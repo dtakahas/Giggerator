@@ -15,5 +15,5 @@ FEATURES
 MIND MAP
 =================
 [Check out maptini.com!](http://maptini.com)
-![](file:///Users/Dave/Downloads/Giggerator%20Maptini.png)
+![](http://s3.amazonaws.com/maptini.com/app/public/system/images/44687/original/46511560-673c-0130-075c-12313d1a8e7f.png)
 
