@@ -1,4 +1,4 @@
-GIGGERATOR -- [Organize Your Gigs!](http://github.com/dtakahas)
+Giggerator -- [Organize Your Gigs!](http://github.com/dtakahas)
 ================================
 
 
@@ -15,5 +15,5 @@ FEATURES
 MIND MAP
 =================
 [Check out maptini.com!](http://maptini.com)
-<iframe src='http://maptini.com/maps/46511560-673c-0130-075c-12313d1a8e7f?embedded=true&zoom=0.9974025974025974' height='871.0649350649351' width='1024' style='border:solid 2px silver;'></iframe>
+![](file:///Users/Dave/Downloads/Giggerator%20Maptini.png)
 
