@@ -1,6 +1,5 @@
 
-![](http://i.imgur.com/T21vML1.png)
-Organize Your Gigs!
+![](http://i.imgur.com/KGutQar.png)
 ================================
 
 
