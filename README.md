@@ -1,5 +1,6 @@
 
-![](http://i.imgur.com/T21vML1.png) -- [Organize Your Gigs!](http://github.com/dtakahas)
+![](http://i.imgur.com/T21vML1.png)
+Organize Your Gigs!
 ================================
 
 
