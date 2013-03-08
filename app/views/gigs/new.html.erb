@@ -7,15 +7,45 @@
 </p>
 
 <p>
-	<%= f.label :title %>
-	<%= f.text_field :title %>
+	<%= f.label :month %>
+	<%= f.text_field :month %>
 </p>
 
 <p>
-	<%= f.label :title %>
-	<%= f.text_field :title %>
+	<%= f.label :day %>
+	<%= f.text_field :day %>
 </p>
 
+<p>
+	<%= f.label :year %>
+	<%= f.text_field :year %>
+</p>
 
+<p>
+	<%= f.label :venue %>
+	<%= f.text_field :venue %>
+</p>
+
+<p>
+	<%= f.label :city %>
+	<%= f.text_field :city %>
+</p>
+
+<p>
+	<%= f.label :address %>
+	<%= f.text_field :address %>
+</p>
+
+<p>
+	<%= f.label :zip %>
+	<%= f.text_field :zip %>
+</p>
+
+<p>
+	<%= f.label :total_budget, "Total Budget" %>
+	<%= f.text_field :total_budget %>
+</p>
+
+<%= f.submit "Save Gig" %>
 
 <% end %>
