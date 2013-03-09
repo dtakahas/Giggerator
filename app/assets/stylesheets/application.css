@@ -11,3 +11,49 @@
  *= require_self
  *= require_tree .
  */
+
+body {
+  background-image:url('/assets/pattern.png');
+  background-repeat:repeat;
+  background-color: #EBEBEB;
+}
+
+#logo {
+  background-color: #d6d6d6;
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 7px;
+  border: 1px solid black;
+ }
+
+#main {
+  background-color: #ffffff;
+  margin-top: 20px;
+  border-radius: 7px;
+  border: 1px solid black;
+  padding-left: 3px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+ }
+
+#main a {
+  font-family: arial;
+}
+
+.flash {
+  background-color: orange;
+  padding-left: 45%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-family: arial;
+  font-size: 24px;
+  border-radius: 7px;
+}
+
+input {
+  border-radius: 5px;
+  height: 20px;
+  background-color: #ffffee;
+  box-shadow: 5px 5px 5px #888888;
+}
