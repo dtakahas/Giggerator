@@ -63,3 +63,11 @@ input {
   box-shadow: inset 2px 2px 5px #888888;
   font-size: 18px;
 }
+
+label {
+  width: 4em;
+  float: left;
+  text-align: right;
+  margin-right: 0.5em;
+  display: block
+}
