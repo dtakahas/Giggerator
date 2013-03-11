@@ -17,8 +17,8 @@
 /* http://stackoverflow.com/questions/10905905/using-fonts-with-rails-asset-pipeline */
 
 body {
-  /*background-image:url('/assets/pattern.png');
-  background-repeat:repeat;*/
+  background-image:url('/assets/ampgrillbackground.gif');
+  background-repeat:repeat;
   background-color: #EBEBEB;
 }
 

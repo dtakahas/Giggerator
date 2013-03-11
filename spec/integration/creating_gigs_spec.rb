@@ -9,6 +9,9 @@ feature "Creating gigs" do
 
 	scenario "can create gigs" do
 		fill_in "Title", :with => "My First Gig"
+		fill_in "Contact Name", :with => "Gigs McGee"
+		fill_in "Contact Phone", :with => "555-555-5555"
+		fill_in "Contact Email", :with => "gigs@mcgee.com"
 		select "March", :from => "date[month]"
 		select "10", :from => "date[day]"
 		select "2015", :from => "date[year]"

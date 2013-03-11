@@ -1,0 +1,9 @@
+<h2>Editing gig</h2>
+
+<%= render "form" %>
+
+<br/><br/>
+
+<div>
+  <%= link_to "Delete Gig", gig_path(@gig), :method => :delete, :confirm => "Are you sure? Gig WILL be deleted." %>
+</div>

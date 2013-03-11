@@ -1,0 +1,11 @@
+<h2><%= @gig.title %></h2>
+
+<div>
+  <ul>
+      <% @gig.attributes.each do | key, value | %>
+    <li>
+      <%= key %>: <%= value %>
+      <% end %>
+    </li>
+  </ul>
+</div>

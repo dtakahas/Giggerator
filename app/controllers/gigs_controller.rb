@@ -1,6 +1,7 @@
 class GigsController < ApplicationController
 
 	def index
+		@gigs = Gig.all
 	end
 
 	def new
@@ -24,6 +25,28 @@ class GigsController < ApplicationController
 
 	def show
     @gig = Gig.find(params[:id])
+	end
+
+	def edit
+		@gig = Gig.find(params[:id])
+	end
+
+	def update
+		@gig = Gig.find(params[:id])
+		if @gig.update_attributes(params[:gig])
+      flash[:notice] = "Gig saved!"
+      redirect_to @gig
+    else
+      flash[:alert] = "Gig NOT saved."
+      render :action =>"edit"
+    end
+	end
+
+	def destroy
+    @gig = Gig.find(params[:id])
+    @gig.destroy
+    flash[:notice] = "Gig deleted!"
+    redirect_to '/'
 	end
 
 
