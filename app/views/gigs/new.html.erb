@@ -7,17 +7,17 @@
 </p>
 
 <p>
-	<%= f.label :month %>
+	<%= f.label :month, "Date" %>
 	<%= select_month(Time.now) %>
-</p>
 
-<p>
-	<%= f.label :day %>
+
+
+	<%= f.label :day, "-" %>
 	<%= select_day(Time.now) %>
-</p>
 
-<p>
-	<%= f.label :year %>
+
+
+	<%= f.label :year, "-" %>
 	<%= select_year(Time.now) %>
 </p>
 
