@@ -9174,3 +9174,193 @@ Served asset /application.js - 304 Not Modified (0ms)
 
 Started GET "/assets/giggerator_logo_transparent.png" for 127.0.0.1 at 2013-03-10 22:09:48 -0700
 Served asset /giggerator_logo_transparent.png - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-03-11 08:54:34 -0700
+Connecting to database specified by database.yml
+Processing by GigsController#index as HTML
+  Rendered gigs/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 87ms (Views: 86.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-11 08:54:34 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-11 08:54:34 -0700
+Served asset /application.js - 304 Not Modified (16ms)
+
+
+Started GET "/assets/gigs.css?body=1" for 127.0.0.1 at 2013-03-11 08:54:34 -0700
+Served asset /gigs.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-11 08:54:34 -0700
+Served asset /application.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/gigs.js?body=1" for 127.0.0.1 at 2013-03-11 08:54:34 -0700
+Served asset /gigs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-11 08:54:34 -0700
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/pattern.png" for 127.0.0.1 at 2013-03-11 08:54:34 -0700
+Served asset /pattern.png - 304 Not Modified (11ms)
+
+
+Started GET "/assets/giggerator_logo_transparent.png" for 127.0.0.1 at 2013-03-11 08:54:34 -0700
+Served asset /giggerator_logo_transparent.png - 304 Not Modified (0ms)
+
+
+Started GET "/gigs/new" for 127.0.0.1 at 2013-03-11 08:55:05 -0700
+Processing by GigsController#new as HTML
+  Rendered gigs/new.html.erb within layouts/application (61.9ms)
+Completed 200 OK in 142ms (Views: 65.2ms | ActiveRecord: 52.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-11 08:55:06 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-11 08:55:06 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/gigs.css?body=1" for 127.0.0.1 at 2013-03-11 08:55:06 -0700
+Served asset /gigs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-11 08:55:06 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/gigs.js?body=1" for 127.0.0.1 at 2013-03-11 08:55:06 -0700
+Served asset /gigs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-11 08:55:06 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/giggerator_logo_transparent.png" for 127.0.0.1 at 2013-03-11 08:55:06 -0700
+Served asset /giggerator_logo_transparent.png - 304 Not Modified (0ms)
+
+
+Started POST "/gigs" for 127.0.0.1 at 2013-03-11 08:57:13 -0700
+Processing by GigsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"L7OnQWLVxnxXDlHHFAGCuq0d8OsocXixD7ot2ZRfvAQ=", "gig"=>{"title"=>"heyeysh", "venue"=>"", "city"=>"", "address"=>"", "zip"=>"", "total_budget"=>""}, "date"=>{"month"=>"3", "day"=>"11", "year"=>"2013"}, "commit"=>"Save Gig"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (69.8ms)[0m  INSERT INTO "gigs" ("address", "city", "created_at", "day", "month", "title", "total_budget", "updated_at", "venue", "year", "zip") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["address", ""], ["city", ""], ["created_at", Mon, 11 Mar 2013 15:57:13 UTC +00:00], ["day", 11], ["month", 3], ["title", "heyeysh"], ["total_budget", nil], ["updated_at", Mon, 11 Mar 2013 15:57:13 UTC +00:00], ["venue", ""], ["year", 2013], ["zip", nil]]
+  [1m[36m (3.3ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/gigs/34
+Completed 302 Found in 77ms (ActiveRecord: 73.2ms)
+
+
+Started GET "/gigs/34" for 127.0.0.1 at 2013-03-11 08:57:13 -0700
+Processing by GigsController#show as HTML
+  Parameters: {"id"=>"34"}
+  [1m[35mGig Load (0.2ms)[0m  SELECT "gigs".* FROM "gigs" WHERE "gigs"."id" = ? LIMIT 1  [["id", "34"]]
+  Rendered gigs/show.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 5ms (Views: 3.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-11 08:57:13 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-11 08:57:13 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-11 08:57:13 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/gigs.css?body=1" for 127.0.0.1 at 2013-03-11 08:57:13 -0700
+Served asset /gigs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-11 08:57:13 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/gigs.js?body=1" for 127.0.0.1 at 2013-03-11 08:57:13 -0700
+Served asset /gigs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/giggerator_logo_transparent.png" for 127.0.0.1 at 2013-03-11 08:57:13 -0700
+Served asset /giggerator_logo_transparent.png - 304 Not Modified (0ms)
+
+
+Started GET "/gigs/34" for 127.0.0.1 at 2013-03-11 09:14:19 -0700
+Processing by GigsController#show as HTML
+  Parameters: {"id"=>"34"}
+  [1m[36mGig Load (0.1ms)[0m  [1mSELECT "gigs".* FROM "gigs" WHERE "gigs"."id" = ? LIMIT 1[0m  [["id", "34"]]
+  Rendered gigs/show.html.erb within layouts/application (0.0ms)
+Compiled application.css  (0ms)  (pid 50601)
+Completed 200 OK in 20ms (Views: 18.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-11 09:14:19 -0700
+Served asset /application.css - 200 OK (9ms)
+
+
+Started GET "/assets/gigs.css?body=1" for 127.0.0.1 at 2013-03-11 09:14:19 -0700
+Served asset /gigs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-11 09:14:19 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-11 09:14:19 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/gigs.js?body=1" for 127.0.0.1 at 2013-03-11 09:14:19 -0700
+Served asset /gigs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-11 09:14:19 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/giggerator_logo_transparent.png" for 127.0.0.1 at 2013-03-11 09:14:19 -0700
+Served asset /giggerator_logo_transparent.png - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-03-11 09:14:29 -0700
+Processing by GigsController#index as HTML
+  Rendered gigs/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 34ms (Views: 33.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/gigs.css?body=1" for 127.0.0.1 at 2013-03-11 09:14:29 -0700
+Served asset /gigs.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-11 09:14:29 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-11 09:14:29 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-11 09:14:29 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/gigs.js?body=1" for 127.0.0.1 at 2013-03-11 09:14:29 -0700
+Served asset /gigs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-11 09:14:29 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/giggerator_logo_transparent.png" for 127.0.0.1 at 2013-03-11 09:14:29 -0700
+Served asset /giggerator_logo_transparent.png - 304 Not Modified (0ms)
