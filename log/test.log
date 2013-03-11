@@ -617,3 +617,352 @@ Processing by GigsController#show as HTML
   Rendered gigs/show.html.erb within layouts/application (0.3ms)
 Completed 200 OK in 2ms (Views: 2.1ms | ActiveRecord: 0.0ms)
   [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+  [1m[36m (3.6ms)[0m  [1mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2013-03-10 19:44:49 -0700
+Processing by GigsController#index as HTML
+  Rendered gigs/index.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 40ms (Views: 39.2ms | ActiveRecord: 0.0ms)
+Started GET "/gigs/new" for 127.0.0.1 at 2013-03-10 19:44:50 -0700
+Processing by GigsController#new as HTML
+  Rendered gigs/new.html.erb within layouts/application (55.5ms)
+Completed 200 OK in 106ms (Views: 74.3ms | ActiveRecord: 19.3ms)
+Started POST "/gigs" for 127.0.0.1 at 2013-03-10 19:44:50 -0700
+Processing by GigsController#create as HTML
+  Parameters: {"utf8"=>"✓", "gig"=>{"title"=>"My First Gig", "month"=>"1", "day"=>"2", "year"=>"2013", "venue"=>"Carnagie Hall", "city"=>"New York", "address"=>"123 Main St", "zip"=>"98102", "total_budget"=>"1000"}, "commit"=>"Save Gig"}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (67.1ms)[0m  [1mINSERT INTO "gigs" ("address", "city", "created_at", "day", "month", "title", "total_budget", "updated_at", "venue", "year", "zip") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["address", "123 Main St"], ["city", "New York"], ["created_at", Mon, 11 Mar 2013 02:44:50 UTC +00:00], ["day", 2], ["month", 1], ["title", "My First Gig"], ["total_budget", 1000.0], ["updated_at", Mon, 11 Mar 2013 02:44:50 UTC +00:00], ["venue", "Carnagie Hall"], ["year", 2013], ["zip", 98102]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://www.example.com/gigs/1
+Completed 302 Found in 71ms (ActiveRecord: 67.2ms)
+Started GET "/gigs/1" for 127.0.0.1 at 2013-03-10 19:44:50 -0700
+Processing by GigsController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendered gigs/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 2ms (Views: 2.1ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.6ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Started GET "/" for 127.0.0.1 at 2013-03-10 19:44:50 -0700
+Processing by GigsController#index as HTML
+Completed 200 OK in 1ms (Views: 1.2ms | ActiveRecord: 0.0ms)
+Started GET "/gigs/new" for 127.0.0.1 at 2013-03-10 19:44:50 -0700
+Processing by GigsController#new as HTML
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.0ms)
+Started POST "/gigs" for 127.0.0.1 at 2013-03-10 19:44:50 -0700
+Processing by GigsController#create as HTML
+  Parameters: {"utf8"=>"✓", "gig"=>{"title"=>"", "month"=>"", "day"=>"", "year"=>"", "venue"=>"", "city"=>"", "address"=>"", "zip"=>"", "total_budget"=>""}, "commit"=>"Save Gig"}
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "gigs" ("address", "city", "created_at", "day", "month", "title", "total_budget", "updated_at", "venue", "year", "zip") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["address", ""], ["city", ""], ["created_at", Mon, 11 Mar 2013 02:44:50 UTC +00:00], ["day", nil], ["month", nil], ["title", ""], ["total_budget", nil], ["updated_at", Mon, 11 Mar 2013 02:44:50 UTC +00:00], ["venue", ""], ["year", nil], ["zip", nil]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/gigs/1
+Completed 302 Found in 2ms (ActiveRecord: 0.5ms)
+Started GET "/gigs/1" for 127.0.0.1 at 2013-03-10 19:44:50 -0700
+Processing by GigsController#show as HTML
+  Parameters: {"id"=>"1"}
+Completed 200 OK in 1ms (Views: 0.8ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.4ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2013-03-10 19:47:01 -0700
+Processing by GigsController#index as HTML
+  Rendered gigs/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 10ms (Views: 10.2ms | ActiveRecord: 0.0ms)
+Started GET "/gigs/new" for 127.0.0.1 at 2013-03-10 19:47:02 -0700
+Processing by GigsController#new as HTML
+  Rendered gigs/new.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 19ms (Views: 8.1ms | ActiveRecord: 1.4ms)
+Started POST "/gigs" for 127.0.0.1 at 2013-03-10 19:47:02 -0700
+Processing by GigsController#create as HTML
+  Parameters: {"utf8"=>"✓", "gig"=>{"title"=>"My First Gig", "month"=>"1", "day"=>"2", "year"=>"2013", "venue"=>"Carnagie Hall", "city"=>"New York", "address"=>"123 Main St", "zip"=>"98102", "total_budget"=>"1000"}, "commit"=>"Save Gig"}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (4.4ms)[0m  [1mINSERT INTO "gigs" ("address", "city", "created_at", "day", "month", "title", "total_budget", "updated_at", "venue", "year", "zip") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["address", "123 Main St"], ["city", "New York"], ["created_at", Mon, 11 Mar 2013 02:47:02 UTC +00:00], ["day", 2], ["month", 1], ["title", "My First Gig"], ["total_budget", 1000.0], ["updated_at", Mon, 11 Mar 2013 02:47:02 UTC +00:00], ["venue", "Carnagie Hall"], ["year", 2013], ["zip", 98102]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://www.example.com/gigs/1
+Completed 302 Found in 7ms (ActiveRecord: 4.5ms)
+Started GET "/gigs/1" for 127.0.0.1 at 2013-03-10 19:47:02 -0700
+Processing by GigsController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendered gigs/show.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.7ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Started GET "/" for 127.0.0.1 at 2013-03-10 19:47:02 -0700
+Processing by GigsController#index as HTML
+Completed 200 OK in 1ms (Views: 1.2ms | ActiveRecord: 0.0ms)
+Started GET "/gigs/new" for 127.0.0.1 at 2013-03-10 19:47:02 -0700
+Processing by GigsController#new as HTML
+Completed 200 OK in 3ms (Views: 3.3ms | ActiveRecord: 0.0ms)
+Started POST "/gigs" for 127.0.0.1 at 2013-03-10 19:47:02 -0700
+Processing by GigsController#create as HTML
+  Parameters: {"utf8"=>"✓", "gig"=>{"title"=>"", "month"=>"", "day"=>"", "year"=>"", "venue"=>"", "city"=>"", "address"=>"", "zip"=>"", "total_budget"=>""}, "commit"=>"Save Gig"}
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+Completed 200 OK in 5ms (Views: 3.6ms | ActiveRecord: 0.1ms)
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2013-03-10 19:51:18 -0700
+Processing by GigsController#index as HTML
+  Rendered gigs/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 11ms (Views: 10.6ms | ActiveRecord: 0.0ms)
+Started GET "/gigs/new" for 127.0.0.1 at 2013-03-10 19:51:18 -0700
+Processing by GigsController#new as HTML
+  Rendered gigs/new.html.erb within layouts/application (44.6ms)
+Completed 500 Internal Server Error in 56ms
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2013-03-10 19:51:18 -0700
+Processing by GigsController#index as HTML
+Completed 200 OK in 1ms (Views: 1.1ms | ActiveRecord: 0.0ms)
+Started GET "/gigs/new" for 127.0.0.1 at 2013-03-10 19:51:18 -0700
+Processing by GigsController#new as HTML
+Completed 500 Internal Server Error in 15ms
+  [1m[35m (0.1ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2013-03-10 19:53:02 -0700
+Processing by GigsController#index as HTML
+  Rendered gigs/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 11ms (Views: 10.3ms | ActiveRecord: 0.0ms)
+Started GET "/gigs/new" for 127.0.0.1 at 2013-03-10 19:53:02 -0700
+Processing by GigsController#new as HTML
+  Rendered gigs/new.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 19ms (Views: 8.1ms | ActiveRecord: 1.3ms)
+Started POST "/gigs" for 127.0.0.1 at 2013-03-10 19:53:02 -0700
+Processing by GigsController#create as HTML
+  Parameters: {"utf8"=>"✓", "gig"=>{"title"=>"My First Gig", "month"=>"1", "day"=>"2", "year"=>"2013", "venue"=>"Carnagie Hall", "city"=>"New York", "address"=>"123 Main St", "zip"=>"98102", "total_budget"=>"1000"}, "commit"=>"Save Gig"}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (4.4ms)[0m  [1mINSERT INTO "gigs" ("address", "city", "created_at", "day", "month", "title", "total_budget", "updated_at", "venue", "year", "zip") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["address", "123 Main St"], ["city", "New York"], ["created_at", Mon, 11 Mar 2013 02:53:02 UTC +00:00], ["day", 2], ["month", 1], ["title", "My First Gig"], ["total_budget", 1000.0], ["updated_at", Mon, 11 Mar 2013 02:53:02 UTC +00:00], ["venue", "Carnagie Hall"], ["year", 2013], ["zip", 98102]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://www.example.com/gigs/1
+Completed 302 Found in 7ms (ActiveRecord: 4.4ms)
+Started GET "/gigs/1" for 127.0.0.1 at 2013-03-10 19:53:02 -0700
+Processing by GigsController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendered gigs/show.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.7ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Started GET "/" for 127.0.0.1 at 2013-03-10 19:53:02 -0700
+Processing by GigsController#index as HTML
+Completed 200 OK in 1ms (Views: 1.3ms | ActiveRecord: 0.0ms)
+Started GET "/gigs/new" for 127.0.0.1 at 2013-03-10 19:53:02 -0700
+Processing by GigsController#new as HTML
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.0ms)
+Started POST "/gigs" for 127.0.0.1 at 2013-03-10 19:53:02 -0700
+Processing by GigsController#create as HTML
+  Parameters: {"utf8"=>"✓", "gig"=>{"title"=>"", "month"=>"", "day"=>"", "year"=>"", "venue"=>"", "city"=>"", "address"=>"", "zip"=>"", "total_budget"=>""}, "commit"=>"Save Gig"}
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+Completed 200 OK in 5ms (Views: 3.8ms | ActiveRecord: 0.1ms)
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2013-03-10 20:01:07 -0700
+Processing by GigsController#index as HTML
+  Rendered gigs/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 11ms (Views: 10.9ms | ActiveRecord: 0.0ms)
+Started GET "/gigs/new" for 127.0.0.1 at 2013-03-10 20:01:07 -0700
+Processing by GigsController#new as HTML
+  Rendered gigs/new.html.erb within layouts/application (18.4ms)
+Completed 500 Internal Server Error in 30ms
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2013-03-10 20:01:07 -0700
+Processing by GigsController#index as HTML
+Completed 200 OK in 1ms (Views: 1.2ms | ActiveRecord: 0.0ms)
+Started GET "/gigs/new" for 127.0.0.1 at 2013-03-10 20:01:07 -0700
+Processing by GigsController#new as HTML
+Completed 500 Internal Server Error in 15ms
+  [1m[35m (0.1ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.5ms)[0m  [1mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2013-03-10 21:25:10 -0700
+Processing by GigsController#index as HTML
+  Rendered gigs/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 11ms (Views: 10.8ms | ActiveRecord: 0.0ms)
+Started GET "/gigs/new" for 127.0.0.1 at 2013-03-10 21:25:10 -0700
+Processing by GigsController#new as HTML
+  Rendered gigs/new.html.erb within layouts/application (8.4ms)
+Completed 200 OK in 20ms (Views: 9.8ms | ActiveRecord: 1.3ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2013-03-10 21:25:10 -0700
+Processing by GigsController#index as HTML
+Completed 200 OK in 1ms (Views: 1.2ms | ActiveRecord: 0.0ms)
+Started GET "/gigs/new" for 127.0.0.1 at 2013-03-10 21:25:10 -0700
+Processing by GigsController#new as HTML
+Completed 200 OK in 5ms (Views: 4.4ms | ActiveRecord: 0.0ms)
+Started POST "/gigs" for 127.0.0.1 at 2013-03-10 21:25:10 -0700
+Processing by GigsController#create as HTML
+  Parameters: {"utf8"=>"✓", "gig"=>{"title"=>"", "venue"=>"", "city"=>"", "address"=>"", "zip"=>"", "total_budget"=>""}, "date"=>{"month"=>"3", "day"=>"10", "year"=>"2013"}, "commit"=>"Save Gig"}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+Completed 200 OK in 8ms (Views: 5.6ms | ActiveRecord: 0.1ms)
+  [1m[35m (0.0ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2013-03-10 21:29:28 -0700
+Processing by GigsController#index as HTML
+  Rendered gigs/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 12ms (Views: 11.8ms | ActiveRecord: 0.0ms)
+Started GET "/gigs/new" for 127.0.0.1 at 2013-03-10 21:29:28 -0700
+Processing by GigsController#new as HTML
+  Rendered gigs/new.html.erb within layouts/application (8.3ms)
+Completed 200 OK in 20ms (Views: 9.6ms | ActiveRecord: 1.4ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2013-03-10 21:29:28 -0700
+Processing by GigsController#index as HTML
+Completed 200 OK in 1ms (Views: 1.1ms | ActiveRecord: 0.0ms)
+Started GET "/gigs/new" for 127.0.0.1 at 2013-03-10 21:29:28 -0700
+Processing by GigsController#new as HTML
+Completed 200 OK in 4ms (Views: 4.3ms | ActiveRecord: 0.0ms)
+Started POST "/gigs" for 127.0.0.1 at 2013-03-10 21:29:28 -0700
+Processing by GigsController#create as HTML
+  Parameters: {"utf8"=>"✓", "gig"=>{"title"=>"", "venue"=>"", "city"=>"", "address"=>"", "zip"=>"", "total_budget"=>""}, "date"=>{"month"=>"3", "day"=>"10", "year"=>"2013"}, "commit"=>"Save Gig"}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+Completed 200 OK in 7ms (Views: 5.3ms | ActiveRecord: 0.1ms)
+  [1m[35m (0.0ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2013-03-10 21:30:06 -0700
+Processing by GigsController#index as HTML
+  Rendered gigs/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 12ms (Views: 11.3ms | ActiveRecord: 0.0ms)
+Started GET "/gigs/new" for 127.0.0.1 at 2013-03-10 21:30:06 -0700
+Processing by GigsController#new as HTML
+  Rendered gigs/new.html.erb within layouts/application (8.4ms)
+Completed 200 OK in 21ms (Views: 9.9ms | ActiveRecord: 1.4ms)
+Started POST "/gigs" for 127.0.0.1 at 2013-03-10 21:30:06 -0700
+Processing by GigsController#create as HTML
+  Parameters: {"utf8"=>"✓", "gig"=>{"title"=>"", "venue"=>"", "city"=>"", "address"=>"", "zip"=>"", "total_budget"=>""}, "date"=>{"month"=>"3", "day"=>"10", "year"=>"2013"}, "commit"=>"Save Gig"}
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  Rendered gigs/new.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 8ms (Views: 5.8ms | ActiveRecord: 0.1ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2013-03-10 21:30:06 -0700
+Processing by GigsController#index as HTML
+Completed 200 OK in 1ms (Views: 1.1ms | ActiveRecord: 0.0ms)
+Started GET "/gigs/new" for 127.0.0.1 at 2013-03-10 21:30:06 -0700
+Processing by GigsController#new as HTML
+Completed 200 OK in 5ms (Views: 4.6ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.0ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2013-03-10 21:30:27 -0700
+Processing by GigsController#index as HTML
+  Rendered gigs/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 11ms (Views: 11.2ms | ActiveRecord: 0.0ms)
+Started GET "/gigs/new" for 127.0.0.1 at 2013-03-10 21:30:27 -0700
+Processing by GigsController#new as HTML
+  Rendered gigs/new.html.erb within layouts/application (8.2ms)
+Completed 200 OK in 20ms (Views: 9.5ms | ActiveRecord: 1.5ms)
+Started POST "/gigs" for 127.0.0.1 at 2013-03-10 21:30:27 -0700
+Processing by GigsController#create as HTML
+  Parameters: {"utf8"=>"✓", "gig"=>{"title"=>"", "venue"=>"", "city"=>"", "address"=>"", "zip"=>"", "total_budget"=>""}, "date"=>{"month"=>"3", "day"=>"10", "year"=>"2013"}, "commit"=>"Save Gig"}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  Rendered gigs/new.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 7ms (Views: 5.4ms | ActiveRecord: 0.1ms)
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2013-03-10 21:30:27 -0700
+Processing by GigsController#index as HTML
+Completed 200 OK in 1ms (Views: 1.1ms | ActiveRecord: 0.0ms)
+Started GET "/gigs/new" for 127.0.0.1 at 2013-03-10 21:30:27 -0700
+Processing by GigsController#new as HTML
+Completed 200 OK in 5ms (Views: 4.4ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.0ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2013-03-10 21:31:58 -0700
+Processing by GigsController#index as HTML
+  Rendered gigs/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 12ms (Views: 11.7ms | ActiveRecord: 0.0ms)
+Started GET "/gigs/new" for 127.0.0.1 at 2013-03-10 21:31:58 -0700
+Processing by GigsController#new as HTML
+  Rendered gigs/new.html.erb within layouts/application (8.2ms)
+Completed 200 OK in 20ms (Views: 9.6ms | ActiveRecord: 1.5ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2013-03-10 21:31:58 -0700
+Processing by GigsController#index as HTML
+Completed 200 OK in 21ms (Views: 20.6ms | ActiveRecord: 0.0ms)
+Started GET "/gigs/new" for 127.0.0.1 at 2013-03-10 21:31:58 -0700
+Processing by GigsController#new as HTML
+Completed 200 OK in 5ms (Views: 4.7ms | ActiveRecord: 0.0ms)
+Started POST "/gigs" for 127.0.0.1 at 2013-03-10 21:31:59 -0700
+Processing by GigsController#create as HTML
+  Parameters: {"utf8"=>"✓", "gig"=>{"title"=>"", "venue"=>"", "city"=>"", "address"=>"", "zip"=>"", "total_budget"=>""}, "date"=>{"month"=>"3", "day"=>"10", "year"=>"2013"}, "commit"=>"Save Gig"}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+Completed 200 OK in 7ms (Views: 5.5ms | ActiveRecord: 0.1ms)
+  [1m[35m (0.0ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2013-03-10 21:32:16 -0700
+Processing by GigsController#index as HTML
+  Rendered gigs/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 12ms (Views: 11.9ms | ActiveRecord: 0.0ms)
+Started GET "/gigs/new" for 127.0.0.1 at 2013-03-10 21:32:16 -0700
+Processing by GigsController#new as HTML
+  Rendered gigs/new.html.erb within layouts/application (8.2ms)
+Completed 200 OK in 20ms (Views: 9.6ms | ActiveRecord: 1.4ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2013-03-10 21:32:16 -0700
+Processing by GigsController#index as HTML
+Completed 200 OK in 1ms (Views: 1.2ms | ActiveRecord: 0.0ms)
+Started GET "/gigs/new" for 127.0.0.1 at 2013-03-10 21:32:16 -0700
+Processing by GigsController#new as HTML
+Completed 200 OK in 5ms (Views: 4.4ms | ActiveRecord: 0.0ms)
+Started POST "/gigs" for 127.0.0.1 at 2013-03-10 21:32:16 -0700
+Processing by GigsController#create as HTML
+  Parameters: {"utf8"=>"✓", "gig"=>{"title"=>"", "venue"=>"", "city"=>"", "address"=>"", "zip"=>"", "total_budget"=>""}, "date"=>{"month"=>"3", "day"=>"10", "year"=>"2013"}, "commit"=>"Save Gig"}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+Completed 200 OK in 7ms (Views: 5.3ms | ActiveRecord: 0.1ms)
+  [1m[35m (0.0ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2013-03-10 21:32:49 -0700
+Processing by GigsController#index as HTML
+  Rendered gigs/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 12ms (Views: 11.5ms | ActiveRecord: 0.0ms)
+Started GET "/gigs/new" for 127.0.0.1 at 2013-03-10 21:32:49 -0700
+Processing by GigsController#new as HTML
+  Rendered gigs/new.html.erb within layouts/application (8.2ms)
+Completed 200 OK in 20ms (Views: 9.6ms | ActiveRecord: 1.5ms)
+Started POST "/gigs" for 127.0.0.1 at 2013-03-10 21:32:49 -0700
+Processing by GigsController#create as HTML
+  Parameters: {"utf8"=>"✓", "gig"=>{"title"=>"My First Gig", "venue"=>"Carnagie Hall", "city"=>"New York", "address"=>"123 Main St", "zip"=>"98102", "total_budget"=>"1000"}, "date"=>{"month"=>"3", "day"=>"10", "year"=>"2015"}, "commit"=>"Save Gig"}
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (4.5ms)[0m  [1mINSERT INTO "gigs" ("address", "city", "created_at", "day", "month", "title", "total_budget", "updated_at", "venue", "year", "zip") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["address", "123 Main St"], ["city", "New York"], ["created_at", Mon, 11 Mar 2013 04:32:49 UTC +00:00], ["day", 10], ["month", 3], ["title", "My First Gig"], ["total_budget", 1000.0], ["updated_at", Mon, 11 Mar 2013 04:32:49 UTC +00:00], ["venue", "Carnagie Hall"], ["year", 2015], ["zip", 98102]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://www.example.com/gigs/1
+Completed 302 Found in 7ms (ActiveRecord: 4.6ms)
+Started GET "/gigs/1" for 127.0.0.1 at 2013-03-10 21:32:49 -0700
+Processing by GigsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mGig Load (0.1ms)[0m  [1mSELECT "gigs".* FROM "gigs" WHERE "gigs"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered gigs/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 3ms (Views: 1.8ms | ActiveRecord: 0.1ms)
+  [1m[35m (0.6ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2013-03-10 21:32:49 -0700
+Processing by GigsController#index as HTML
+Completed 200 OK in 1ms (Views: 1.2ms | ActiveRecord: 0.0ms)
+Started GET "/gigs/new" for 127.0.0.1 at 2013-03-10 21:32:49 -0700
+Processing by GigsController#new as HTML
+Completed 200 OK in 5ms (Views: 4.7ms | ActiveRecord: 0.0ms)
+Started POST "/gigs" for 127.0.0.1 at 2013-03-10 21:32:49 -0700
+Processing by GigsController#create as HTML
+  Parameters: {"utf8"=>"✓", "gig"=>{"title"=>"", "venue"=>"", "city"=>"", "address"=>"", "zip"=>"", "total_budget"=>""}, "date"=>{"month"=>"3", "day"=>"10", "year"=>"2013"}, "commit"=>"Save Gig"}
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+Completed 200 OK in 7ms (Views: 5.4ms | ActiveRecord: 0.1ms)
+  [1m[35m (0.1ms)[0m  rollback transaction

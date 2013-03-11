@@ -9,6 +9,9 @@ class GigsController < ApplicationController
 
 	def create
 		@gig = Gig.new(params[:gig])
+		@gig.month = params["date"]["month"].to_i
+		@gig.day = params["date"]["day"].to_i
+		@gig.year = params["date"]["year"].to_i
 
 		if @gig.save
 			flash[:notice] = "Gig saved!"
@@ -20,7 +23,8 @@ class GigsController < ApplicationController
 	end
 
 	def show
-
+    @gig = Gig.find(params[:id])
 	end
+
 
 end

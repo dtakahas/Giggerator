@@ -1,5 +1,5 @@
 <%= form_for(@gig) do |f| %>
-<%#= f.error_messages %>
+<%= f.error_messages %>
 
 <p>
 	<%= f.label :title %>
@@ -8,17 +8,17 @@
 
 <p>
 	<%= f.label :month %>
-	<%= f.text_field :month %>
+	<%= select_month(Time.now) %>
 </p>
 
 <p>
 	<%= f.label :day %>
-	<%= f.text_field :day %>
+	<%= select_day(Time.now) %>
 </p>
 
 <p>
 	<%= f.label :year %>
-	<%= f.text_field :year %>
+	<%= select_year(Time.now) %>
 </p>
 
 <p>
