@@ -5619,3 +5619,654 @@ Processing by GigsController#create as HTML
   Rendered gigs/_form.html.erb (7.2ms)
 Completed 200 OK in 12ms (Views: 9.5ms | ActiveRecord: 0.1ms)
   [1m[35m (0.1ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.5ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.5ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (31.7ms)[0m  [1mINSERT INTO "gigs" ("address", "city", "contact_email", "contact_name", "contact_phone", "created_at", "day", "month", "title", "total_budget", "updated_at", "user_id", "venue", "year", "zip") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["address", nil], ["city", nil], ["contact_email", nil], ["contact_name", nil], ["contact_phone", nil], ["created_at", Wed, 13 Mar 2013 22:31:39 UTC +00:00], ["day", nil], ["month", nil], ["title", "This is the right gig"], ["total_budget", nil], ["updated_at", Wed, 13 Mar 2013 22:31:39 UTC +00:00], ["user_id", 1], ["venue", nil], ["year", nil], ["zip", nil]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "gigs" ("address", "city", "contact_email", "contact_name", "contact_phone", "created_at", "day", "month", "title", "total_budget", "updated_at", "user_id", "venue", "year", "zip") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["address", nil], ["city", nil], ["contact_email", nil], ["contact_name", nil], ["contact_phone", nil], ["created_at", Wed, 13 Mar 2013 22:31:39 UTC +00:00], ["day", nil], ["month", nil], ["title", "This is the wrong gig"], ["total_budget", nil], ["updated_at", Wed, 13 Mar 2013 22:31:39 UTC +00:00], ["user_id", 2], ["venue", nil], ["year", nil], ["zip", nil]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "gigs" ("address", "city", "contact_email", "contact_name", "contact_phone", "created_at", "day", "month", "title", "total_budget", "updated_at", "user_id", "venue", "year", "zip") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["address", nil], ["city", nil], ["contact_email", nil], ["contact_name", nil], ["contact_phone", nil], ["created_at", Wed, 13 Mar 2013 22:31:39 UTC +00:00], ["day", nil], ["month", nil], ["title", "This is another right gig"], ["total_budget", nil], ["updated_at", Wed, 13 Mar 2013 22:31:39 UTC +00:00], ["user_id", 1], ["venue", nil], ["year", nil], ["zip", nil]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.5ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (31.6ms)[0m  [1mINSERT INTO "gigs" ("address", "city", "contact_email", "contact_name", "contact_phone", "created_at", "day", "month", "title", "total_budget", "updated_at", "user_id", "venue", "year", "zip") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["address", nil], ["city", nil], ["contact_email", nil], ["contact_name", nil], ["contact_phone", nil], ["created_at", Wed, 13 Mar 2013 22:32:44 UTC +00:00], ["day", nil], ["month", nil], ["title", "This is the right gig"], ["total_budget", nil], ["updated_at", Wed, 13 Mar 2013 22:32:44 UTC +00:00], ["user_id", 1], ["venue", nil], ["year", nil], ["zip", nil]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "gigs" ("address", "city", "contact_email", "contact_name", "contact_phone", "created_at", "day", "month", "title", "total_budget", "updated_at", "user_id", "venue", "year", "zip") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["address", nil], ["city", nil], ["contact_email", nil], ["contact_name", nil], ["contact_phone", nil], ["created_at", Wed, 13 Mar 2013 22:32:44 UTC +00:00], ["day", nil], ["month", nil], ["title", "This is the wrong gig"], ["total_budget", nil], ["updated_at", Wed, 13 Mar 2013 22:32:44 UTC +00:00], ["user_id", 2], ["venue", nil], ["year", nil], ["zip", nil]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "gigs" ("address", "city", "contact_email", "contact_name", "contact_phone", "created_at", "day", "month", "title", "total_budget", "updated_at", "user_id", "venue", "year", "zip") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["address", nil], ["city", nil], ["contact_email", nil], ["contact_name", nil], ["contact_phone", nil], ["created_at", Wed, 13 Mar 2013 22:32:44 UTC +00:00], ["day", nil], ["month", nil], ["title", "This is another right gig"], ["total_budget", nil], ["updated_at", Wed, 13 Mar 2013 22:32:44 UTC +00:00], ["user_id", 1], ["venue", nil], ["year", nil], ["zip", nil]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.5ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (31.7ms)[0m  [1mINSERT INTO "gigs" ("address", "city", "contact_email", "contact_name", "contact_phone", "created_at", "day", "month", "title", "total_budget", "updated_at", "user_id", "venue", "year", "zip") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["address", nil], ["city", nil], ["contact_email", nil], ["contact_name", nil], ["contact_phone", nil], ["created_at", Wed, 13 Mar 2013 22:33:42 UTC +00:00], ["day", nil], ["month", nil], ["title", "This is the right gig"], ["total_budget", nil], ["updated_at", Wed, 13 Mar 2013 22:33:42 UTC +00:00], ["user_id", 1], ["venue", nil], ["year", nil], ["zip", nil]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "gigs" ("address", "city", "contact_email", "contact_name", "contact_phone", "created_at", "day", "month", "title", "total_budget", "updated_at", "user_id", "venue", "year", "zip") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["address", nil], ["city", nil], ["contact_email", nil], ["contact_name", nil], ["contact_phone", nil], ["created_at", Wed, 13 Mar 2013 22:33:42 UTC +00:00], ["day", nil], ["month", nil], ["title", "This is the wrong gig"], ["total_budget", nil], ["updated_at", Wed, 13 Mar 2013 22:33:42 UTC +00:00], ["user_id", 2], ["venue", nil], ["year", nil], ["zip", nil]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "gigs" ("address", "city", "contact_email", "contact_name", "contact_phone", "created_at", "day", "month", "title", "total_budget", "updated_at", "user_id", "venue", "year", "zip") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["address", nil], ["city", nil], ["contact_email", nil], ["contact_name", nil], ["contact_phone", nil], ["created_at", Wed, 13 Mar 2013 22:33:42 UTC +00:00], ["day", nil], ["month", nil], ["title", "This is another right gig"], ["total_budget", nil], ["updated_at", Wed, 13 Mar 2013 22:33:42 UTC +00:00], ["user_id", 1], ["venue", nil], ["year", nil], ["zip", nil]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."email" = 'user@example.com' LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."confirmation_token" = 'LcdnfZti2wzsy2Xp9gCB' LIMIT 1[0m
+Binary data inserted for `string` type on column `encrypted_password`
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "users" ("confirmation_sent_at", "confirmation_token", "confirmed_at", "created_at", "current_sign_in_at", "current_sign_in_ip", "email", "encrypted_password", "id", "last_sign_in_at", "last_sign_in_ip", "remember_created_at", "reset_password_sent_at", "reset_password_token", "sign_in_count", "unconfirmed_email", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["confirmation_sent_at", Wed, 13 Mar 2013 22:33:43 UTC +00:00], ["confirmation_token", "LcdnfZti2wzsy2Xp9gCB"], ["confirmed_at", nil], ["created_at", Wed, 13 Mar 2013 22:33:43 UTC +00:00], ["current_sign_in_at", nil], ["current_sign_in_ip", nil], ["email", "user@example.com"], ["encrypted_password", "$2a$04$6gUoJyjd5e6K5kIhYpWOb.GEoW/ydk91WIPSL1xQ07E39nvuVQWwW"], ["id", 1], ["last_sign_in_at", nil], ["last_sign_in_ip", nil], ["remember_created_at", nil], ["reset_password_sent_at", nil], ["reset_password_token", nil], ["sign_in_count", 0], ["unconfirmed_email", nil], ["updated_at", Wed, 13 Mar 2013 22:33:43 UTC +00:00]]
+  Rendered /home/calico/.rvm/gems/ruby-1.9.3-p374/gems/devise-2.2.2/app/views/devise/mailer/confirmation_instructions.html.erb (4.1ms)
+
+Sent mail to user@example.com (44ms)
+Date: Wed, 13 Mar 2013 15:33:43 -0700
+From: please-change-me-at-config-initializers-devise@example.com
+Reply-To: please-change-me-at-config-initializers-devise@example.com
+To: user@example.com
+Message-ID: <5140fec730e8f_fbc4f0c8107955d@homie.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Welcome user@example.com!</p>
+
+<p>You can confirm your account email through the link below:</p>
+
+<p><a href="http://localhost:3000/users/confirmation?confirmation_token=LcdnfZti2wzsy2Xp9gCB">Confirm my account</a></p>
+
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" = 'differentuser@example.com' LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."confirmation_token" = 'ht8GX3pFzwV1zVwPiQPD' LIMIT 1
+Binary data inserted for `string` type on column `encrypted_password`
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("confirmation_sent_at", "confirmation_token", "confirmed_at", "created_at", "current_sign_in_at", "current_sign_in_ip", "email", "encrypted_password", "id", "last_sign_in_at", "last_sign_in_ip", "remember_created_at", "reset_password_sent_at", "reset_password_token", "sign_in_count", "unconfirmed_email", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["confirmation_sent_at", Wed, 13 Mar 2013 22:33:43 UTC +00:00], ["confirmation_token", "ht8GX3pFzwV1zVwPiQPD"], ["confirmed_at", nil], ["created_at", Wed, 13 Mar 2013 22:33:43 UTC +00:00], ["current_sign_in_at", nil], ["current_sign_in_ip", nil], ["email", "differentuser@example.com"], ["encrypted_password", "$2a$04$I/fS3AS9bSLopSQj1K20h.PediZSeI12B2l9m9SkMGtMPILcKU1ti"], ["id", 2], ["last_sign_in_at", nil], ["last_sign_in_ip", nil], ["remember_created_at", nil], ["reset_password_sent_at", nil], ["reset_password_token", nil], ["sign_in_count", 0], ["unconfirmed_email", nil], ["updated_at", Wed, 13 Mar 2013 22:33:43 UTC +00:00]]
+  Rendered /home/calico/.rvm/gems/ruby-1.9.3-p374/gems/devise-2.2.2/app/views/devise/mailer/confirmation_instructions.html.erb (0.4ms)
+
+Sent mail to differentuser@example.com (4ms)
+Date: Wed, 13 Mar 2013 15:33:43 -0700
+From: please-change-me-at-config-initializers-devise@example.com
+Reply-To: please-change-me-at-config-initializers-devise@example.com
+To: differentuser@example.com
+Message-ID: <5140fec73ce3b_fbc4f0c81079631@homie.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Welcome differentuser@example.com!</p>
+
+<p>You can confirm your account email through the link below:</p>
+
+<p><a href="http://localhost:3000/users/confirmation?confirmation_token=ht8GX3pFzwV1zVwPiQPD">Confirm my account</a></p>
+
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'user@example.com' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mUPDATE "users" SET "confirmation_token" = NULL, "confirmed_at" = '2013-03-13 22:33:43.254364', "updated_at" = '2013-03-13 22:33:43.255128' WHERE "users"."id" = 1[0m
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Started GET "/" for 127.0.0.1 at 2013-03-13 15:33:43 -0700
+Processing by GigsController#index as HTML
+  [1m[36mGig Load (0.2ms)[0m  [1mSELECT "gigs".* FROM "gigs" [0m
+  Rendered gigs/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 9ms (Views: 7.4ms | ActiveRecord: 0.2ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.5ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (31.6ms)[0m  [1mINSERT INTO "gigs" ("address", "city", "contact_email", "contact_name", "contact_phone", "created_at", "day", "month", "title", "total_budget", "updated_at", "user_id", "venue", "year", "zip") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["address", nil], ["city", nil], ["contact_email", nil], ["contact_name", nil], ["contact_phone", nil], ["created_at", Wed, 13 Mar 2013 22:46:13 UTC +00:00], ["day", nil], ["month", nil], ["title", "This is the right gig"], ["total_budget", nil], ["updated_at", Wed, 13 Mar 2013 22:46:13 UTC +00:00], ["user_id", 1], ["venue", nil], ["year", nil], ["zip", nil]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "gigs" ("address", "city", "contact_email", "contact_name", "contact_phone", "created_at", "day", "month", "title", "total_budget", "updated_at", "user_id", "venue", "year", "zip") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["address", nil], ["city", nil], ["contact_email", nil], ["contact_name", nil], ["contact_phone", nil], ["created_at", Wed, 13 Mar 2013 22:46:13 UTC +00:00], ["day", nil], ["month", nil], ["title", "This is the wrong gig"], ["total_budget", nil], ["updated_at", Wed, 13 Mar 2013 22:46:13 UTC +00:00], ["user_id", 2], ["venue", nil], ["year", nil], ["zip", nil]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "gigs" ("address", "city", "contact_email", "contact_name", "contact_phone", "created_at", "day", "month", "title", "total_budget", "updated_at", "user_id", "venue", "year", "zip") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["address", nil], ["city", nil], ["contact_email", nil], ["contact_name", nil], ["contact_phone", nil], ["created_at", Wed, 13 Mar 2013 22:46:13 UTC +00:00], ["day", nil], ["month", nil], ["title", "This is another right gig"], ["total_budget", nil], ["updated_at", Wed, 13 Mar 2013 22:46:13 UTC +00:00], ["user_id", 1], ["venue", nil], ["year", nil], ["zip", nil]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."email" = 'user@example.com' LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."confirmation_token" = '7PWnqqbw7ZgxNZsExi5B' LIMIT 1[0m
+Binary data inserted for `string` type on column `encrypted_password`
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "users" ("confirmation_sent_at", "confirmation_token", "confirmed_at", "created_at", "current_sign_in_at", "current_sign_in_ip", "email", "encrypted_password", "id", "last_sign_in_at", "last_sign_in_ip", "remember_created_at", "reset_password_sent_at", "reset_password_token", "sign_in_count", "unconfirmed_email", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["confirmation_sent_at", Wed, 13 Mar 2013 22:46:13 UTC +00:00], ["confirmation_token", "7PWnqqbw7ZgxNZsExi5B"], ["confirmed_at", nil], ["created_at", Wed, 13 Mar 2013 22:46:13 UTC +00:00], ["current_sign_in_at", nil], ["current_sign_in_ip", nil], ["email", "user@example.com"], ["encrypted_password", "$2a$04$oo8SxIWkMtGsa7HyGCpoyOeQW.et8rrnm7Jrj9q2D10fwsiPZcNQq"], ["id", 1], ["last_sign_in_at", nil], ["last_sign_in_ip", nil], ["remember_created_at", nil], ["reset_password_sent_at", nil], ["reset_password_token", nil], ["sign_in_count", 0], ["unconfirmed_email", nil], ["updated_at", Wed, 13 Mar 2013 22:46:13 UTC +00:00]]
+  Rendered /home/calico/.rvm/gems/ruby-1.9.3-p374/gems/devise-2.2.2/app/views/devise/mailer/confirmation_instructions.html.erb (4.1ms)
+
+Sent mail to user@example.com (45ms)
+Date: Wed, 13 Mar 2013 15:46:13 -0700
+From: please-change-me-at-config-initializers-devise@example.com
+Reply-To: please-change-me-at-config-initializers-devise@example.com
+To: user@example.com
+Message-ID: <514101b55b8ee_fdf46fb81089722@homie.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Welcome user@example.com!</p>
+
+<p>You can confirm your account email through the link below:</p>
+
+<p><a href="http://localhost:3000/users/confirmation?confirmation_token=7PWnqqbw7ZgxNZsExi5B">Confirm my account</a></p>
+
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" = 'differentuser@example.com' LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."confirmation_token" = 'xtttUnaG1LewvcjC1piK' LIMIT 1
+Binary data inserted for `string` type on column `encrypted_password`
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("confirmation_sent_at", "confirmation_token", "confirmed_at", "created_at", "current_sign_in_at", "current_sign_in_ip", "email", "encrypted_password", "id", "last_sign_in_at", "last_sign_in_ip", "remember_created_at", "reset_password_sent_at", "reset_password_token", "sign_in_count", "unconfirmed_email", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["confirmation_sent_at", Wed, 13 Mar 2013 22:46:13 UTC +00:00], ["confirmation_token", "xtttUnaG1LewvcjC1piK"], ["confirmed_at", nil], ["created_at", Wed, 13 Mar 2013 22:46:13 UTC +00:00], ["current_sign_in_at", nil], ["current_sign_in_ip", nil], ["email", "differentuser@example.com"], ["encrypted_password", "$2a$04$L.2lr45rCxsC86fx/2pCMejcRoks.A6KzzbyrC81yMvWhDxi1EaS2"], ["id", 2], ["last_sign_in_at", nil], ["last_sign_in_ip", nil], ["remember_created_at", nil], ["reset_password_sent_at", nil], ["reset_password_token", nil], ["sign_in_count", 0], ["unconfirmed_email", nil], ["updated_at", Wed, 13 Mar 2013 22:46:13 UTC +00:00]]
+  Rendered /home/calico/.rvm/gems/ruby-1.9.3-p374/gems/devise-2.2.2/app/views/devise/mailer/confirmation_instructions.html.erb (0.4ms)
+
+Sent mail to differentuser@example.com (4ms)
+Date: Wed, 13 Mar 2013 15:46:13 -0700
+From: please-change-me-at-config-initializers-devise@example.com
+Reply-To: please-change-me-at-config-initializers-devise@example.com
+To: differentuser@example.com
+Message-ID: <514101b5679b4_fdf46fb8108985d@homie.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Welcome differentuser@example.com!</p>
+
+<p>You can confirm your account email through the link below:</p>
+
+<p><a href="http://localhost:3000/users/confirmation?confirmation_token=xtttUnaG1LewvcjC1piK">Confirm my account</a></p>
+
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'user@example.com' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mUPDATE "users" SET "confirmation_token" = NULL, "confirmed_at" = '2013-03-13 22:46:13.429418', "updated_at" = '2013-03-13 22:46:13.430183' WHERE "users"."id" = 1[0m
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Started GET "/" for 127.0.0.1 at 2013-03-13 15:46:13 -0700
+Processing by GigsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" IS NULL LIMIT 1[0m
+Completed 500 Internal Server Error in 1ms
+  [1m[35m (0.2ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.5ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (31.6ms)[0m  [1mINSERT INTO "gigs" ("address", "city", "contact_email", "contact_name", "contact_phone", "created_at", "day", "month", "title", "total_budget", "updated_at", "user_id", "venue", "year", "zip") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["address", nil], ["city", nil], ["contact_email", nil], ["contact_name", nil], ["contact_phone", nil], ["created_at", Wed, 13 Mar 2013 22:52:39 UTC +00:00], ["day", nil], ["month", nil], ["title", "This is the right gig"], ["total_budget", nil], ["updated_at", Wed, 13 Mar 2013 22:52:39 UTC +00:00], ["user_id", 1], ["venue", nil], ["year", nil], ["zip", nil]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "gigs" ("address", "city", "contact_email", "contact_name", "contact_phone", "created_at", "day", "month", "title", "total_budget", "updated_at", "user_id", "venue", "year", "zip") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["address", nil], ["city", nil], ["contact_email", nil], ["contact_name", nil], ["contact_phone", nil], ["created_at", Wed, 13 Mar 2013 22:52:39 UTC +00:00], ["day", nil], ["month", nil], ["title", "This is the wrong gig"], ["total_budget", nil], ["updated_at", Wed, 13 Mar 2013 22:52:39 UTC +00:00], ["user_id", 2], ["venue", nil], ["year", nil], ["zip", nil]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "gigs" ("address", "city", "contact_email", "contact_name", "contact_phone", "created_at", "day", "month", "title", "total_budget", "updated_at", "user_id", "venue", "year", "zip") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["address", nil], ["city", nil], ["contact_email", nil], ["contact_name", nil], ["contact_phone", nil], ["created_at", Wed, 13 Mar 2013 22:52:39 UTC +00:00], ["day", nil], ["month", nil], ["title", "This is another right gig"], ["total_budget", nil], ["updated_at", Wed, 13 Mar 2013 22:52:39 UTC +00:00], ["user_id", 1], ["venue", nil], ["year", nil], ["zip", nil]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."email" = 'user@example.com' LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."confirmation_token" = 'dmFspGhASpzXRAdnC3Gx' LIMIT 1[0m
+Binary data inserted for `string` type on column `encrypted_password`
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "users" ("confirmation_sent_at", "confirmation_token", "confirmed_at", "created_at", "current_sign_in_at", "current_sign_in_ip", "email", "encrypted_password", "id", "last_sign_in_at", "last_sign_in_ip", "remember_created_at", "reset_password_sent_at", "reset_password_token", "sign_in_count", "unconfirmed_email", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["confirmation_sent_at", Wed, 13 Mar 2013 22:52:39 UTC +00:00], ["confirmation_token", "dmFspGhASpzXRAdnC3Gx"], ["confirmed_at", nil], ["created_at", Wed, 13 Mar 2013 22:52:39 UTC +00:00], ["current_sign_in_at", nil], ["current_sign_in_ip", nil], ["email", "user@example.com"], ["encrypted_password", "$2a$04$BerLoIJiN7L1XWOYkGDtwOj0wK7VYYTyNVf/Yn7C2A3waW9qWEmty"], ["id", 1], ["last_sign_in_at", nil], ["last_sign_in_ip", nil], ["remember_created_at", nil], ["reset_password_sent_at", nil], ["reset_password_token", nil], ["sign_in_count", 0], ["unconfirmed_email", nil], ["updated_at", Wed, 13 Mar 2013 22:52:39 UTC +00:00]]
+  Rendered /home/calico/.rvm/gems/ruby-1.9.3-p374/gems/devise-2.2.2/app/views/devise/mailer/confirmation_instructions.html.erb (4.0ms)
+
+Sent mail to user@example.com (44ms)
+Date: Wed, 13 Mar 2013 15:52:39 -0700
+From: please-change-me-at-config-initializers-devise@example.com
+Reply-To: please-change-me-at-config-initializers-devise@example.com
+To: user@example.com
+Message-ID: <51410337bc1d6_ff6442300c20832@homie.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Welcome user@example.com!</p>
+
+<p>You can confirm your account email through the link below:</p>
+
+<p><a href="http://localhost:3000/users/confirmation?confirmation_token=dmFspGhASpzXRAdnC3Gx">Confirm my account</a></p>
+
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" = 'differentuser@example.com' LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."confirmation_token" = 'yvzFEzMZoEHe1jtavQ5r' LIMIT 1
+Binary data inserted for `string` type on column `encrypted_password`
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("confirmation_sent_at", "confirmation_token", "confirmed_at", "created_at", "current_sign_in_at", "current_sign_in_ip", "email", "encrypted_password", "id", "last_sign_in_at", "last_sign_in_ip", "remember_created_at", "reset_password_sent_at", "reset_password_token", "sign_in_count", "unconfirmed_email", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["confirmation_sent_at", Wed, 13 Mar 2013 22:52:39 UTC +00:00], ["confirmation_token", "yvzFEzMZoEHe1jtavQ5r"], ["confirmed_at", nil], ["created_at", Wed, 13 Mar 2013 22:52:39 UTC +00:00], ["current_sign_in_at", nil], ["current_sign_in_ip", nil], ["email", "differentuser@example.com"], ["encrypted_password", "$2a$04$stVqKzyZ.bqTFvVxbFWt3uauETzxj3U7/bj7YUA0fiBT78G9IlHy2"], ["id", 2], ["last_sign_in_at", nil], ["last_sign_in_ip", nil], ["remember_created_at", nil], ["reset_password_sent_at", nil], ["reset_password_token", nil], ["sign_in_count", 0], ["unconfirmed_email", nil], ["updated_at", Wed, 13 Mar 2013 22:52:39 UTC +00:00]]
+  Rendered /home/calico/.rvm/gems/ruby-1.9.3-p374/gems/devise-2.2.2/app/views/devise/mailer/confirmation_instructions.html.erb (0.4ms)
+
+Sent mail to differentuser@example.com (4ms)
+Date: Wed, 13 Mar 2013 15:52:39 -0700
+From: please-change-me-at-config-initializers-devise@example.com
+Reply-To: please-change-me-at-config-initializers-devise@example.com
+To: differentuser@example.com
+Message-ID: <51410337c8142_ff6442300c2096c@homie.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Welcome differentuser@example.com!</p>
+
+<p>You can confirm your account email through the link below:</p>
+
+<p><a href="http://localhost:3000/users/confirmation?confirmation_token=yvzFEzMZoEHe1jtavQ5r">Confirm my account</a></p>
+
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'user@example.com' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mUPDATE "users" SET "confirmation_token" = NULL, "confirmed_at" = '2013-03-13 22:52:39.824531', "updated_at" = '2013-03-13 22:52:39.825356' WHERE "users"."id" = 1[0m
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Started GET "/" for 127.0.0.1 at 2013-03-13 15:52:39 -0700
+Processing by GigsController#index as HTML
+Completed 500 Internal Server Error in 1ms
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.5ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (31.6ms)[0m  [1mINSERT INTO "gigs" ("address", "city", "contact_email", "contact_name", "contact_phone", "created_at", "day", "month", "title", "total_budget", "updated_at", "user_id", "venue", "year", "zip") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["address", nil], ["city", nil], ["contact_email", nil], ["contact_name", nil], ["contact_phone", nil], ["created_at", Wed, 13 Mar 2013 22:52:57 UTC +00:00], ["day", nil], ["month", nil], ["title", "This is the right gig"], ["total_budget", nil], ["updated_at", Wed, 13 Mar 2013 22:52:57 UTC +00:00], ["user_id", 1], ["venue", nil], ["year", nil], ["zip", nil]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "gigs" ("address", "city", "contact_email", "contact_name", "contact_phone", "created_at", "day", "month", "title", "total_budget", "updated_at", "user_id", "venue", "year", "zip") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["address", nil], ["city", nil], ["contact_email", nil], ["contact_name", nil], ["contact_phone", nil], ["created_at", Wed, 13 Mar 2013 22:52:57 UTC +00:00], ["day", nil], ["month", nil], ["title", "This is the wrong gig"], ["total_budget", nil], ["updated_at", Wed, 13 Mar 2013 22:52:57 UTC +00:00], ["user_id", 2], ["venue", nil], ["year", nil], ["zip", nil]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "gigs" ("address", "city", "contact_email", "contact_name", "contact_phone", "created_at", "day", "month", "title", "total_budget", "updated_at", "user_id", "venue", "year", "zip") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["address", nil], ["city", nil], ["contact_email", nil], ["contact_name", nil], ["contact_phone", nil], ["created_at", Wed, 13 Mar 2013 22:52:57 UTC +00:00], ["day", nil], ["month", nil], ["title", "This is another right gig"], ["total_budget", nil], ["updated_at", Wed, 13 Mar 2013 22:52:57 UTC +00:00], ["user_id", 1], ["venue", nil], ["year", nil], ["zip", nil]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."email" = 'user@example.com' LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."confirmation_token" = 'YB9pGzEvUbkqxNSkZsbo' LIMIT 1[0m
+Binary data inserted for `string` type on column `encrypted_password`
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "users" ("confirmation_sent_at", "confirmation_token", "confirmed_at", "created_at", "current_sign_in_at", "current_sign_in_ip", "email", "encrypted_password", "id", "last_sign_in_at", "last_sign_in_ip", "remember_created_at", "reset_password_sent_at", "reset_password_token", "sign_in_count", "unconfirmed_email", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["confirmation_sent_at", Wed, 13 Mar 2013 22:52:57 UTC +00:00], ["confirmation_token", "YB9pGzEvUbkqxNSkZsbo"], ["confirmed_at", nil], ["created_at", Wed, 13 Mar 2013 22:52:57 UTC +00:00], ["current_sign_in_at", nil], ["current_sign_in_ip", nil], ["email", "user@example.com"], ["encrypted_password", "$2a$04$Cqo/ra65kOIYSfqDMJnL3O0v3R6jfeMkBicd1JQLoRHhd5.ymLINO"], ["id", 1], ["last_sign_in_at", nil], ["last_sign_in_ip", nil], ["remember_created_at", nil], ["reset_password_sent_at", nil], ["reset_password_token", nil], ["sign_in_count", 0], ["unconfirmed_email", nil], ["updated_at", Wed, 13 Mar 2013 22:52:57 UTC +00:00]]
+  Rendered /home/calico/.rvm/gems/ruby-1.9.3-p374/gems/devise-2.2.2/app/views/devise/mailer/confirmation_instructions.html.erb (4.0ms)
+
+Sent mail to user@example.com (44ms)
+Date: Wed, 13 Mar 2013 15:52:57 -0700
+From: please-change-me-at-config-initializers-devise@example.com
+Reply-To: please-change-me-at-config-initializers-devise@example.com
+To: user@example.com
+Message-ID: <51410349d9a3f_10004df600c76068@homie.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Welcome user@example.com!</p>
+
+<p>You can confirm your account email through the link below:</p>
+
+<p><a href="http://localhost:3000/users/confirmation?confirmation_token=YB9pGzEvUbkqxNSkZsbo">Confirm my account</a></p>
+
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" = 'differentuser@example.com' LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."confirmation_token" = 'zVqViFevop2zjFG72cNz' LIMIT 1
+Binary data inserted for `string` type on column `encrypted_password`
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("confirmation_sent_at", "confirmation_token", "confirmed_at", "created_at", "current_sign_in_at", "current_sign_in_ip", "email", "encrypted_password", "id", "last_sign_in_at", "last_sign_in_ip", "remember_created_at", "reset_password_sent_at", "reset_password_token", "sign_in_count", "unconfirmed_email", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["confirmation_sent_at", Wed, 13 Mar 2013 22:52:57 UTC +00:00], ["confirmation_token", "zVqViFevop2zjFG72cNz"], ["confirmed_at", nil], ["created_at", Wed, 13 Mar 2013 22:52:57 UTC +00:00], ["current_sign_in_at", nil], ["current_sign_in_ip", nil], ["email", "differentuser@example.com"], ["encrypted_password", "$2a$04$WsUfJwqM7d8vftQ4PL.YpOu165ZyYbT/EVGUC9weAFlVB6jURWnbO"], ["id", 2], ["last_sign_in_at", nil], ["last_sign_in_ip", nil], ["remember_created_at", nil], ["reset_password_sent_at", nil], ["reset_password_token", nil], ["sign_in_count", 0], ["unconfirmed_email", nil], ["updated_at", Wed, 13 Mar 2013 22:52:57 UTC +00:00]]
+  Rendered /home/calico/.rvm/gems/ruby-1.9.3-p374/gems/devise-2.2.2/app/views/devise/mailer/confirmation_instructions.html.erb (0.4ms)
+
+Sent mail to differentuser@example.com (4ms)
+Date: Wed, 13 Mar 2013 15:52:57 -0700
+From: please-change-me-at-config-initializers-devise@example.com
+Reply-To: please-change-me-at-config-initializers-devise@example.com
+To: differentuser@example.com
+Message-ID: <51410349e5946_10004df600c76141@homie.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Welcome differentuser@example.com!</p>
+
+<p>You can confirm your account email through the link below:</p>
+
+<p><a href="http://localhost:3000/users/confirmation?confirmation_token=zVqViFevop2zjFG72cNz">Confirm my account</a></p>
+
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'user@example.com' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mUPDATE "users" SET "confirmation_token" = NULL, "confirmed_at" = '2013-03-13 22:52:57.945315', "updated_at" = '2013-03-13 22:52:57.946077' WHERE "users"."id" = 1[0m
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Started GET "/" for 127.0.0.1 at 2013-03-13 15:52:57 -0700
+Processing by GigsController#index as HTML
+Completed 500 Internal Server Error in 1ms
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.5ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (31.8ms)[0m  [1mINSERT INTO "gigs" ("address", "city", "contact_email", "contact_name", "contact_phone", "created_at", "day", "month", "title", "total_budget", "updated_at", "user_id", "venue", "year", "zip") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["address", nil], ["city", nil], ["contact_email", nil], ["contact_name", nil], ["contact_phone", nil], ["created_at", Wed, 13 Mar 2013 23:00:52 UTC +00:00], ["day", nil], ["month", nil], ["title", "This is the right gig"], ["total_budget", nil], ["updated_at", Wed, 13 Mar 2013 23:00:52 UTC +00:00], ["user_id", 1], ["venue", nil], ["year", nil], ["zip", nil]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "gigs" ("address", "city", "contact_email", "contact_name", "contact_phone", "created_at", "day", "month", "title", "total_budget", "updated_at", "user_id", "venue", "year", "zip") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["address", nil], ["city", nil], ["contact_email", nil], ["contact_name", nil], ["contact_phone", nil], ["created_at", Wed, 13 Mar 2013 23:00:52 UTC +00:00], ["day", nil], ["month", nil], ["title", "This is the wrong gig"], ["total_budget", nil], ["updated_at", Wed, 13 Mar 2013 23:00:52 UTC +00:00], ["user_id", 2], ["venue", nil], ["year", nil], ["zip", nil]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "gigs" ("address", "city", "contact_email", "contact_name", "contact_phone", "created_at", "day", "month", "title", "total_budget", "updated_at", "user_id", "venue", "year", "zip") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["address", nil], ["city", nil], ["contact_email", nil], ["contact_name", nil], ["contact_phone", nil], ["created_at", Wed, 13 Mar 2013 23:00:52 UTC +00:00], ["day", nil], ["month", nil], ["title", "This is another right gig"], ["total_budget", nil], ["updated_at", Wed, 13 Mar 2013 23:00:52 UTC +00:00], ["user_id", 1], ["venue", nil], ["year", nil], ["zip", nil]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."email" = 'user@example.com' LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."confirmation_token" = '5udTsRNhAQypzumDC9vQ' LIMIT 1[0m
+Binary data inserted for `string` type on column `encrypted_password`
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "users" ("confirmation_sent_at", "confirmation_token", "confirmed_at", "created_at", "current_sign_in_at", "current_sign_in_ip", "email", "encrypted_password", "id", "last_sign_in_at", "last_sign_in_ip", "remember_created_at", "reset_password_sent_at", "reset_password_token", "sign_in_count", "unconfirmed_email", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["confirmation_sent_at", Wed, 13 Mar 2013 23:00:52 UTC +00:00], ["confirmation_token", "5udTsRNhAQypzumDC9vQ"], ["confirmed_at", nil], ["created_at", Wed, 13 Mar 2013 23:00:52 UTC +00:00], ["current_sign_in_at", nil], ["current_sign_in_ip", nil], ["email", "user@example.com"], ["encrypted_password", "$2a$04$jiWkspuFg7SWHGOIxGiwcuX/P1CpcTektMpbnWM7udY.7L5E/3HMW"], ["id", 1], ["last_sign_in_at", nil], ["last_sign_in_ip", nil], ["remember_created_at", nil], ["reset_password_sent_at", nil], ["reset_password_token", nil], ["sign_in_count", 0], ["unconfirmed_email", nil], ["updated_at", Wed, 13 Mar 2013 23:00:52 UTC +00:00]]
+  Rendered /home/calico/.rvm/gems/ruby-1.9.3-p374/gems/devise-2.2.2/app/views/devise/mailer/confirmation_instructions.html.erb (4.0ms)
+
+Sent mail to user@example.com (44ms)
+Date: Wed, 13 Mar 2013 16:00:53 -0700
+From: please-change-me-at-config-initializers-devise@example.com
+Reply-To: please-change-me-at-config-initializers-devise@example.com
+To: user@example.com
+Message-ID: <514105259d8b_10124261804498c4@homie.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Welcome user@example.com!</p>
+
+<p>You can confirm your account email through the link below:</p>
+
+<p><a href="http://localhost:3000/users/confirmation?confirmation_token=5udTsRNhAQypzumDC9vQ">Confirm my account</a></p>
+
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" = 'differentuser@example.com' LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."confirmation_token" = 'MxS3oXrY6wZqjQXdsapG' LIMIT 1
+Binary data inserted for `string` type on column `encrypted_password`
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("confirmation_sent_at", "confirmation_token", "confirmed_at", "created_at", "current_sign_in_at", "current_sign_in_ip", "email", "encrypted_password", "id", "last_sign_in_at", "last_sign_in_ip", "remember_created_at", "reset_password_sent_at", "reset_password_token", "sign_in_count", "unconfirmed_email", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["confirmation_sent_at", Wed, 13 Mar 2013 23:00:53 UTC +00:00], ["confirmation_token", "MxS3oXrY6wZqjQXdsapG"], ["confirmed_at", nil], ["created_at", Wed, 13 Mar 2013 23:00:53 UTC +00:00], ["current_sign_in_at", nil], ["current_sign_in_ip", nil], ["email", "differentuser@example.com"], ["encrypted_password", "$2a$04$m8TYIzsGyWbpRnj1SXVQY.MFSAfXOUwp58oeBTmGYVwJC4Or/oXkS"], ["id", 2], ["last_sign_in_at", nil], ["last_sign_in_ip", nil], ["remember_created_at", nil], ["reset_password_sent_at", nil], ["reset_password_token", nil], ["sign_in_count", 0], ["unconfirmed_email", nil], ["updated_at", Wed, 13 Mar 2013 23:00:53 UTC +00:00]]
+  Rendered /home/calico/.rvm/gems/ruby-1.9.3-p374/gems/devise-2.2.2/app/views/devise/mailer/confirmation_instructions.html.erb (0.4ms)
+
+Sent mail to differentuser@example.com (4ms)
+Date: Wed, 13 Mar 2013 16:00:53 -0700
+From: please-change-me-at-config-initializers-devise@example.com
+Reply-To: please-change-me-at-config-initializers-devise@example.com
+To: differentuser@example.com
+Message-ID: <5141052515d48_10124261804499ca@homie.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Welcome differentuser@example.com!</p>
+
+<p>You can confirm your account email through the link below:</p>
+
+<p><a href="http://localhost:3000/users/confirmation?confirmation_token=MxS3oXrY6wZqjQXdsapG">Confirm my account</a></p>
+
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'user@example.com' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mUPDATE "users" SET "confirmation_token" = NULL, "confirmed_at" = '2013-03-13 23:00:53.094375', "updated_at" = '2013-03-13 23:00:53.095137' WHERE "users"."id" = 1[0m
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Started GET "/users/sign_in" for 127.0.0.1 at 2013-03-13 16:00:53 -0700
+Processing by Devise::SessionsController#new as HTML
+  Rendered /home/calico/.rvm/gems/ruby-1.9.3-p374/gems/devise-2.2.2/app/views/devise/shared/_links.erb (2.2ms)
+  Rendered /home/calico/.rvm/gems/ruby-1.9.3-p374/gems/devise-2.2.2/app/views/devise/sessions/new.html.erb within layouts/application (35.0ms)
+Completed 200 OK in 41ms (Views: 39.9ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.5ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (32.0ms)[0m  [1mINSERT INTO "gigs" ("address", "city", "contact_email", "contact_name", "contact_phone", "created_at", "day", "month", "title", "total_budget", "updated_at", "user_id", "venue", "year", "zip") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["address", nil], ["city", nil], ["contact_email", nil], ["contact_name", nil], ["contact_phone", nil], ["created_at", Wed, 13 Mar 2013 23:02:32 UTC +00:00], ["day", nil], ["month", nil], ["title", "This is the right gig"], ["total_budget", nil], ["updated_at", Wed, 13 Mar 2013 23:02:32 UTC +00:00], ["user_id", 1], ["venue", nil], ["year", nil], ["zip", nil]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "gigs" ("address", "city", "contact_email", "contact_name", "contact_phone", "created_at", "day", "month", "title", "total_budget", "updated_at", "user_id", "venue", "year", "zip") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["address", nil], ["city", nil], ["contact_email", nil], ["contact_name", nil], ["contact_phone", nil], ["created_at", Wed, 13 Mar 2013 23:02:32 UTC +00:00], ["day", nil], ["month", nil], ["title", "This is the wrong gig"], ["total_budget", nil], ["updated_at", Wed, 13 Mar 2013 23:02:32 UTC +00:00], ["user_id", 2], ["venue", nil], ["year", nil], ["zip", nil]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "gigs" ("address", "city", "contact_email", "contact_name", "contact_phone", "created_at", "day", "month", "title", "total_budget", "updated_at", "user_id", "venue", "year", "zip") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["address", nil], ["city", nil], ["contact_email", nil], ["contact_name", nil], ["contact_phone", nil], ["created_at", Wed, 13 Mar 2013 23:02:32 UTC +00:00], ["day", nil], ["month", nil], ["title", "This is another right gig"], ["total_budget", nil], ["updated_at", Wed, 13 Mar 2013 23:02:32 UTC +00:00], ["user_id", 1], ["venue", nil], ["year", nil], ["zip", nil]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."email" = 'user@example.com' LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."confirmation_token" = 'nyxNrFhzwSJQqHiVbtgv' LIMIT 1[0m
+Binary data inserted for `string` type on column `encrypted_password`
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "users" ("confirmation_sent_at", "confirmation_token", "confirmed_at", "created_at", "current_sign_in_at", "current_sign_in_ip", "email", "encrypted_password", "id", "last_sign_in_at", "last_sign_in_ip", "remember_created_at", "reset_password_sent_at", "reset_password_token", "sign_in_count", "unconfirmed_email", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["confirmation_sent_at", Wed, 13 Mar 2013 23:02:32 UTC +00:00], ["confirmation_token", "nyxNrFhzwSJQqHiVbtgv"], ["confirmed_at", nil], ["created_at", Wed, 13 Mar 2013 23:02:32 UTC +00:00], ["current_sign_in_at", nil], ["current_sign_in_ip", nil], ["email", "user@example.com"], ["encrypted_password", "$2a$04$RXqCxnQzlEoOilF3/fjzG.NzggNt1dmkNOxDTi2rLAm.FUfNfPCBq"], ["id", 1], ["last_sign_in_at", nil], ["last_sign_in_ip", nil], ["remember_created_at", nil], ["reset_password_sent_at", nil], ["reset_password_token", nil], ["sign_in_count", 0], ["unconfirmed_email", nil], ["updated_at", Wed, 13 Mar 2013 23:02:32 UTC +00:00]]
+  Rendered /home/calico/.rvm/gems/ruby-1.9.3-p374/gems/devise-2.2.2/app/views/devise/mailer/confirmation_instructions.html.erb (4.0ms)
+
+Sent mail to user@example.com (44ms)
+Date: Wed, 13 Mar 2013 16:02:32 -0700
+From: please-change-me-at-config-initializers-devise@example.com
+Reply-To: please-change-me-at-config-initializers-devise@example.com
+To: user@example.com
+Message-ID: <51410588476bc_101c405700454a2@homie.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Welcome user@example.com!</p>
+
+<p>You can confirm your account email through the link below:</p>
+
+<p><a href="http://localhost:3000/users/confirmation?confirmation_token=nyxNrFhzwSJQqHiVbtgv">Confirm my account</a></p>
+
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" = 'differentuser@example.com' LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."confirmation_token" = 'a97CV9zdhxa5t2TjLimV' LIMIT 1
+Binary data inserted for `string` type on column `encrypted_password`
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("confirmation_sent_at", "confirmation_token", "confirmed_at", "created_at", "current_sign_in_at", "current_sign_in_ip", "email", "encrypted_password", "id", "last_sign_in_at", "last_sign_in_ip", "remember_created_at", "reset_password_sent_at", "reset_password_token", "sign_in_count", "unconfirmed_email", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["confirmation_sent_at", Wed, 13 Mar 2013 23:02:32 UTC +00:00], ["confirmation_token", "a97CV9zdhxa5t2TjLimV"], ["confirmed_at", nil], ["created_at", Wed, 13 Mar 2013 23:02:32 UTC +00:00], ["current_sign_in_at", nil], ["current_sign_in_ip", nil], ["email", "differentuser@example.com"], ["encrypted_password", "$2a$04$Y05WzSqj.Xkgk5ZCsULNl.WSNNoye28LejqZQP2FFgA8ZbdHdOgOm"], ["id", 2], ["last_sign_in_at", nil], ["last_sign_in_ip", nil], ["remember_created_at", nil], ["reset_password_sent_at", nil], ["reset_password_token", nil], ["sign_in_count", 0], ["unconfirmed_email", nil], ["updated_at", Wed, 13 Mar 2013 23:02:32 UTC +00:00]]
+  Rendered /home/calico/.rvm/gems/ruby-1.9.3-p374/gems/devise-2.2.2/app/views/devise/mailer/confirmation_instructions.html.erb (0.4ms)
+
+Sent mail to differentuser@example.com (4ms)
+Date: Wed, 13 Mar 2013 16:02:32 -0700
+From: please-change-me-at-config-initializers-devise@example.com
+Reply-To: please-change-me-at-config-initializers-devise@example.com
+To: differentuser@example.com
+Message-ID: <514105885357c_101c405700455c3@homie.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Welcome differentuser@example.com!</p>
+
+<p>You can confirm your account email through the link below:</p>
+
+<p><a href="http://localhost:3000/users/confirmation?confirmation_token=a97CV9zdhxa5t2TjLimV">Confirm my account</a></p>
+
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'user@example.com' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mUPDATE "users" SET "confirmation_token" = NULL, "confirmed_at" = '2013-03-13 23:02:32.346291', "updated_at" = '2013-03-13 23:02:32.347058' WHERE "users"."id" = 1[0m
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Started GET "/users/sign_in" for 127.0.0.1 at 2013-03-13 16:02:32 -0700
+Processing by Devise::SessionsController#new as HTML
+  Rendered /home/calico/.rvm/gems/ruby-1.9.3-p374/gems/devise-2.2.2/app/views/devise/shared/_links.erb (2.2ms)
+  Rendered /home/calico/.rvm/gems/ruby-1.9.3-p374/gems/devise-2.2.2/app/views/devise/sessions/new.html.erb within layouts/application (34.9ms)
+Completed 200 OK in 41ms (Views: 39.9ms | ActiveRecord: 0.0ms)
+Started POST "/users/sign_in" for 127.0.0.1 at 2013-03-13 16:02:32 -0700
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "user"=>{"email"=>"user@example.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'user@example.com' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mUPDATE "users" SET "last_sign_in_at" = '2013-03-13 23:02:32.563126', "current_sign_in_at" = '2013-03-13 23:02:32.563126', "last_sign_in_ip" = '127.0.0.1', "current_sign_in_ip" = '127.0.0.1', "sign_in_count" = 1, "updated_at" = '2013-03-13 23:02:32.563819' WHERE "users"."id" = 1[0m
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://www.example.com/
+Completed 302 Found in 42ms (ActiveRecord: 0.0ms)
+Started GET "/" for 127.0.0.1 at 2013-03-13 16:02:32 -0700
+Processing by GigsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mGig Load (0.1ms)[0m  SELECT "gigs".* FROM "gigs" 
+  Rendered gigs/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 8ms (Views: 5.6ms | ActiveRecord: 0.3ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.5ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (31.8ms)[0m  [1mINSERT INTO "gigs" ("address", "city", "contact_email", "contact_name", "contact_phone", "created_at", "day", "month", "title", "total_budget", "updated_at", "user_id", "venue", "year", "zip") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["address", nil], ["city", nil], ["contact_email", nil], ["contact_name", nil], ["contact_phone", nil], ["created_at", Wed, 13 Mar 2013 23:05:17 UTC +00:00], ["day", nil], ["month", nil], ["title", "This is the right gig"], ["total_budget", nil], ["updated_at", Wed, 13 Mar 2013 23:05:17 UTC +00:00], ["user_id", 1], ["venue", nil], ["year", nil], ["zip", nil]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "gigs" ("address", "city", "contact_email", "contact_name", "contact_phone", "created_at", "day", "month", "title", "total_budget", "updated_at", "user_id", "venue", "year", "zip") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["address", nil], ["city", nil], ["contact_email", nil], ["contact_name", nil], ["contact_phone", nil], ["created_at", Wed, 13 Mar 2013 23:05:17 UTC +00:00], ["day", nil], ["month", nil], ["title", "This is the wrong gig"], ["total_budget", nil], ["updated_at", Wed, 13 Mar 2013 23:05:17 UTC +00:00], ["user_id", 2], ["venue", nil], ["year", nil], ["zip", nil]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "gigs" ("address", "city", "contact_email", "contact_name", "contact_phone", "created_at", "day", "month", "title", "total_budget", "updated_at", "user_id", "venue", "year", "zip") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["address", nil], ["city", nil], ["contact_email", nil], ["contact_name", nil], ["contact_phone", nil], ["created_at", Wed, 13 Mar 2013 23:05:17 UTC +00:00], ["day", nil], ["month", nil], ["title", "This is another right gig"], ["total_budget", nil], ["updated_at", Wed, 13 Mar 2013 23:05:17 UTC +00:00], ["user_id", 1], ["venue", nil], ["year", nil], ["zip", nil]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."email" = 'user@example.com' LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."confirmation_token" = 'Bn4DhRzfMc8hc7KXfqkj' LIMIT 1[0m
+Binary data inserted for `string` type on column `encrypted_password`
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "users" ("confirmation_sent_at", "confirmation_token", "confirmed_at", "created_at", "current_sign_in_at", "current_sign_in_ip", "email", "encrypted_password", "id", "last_sign_in_at", "last_sign_in_ip", "remember_created_at", "reset_password_sent_at", "reset_password_token", "sign_in_count", "unconfirmed_email", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["confirmation_sent_at", Wed, 13 Mar 2013 23:05:17 UTC +00:00], ["confirmation_token", "Bn4DhRzfMc8hc7KXfqkj"], ["confirmed_at", nil], ["created_at", Wed, 13 Mar 2013 23:05:17 UTC +00:00], ["current_sign_in_at", nil], ["current_sign_in_ip", nil], ["email", "user@example.com"], ["encrypted_password", "$2a$04$ZVPEVyTkVcx1jsAPezxdQON.KUbw053PDACQBuRHhON66M48agc8y"], ["id", 1], ["last_sign_in_at", nil], ["last_sign_in_ip", nil], ["remember_created_at", nil], ["reset_password_sent_at", nil], ["reset_password_token", nil], ["sign_in_count", 0], ["unconfirmed_email", nil], ["updated_at", Wed, 13 Mar 2013 23:05:17 UTC +00:00]]
+  Rendered /home/calico/.rvm/gems/ruby-1.9.3-p374/gems/devise-2.2.2/app/views/devise/mailer/confirmation_instructions.html.erb (4.1ms)
+
+Sent mail to user@example.com (45ms)
+Date: Wed, 13 Mar 2013 16:05:17 -0700
+From: please-change-me-at-config-initializers-devise@example.com
+Reply-To: please-change-me-at-config-initializers-devise@example.com
+To: user@example.com
+Message-ID: <5141062d59f23_10274ef481487618@homie.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Welcome user@example.com!</p>
+
+<p>You can confirm your account email through the link below:</p>
+
+<p><a href="http://localhost:3000/users/confirmation?confirmation_token=Bn4DhRzfMc8hc7KXfqkj">Confirm my account</a></p>
+
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" = 'differentuser@example.com' LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."confirmation_token" = 'DCyWp7UcyTRxnsp1sywg' LIMIT 1
+Binary data inserted for `string` type on column `encrypted_password`
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("confirmation_sent_at", "confirmation_token", "confirmed_at", "created_at", "current_sign_in_at", "current_sign_in_ip", "email", "encrypted_password", "id", "last_sign_in_at", "last_sign_in_ip", "remember_created_at", "reset_password_sent_at", "reset_password_token", "sign_in_count", "unconfirmed_email", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["confirmation_sent_at", Wed, 13 Mar 2013 23:05:17 UTC +00:00], ["confirmation_token", "DCyWp7UcyTRxnsp1sywg"], ["confirmed_at", nil], ["created_at", Wed, 13 Mar 2013 23:05:17 UTC +00:00], ["current_sign_in_at", nil], ["current_sign_in_ip", nil], ["email", "differentuser@example.com"], ["encrypted_password", "$2a$04$iB9U/n4tZwdYFNMvETlWyO2wfgPVISjo.bVzCyfw8iX7UgdDEhuVu"], ["id", 2], ["last_sign_in_at", nil], ["last_sign_in_ip", nil], ["remember_created_at", nil], ["reset_password_sent_at", nil], ["reset_password_token", nil], ["sign_in_count", 0], ["unconfirmed_email", nil], ["updated_at", Wed, 13 Mar 2013 23:05:17 UTC +00:00]]
+  Rendered /home/calico/.rvm/gems/ruby-1.9.3-p374/gems/devise-2.2.2/app/views/devise/mailer/confirmation_instructions.html.erb (0.4ms)
+
+Sent mail to differentuser@example.com (4ms)
+Date: Wed, 13 Mar 2013 16:05:17 -0700
+From: please-change-me-at-config-initializers-devise@example.com
+Reply-To: please-change-me-at-config-initializers-devise@example.com
+To: differentuser@example.com
+Message-ID: <5141062d65f29_10274ef4814877e7@homie.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Welcome differentuser@example.com!</p>
+
+<p>You can confirm your account email through the link below:</p>
+
+<p><a href="http://localhost:3000/users/confirmation?confirmation_token=DCyWp7UcyTRxnsp1sywg">Confirm my account</a></p>
+
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'user@example.com' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mUPDATE "users" SET "confirmation_token" = NULL, "confirmed_at" = '2013-03-13 23:05:17.422662', "updated_at" = '2013-03-13 23:05:17.423435' WHERE "users"."id" = 1[0m
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Started GET "/users/sign_in" for 127.0.0.1 at 2013-03-13 16:05:17 -0700
+Processing by Devise::SessionsController#new as HTML
+  Rendered /home/calico/.rvm/gems/ruby-1.9.3-p374/gems/devise-2.2.2/app/views/devise/shared/_links.erb (2.2ms)
+  Rendered /home/calico/.rvm/gems/ruby-1.9.3-p374/gems/devise-2.2.2/app/views/devise/sessions/new.html.erb within layouts/application (35.2ms)
+Completed 200 OK in 41ms (Views: 40.1ms | ActiveRecord: 0.0ms)
+Started POST "/users/sign_in" for 127.0.0.1 at 2013-03-13 16:05:17 -0700
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "user"=>{"email"=>"user@example.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'user@example.com' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mUPDATE "users" SET "last_sign_in_at" = '2013-03-13 23:05:17.640279', "current_sign_in_at" = '2013-03-13 23:05:17.640279', "last_sign_in_ip" = '127.0.0.1', "current_sign_in_ip" = '127.0.0.1', "sign_in_count" = 1, "updated_at" = '2013-03-13 23:05:17.640985' WHERE "users"."id" = 1[0m
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://www.example.com/
+Completed 302 Found in 42ms (ActiveRecord: 0.0ms)
+Started GET "/" for 127.0.0.1 at 2013-03-13 16:05:17 -0700
+Processing by GigsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mGig Load (0.1ms)[0m  SELECT "gigs".* FROM "gigs" WHERE "gigs"."user_id" = 1 LIMIT 1
+  Rendered gigs/index.html.erb within layouts/application (2.0ms)
+Completed 500 Internal Server Error in 6ms
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.5ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (31.9ms)[0m  [1mINSERT INTO "gigs" ("address", "city", "contact_email", "contact_name", "contact_phone", "created_at", "day", "month", "title", "total_budget", "updated_at", "user_id", "venue", "year", "zip") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["address", nil], ["city", nil], ["contact_email", nil], ["contact_name", nil], ["contact_phone", nil], ["created_at", Wed, 13 Mar 2013 23:07:34 UTC +00:00], ["day", nil], ["month", nil], ["title", "This is the right gig"], ["total_budget", nil], ["updated_at", Wed, 13 Mar 2013 23:07:34 UTC +00:00], ["user_id", 1], ["venue", nil], ["year", nil], ["zip", nil]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "gigs" ("address", "city", "contact_email", "contact_name", "contact_phone", "created_at", "day", "month", "title", "total_budget", "updated_at", "user_id", "venue", "year", "zip") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["address", nil], ["city", nil], ["contact_email", nil], ["contact_name", nil], ["contact_phone", nil], ["created_at", Wed, 13 Mar 2013 23:07:34 UTC +00:00], ["day", nil], ["month", nil], ["title", "This is the wrong gig"], ["total_budget", nil], ["updated_at", Wed, 13 Mar 2013 23:07:34 UTC +00:00], ["user_id", 2], ["venue", nil], ["year", nil], ["zip", nil]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "gigs" ("address", "city", "contact_email", "contact_name", "contact_phone", "created_at", "day", "month", "title", "total_budget", "updated_at", "user_id", "venue", "year", "zip") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["address", nil], ["city", nil], ["contact_email", nil], ["contact_name", nil], ["contact_phone", nil], ["created_at", Wed, 13 Mar 2013 23:07:34 UTC +00:00], ["day", nil], ["month", nil], ["title", "This is another right gig"], ["total_budget", nil], ["updated_at", Wed, 13 Mar 2013 23:07:34 UTC +00:00], ["user_id", 1], ["venue", nil], ["year", nil], ["zip", nil]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."email" = 'user@example.com' LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."confirmation_token" = 'JzeC9wEh3ZmdkQMy5ewZ' LIMIT 1[0m
+Binary data inserted for `string` type on column `encrypted_password`
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "users" ("confirmation_sent_at", "confirmation_token", "confirmed_at", "created_at", "current_sign_in_at", "current_sign_in_ip", "email", "encrypted_password", "id", "last_sign_in_at", "last_sign_in_ip", "remember_created_at", "reset_password_sent_at", "reset_password_token", "sign_in_count", "unconfirmed_email", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["confirmation_sent_at", Wed, 13 Mar 2013 23:07:34 UTC +00:00], ["confirmation_token", "JzeC9wEh3ZmdkQMy5ewZ"], ["confirmed_at", nil], ["created_at", Wed, 13 Mar 2013 23:07:34 UTC +00:00], ["current_sign_in_at", nil], ["current_sign_in_ip", nil], ["email", "user@example.com"], ["encrypted_password", "$2a$04$0g7h5Wy.fQHrhfeJTX5FMe7WQbuqwGOqfyauJqbQeMzURnBC9C6Uq"], ["id", 1], ["last_sign_in_at", nil], ["last_sign_in_ip", nil], ["remember_created_at", nil], ["reset_password_sent_at", nil], ["reset_password_token", nil], ["sign_in_count", 0], ["unconfirmed_email", nil], ["updated_at", Wed, 13 Mar 2013 23:07:34 UTC +00:00]]
+  Rendered /home/calico/.rvm/gems/ruby-1.9.3-p374/gems/devise-2.2.2/app/views/devise/mailer/confirmation_instructions.html.erb (4.0ms)
+
+Sent mail to user@example.com (44ms)
+Date: Wed, 13 Mar 2013 16:07:35 -0700
+From: please-change-me-at-config-initializers-devise@example.com
+Reply-To: please-change-me-at-config-initializers-devise@example.com
+To: user@example.com
+Message-ID: <514106b71975a_1032420b814384c@homie.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Welcome user@example.com!</p>
+
+<p>You can confirm your account email through the link below:</p>
+
+<p><a href="http://localhost:3000/users/confirmation?confirmation_token=JzeC9wEh3ZmdkQMy5ewZ">Confirm my account</a></p>
+
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" = 'differentuser@example.com' LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."confirmation_token" = 'FBjLjxRBoqLiU7kevdqB' LIMIT 1
+Binary data inserted for `string` type on column `encrypted_password`
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("confirmation_sent_at", "confirmation_token", "confirmed_at", "created_at", "current_sign_in_at", "current_sign_in_ip", "email", "encrypted_password", "id", "last_sign_in_at", "last_sign_in_ip", "remember_created_at", "reset_password_sent_at", "reset_password_token", "sign_in_count", "unconfirmed_email", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["confirmation_sent_at", Wed, 13 Mar 2013 23:07:35 UTC +00:00], ["confirmation_token", "FBjLjxRBoqLiU7kevdqB"], ["confirmed_at", nil], ["created_at", Wed, 13 Mar 2013 23:07:35 UTC +00:00], ["current_sign_in_at", nil], ["current_sign_in_ip", nil], ["email", "differentuser@example.com"], ["encrypted_password", "$2a$04$BJvypsEz4iPExgLBt3hgAuYJLy8iC1.QVMvwdeRRDtn2LuJFw0aji"], ["id", 2], ["last_sign_in_at", nil], ["last_sign_in_ip", nil], ["remember_created_at", nil], ["reset_password_sent_at", nil], ["reset_password_token", nil], ["sign_in_count", 0], ["unconfirmed_email", nil], ["updated_at", Wed, 13 Mar 2013 23:07:35 UTC +00:00]]
+  Rendered /home/calico/.rvm/gems/ruby-1.9.3-p374/gems/devise-2.2.2/app/views/devise/mailer/confirmation_instructions.html.erb (0.4ms)
+
+Sent mail to differentuser@example.com (4ms)
+Date: Wed, 13 Mar 2013 16:07:35 -0700
+From: please-change-me-at-config-initializers-devise@example.com
+Reply-To: please-change-me-at-config-initializers-devise@example.com
+To: differentuser@example.com
+Message-ID: <514106b725686_1032420b81438591@homie.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Welcome differentuser@example.com!</p>
+
+<p>You can confirm your account email through the link below:</p>
+
+<p><a href="http://localhost:3000/users/confirmation?confirmation_token=FBjLjxRBoqLiU7kevdqB">Confirm my account</a></p>
+
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'user@example.com' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mUPDATE "users" SET "confirmation_token" = NULL, "confirmed_at" = '2013-03-13 23:07:35.158232', "updated_at" = '2013-03-13 23:07:35.159010' WHERE "users"."id" = 1[0m
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Started GET "/users/sign_in" for 127.0.0.1 at 2013-03-13 16:07:35 -0700
+Processing by Devise::SessionsController#new as HTML
+  Rendered /home/calico/.rvm/gems/ruby-1.9.3-p374/gems/devise-2.2.2/app/views/devise/shared/_links.erb (2.2ms)
+  Rendered /home/calico/.rvm/gems/ruby-1.9.3-p374/gems/devise-2.2.2/app/views/devise/sessions/new.html.erb within layouts/application (35.0ms)
+Completed 200 OK in 41ms (Views: 40.0ms | ActiveRecord: 0.0ms)
+Started POST "/users/sign_in" for 127.0.0.1 at 2013-03-13 16:07:35 -0700
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "user"=>{"email"=>"user@example.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'user@example.com' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mUPDATE "users" SET "last_sign_in_at" = '2013-03-13 23:07:35.375383', "current_sign_in_at" = '2013-03-13 23:07:35.375383', "last_sign_in_ip" = '127.0.0.1', "current_sign_in_ip" = '127.0.0.1', "sign_in_count" = 1, "updated_at" = '2013-03-13 23:07:35.376074' WHERE "users"."id" = 1[0m
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://www.example.com/
+Completed 302 Found in 42ms (ActiveRecord: 0.0ms)
+Started GET "/" for 127.0.0.1 at 2013-03-13 16:07:35 -0700
+Processing by GigsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mGig Load (0.2ms)[0m  SELECT "gigs".* FROM "gigs" WHERE "gigs"."user_id" = 1
+  Rendered gigs/index.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 8ms (Views: 6.2ms | ActiveRecord: 0.4ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m

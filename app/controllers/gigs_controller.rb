@@ -1,7 +1,7 @@
 class GigsController < ApplicationController
 
 	def index
-		@gigs = Gig.all
+		@gigs = Gig.where(:user_id => current_user.id)
 	end
 
 	def new
