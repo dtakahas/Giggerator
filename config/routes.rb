@@ -1,4 +1,7 @@
 Temp::Application.routes.draw do
+
+  devise_for :users
+
   root :to => 'gigs#index'
 
   resources :gigs

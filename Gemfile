@@ -6,7 +6,7 @@ gem 'dynamic_form', '1.1.4'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'sqlite3'
-
+gem 'devise'
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -39,9 +39,10 @@ gem 'jquery-rails'
 group :test, :development do
 	gem 'rspec-rails', '~> 2.11'
 	gem 'factory_girl', '2.6.2'
-        gem 'letter_opener'
+  gem 'letter_opener'
 end
 
 group :test do
 	gem 'capybara', '1.1.2'
+	gem 'email_spec'
 end
