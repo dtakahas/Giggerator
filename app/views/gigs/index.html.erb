@@ -1,10 +1,13 @@
 <%= link_to "Create Gig", new_gig_path %>
 
-<ul>
+<br />
+
+<h2>My Gigs</h2>
+<table>
   <% @gigs.each do |gig| %>
-  <li>
-    <%= link_to gig.title, gig %>  | <%= link_to "Edit", edit_gig_path(gig) %>
-  </li>
+  <tr>
+    <td><%= link_to gig.title, gig %></td><td><%= link_to "Edit", edit_gig_path(gig) %></td>
+  </tr>
   <% end %>
-</ul>
+</table>
 

@@ -39,6 +39,7 @@ body {
   padding-left: 30px;
   padding-top: 30px;
   padding-bottom: 30px;
+  padding-right: 30px;
   font-family: arial;
  }
 
@@ -70,4 +71,15 @@ label {
   text-align: right;
   margin-right: 0.5em;
   display: block
+}
+
+h2 {
+  background-color: orange;
+  padding-left: 45%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 10px;
+  font-family: arial;
+  font-size: 24px;
+  border-radius: 7px;
 }
