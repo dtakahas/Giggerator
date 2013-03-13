@@ -48,7 +48,7 @@ body {
 }
 
 .flash {
-  background-color: orange;
+  background-color: #db7f2e;
   padding-left: 45%;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -74,7 +74,7 @@ label {
 }
 
 h2 {
-  background-color: orange;
+  background-color: #db7f2e;
   padding-left: 45%;
   padding-top: 10px;
   padding-bottom: 10px;
