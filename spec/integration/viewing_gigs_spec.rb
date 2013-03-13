@@ -2,9 +2,6 @@ require 'spec_helper'
 
 feature "Viewing a gig" do
 
-  # before do
-  #   gig = Factory(:gig, :title => "New Title")
-  # end
 
   scenario "Can view a gig" do
     gig = Factory.create(:gig, :title => "New Title")
