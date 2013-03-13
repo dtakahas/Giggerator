@@ -1,7 +1,11 @@
 class GigsController < ApplicationController
 
 	def index
-		@gigs = Gig.where(:user_id => current_user.id)
+    if current_user
+		  @gigs = Gig.where(:user_id => current_user.id)
+    else
+      redirect_to "/users/sign_in"
+    end
 	end
 
 	def new
