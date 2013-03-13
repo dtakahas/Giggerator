@@ -3,10 +3,7 @@ require 'spec_helper'
 feature "Deleting a gig" do
 
   scenario "Can destroy a gig" do
-    visit '/'
-    click_link "Create Gig"
-    fill_in "Title", :with => "Sam"
-    click_button "Save Gig"
+    Factory(:gig)
     visit '/'
     click_link "Edit"
     click_link "Delete Gig"
