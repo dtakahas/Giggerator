@@ -37,6 +37,8 @@ gem 'jquery-rails'
 # To use debugger
 # gem 'debugger'
 group :test, :development do
+  gem 'pry'
+  gem 'pry-debugger'
 	gem 'rspec-rails', '~> 2.11'
 	gem 'factory_girl', '2.6.2'
   gem 'letter_opener'

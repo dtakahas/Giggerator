@@ -7012,3 +7012,1540 @@ Processing by GigsController#index as HTML
   [1m[35mGig Load (0.1ms)[0m  SELECT "gigs".* FROM "gigs" WHERE "gigs"."user_id" = 1
 Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.2ms)
   [1m[36m (0.6ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.5ms)[0m  [1mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2013-03-15 13:35:26 -0700
+Processing by GigsController#index as HTML
+Redirected to http://www.example.com/users/sign_in
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+Started GET "/users/sign_in" for 127.0.0.1 at 2013-03-15 13:35:26 -0700
+Processing by Devise::SessionsController#new as HTML
+  Rendered /home/calico/.rvm/gems/ruby-1.9.3-p374/gems/devise-2.2.2/app/views/devise/shared/_links.erb (2.2ms)
+  Rendered /home/calico/.rvm/gems/ruby-1.9.3-p374/gems/devise-2.2.2/app/views/devise/sessions/new.html.erb within layouts/application (45.2ms)
+Completed 200 OK in 110ms (Views: 85.9ms | ActiveRecord: 2.6ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2013-03-15 13:35:26 -0700
+Processing by GigsController#index as HTML
+Redirected to http://www.example.com/users/sign_in
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+Started GET "/users/sign_in" for 127.0.0.1 at 2013-03-15 13:35:26 -0700
+Processing by Devise::SessionsController#new as HTML
+  Rendered /home/calico/.rvm/gems/ruby-1.9.3-p374/gems/devise-2.2.2/app/views/devise/shared/_links.erb (0.6ms)
+Completed 200 OK in 5ms (Views: 4.6ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.5ms)[0m  [1mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2013-03-15 13:42:47 -0700
+Processing by GigsController#index as HTML
+Redirected to http://www.example.com/users/sign_in
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+Started GET "/users/sign_in" for 127.0.0.1 at 2013-03-15 13:42:47 -0700
+Processing by Devise::SessionsController#new as HTML
+  Rendered /home/calico/.rvm/gems/ruby-1.9.3-p374/gems/devise-2.2.2/app/views/devise/shared/_links.erb (2.2ms)
+  Rendered /home/calico/.rvm/gems/ruby-1.9.3-p374/gems/devise-2.2.2/app/views/devise/sessions/new.html.erb within layouts/application (45.0ms)
+Completed 200 OK in 111ms (Views: 85.7ms | ActiveRecord: 2.6ms)
+Started GET "/gigs/new" for 127.0.0.1 at 2013-03-15 13:42:47 -0700
+Processing by GigsController#new as HTML
+  Rendered gigs/_form.html.erb (8.9ms)
+  Rendered gigs/new.html.erb within layouts/application (11.6ms)
+Completed 200 OK in 33ms (Views: 16.9ms | ActiveRecord: 0.4ms)
+Started POST "/gigs" for 127.0.0.1 at 2013-03-15 13:42:47 -0700
+Processing by GigsController#create as HTML
+  Parameters: {"utf8"=>"✓", "gig"=>{"title"=>"My First Gig", "contact_name"=>"Gigs McGee", "contact_phone"=>"555-555-5555", "contact_email"=>"gigs@mcgee.com", "venue"=>"Carnagie Hall", "city"=>"New York", "address"=>"123 Main St", "zip"=>"98102", "total_budget"=>"1000"}, "date"=>{"month"=>"3", "day"=>"10", "year"=>"2015"}, "commit"=>"Save Gig"}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (32.3ms)[0m  [1mINSERT INTO "gigs" ("address", "city", "contact_email", "contact_name", "contact_phone", "created_at", "day", "month", "title", "total_budget", "updated_at", "user_id", "venue", "year", "zip") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["address", "123 Main St"], ["city", "New York"], ["contact_email", "gigs@mcgee.com"], ["contact_name", "Gigs McGee"], ["contact_phone", "555-555-5555"], ["created_at", Fri, 15 Mar 2013 20:42:47 UTC +00:00], ["day", 10], ["month", 3], ["title", "My First Gig"], ["total_budget", 1000.0], ["updated_at", Fri, 15 Mar 2013 20:42:47 UTC +00:00], ["user_id", nil], ["venue", "Carnagie Hall"], ["year", 2015], ["zip", 98102]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://www.example.com/gigs/1
+Completed 302 Found in 37ms (ActiveRecord: 32.4ms)
+Started GET "/gigs/1" for 127.0.0.1 at 2013-03-15 13:42:47 -0700
+Processing by GigsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mGig Load (0.2ms)[0m  [1mSELECT "gigs".* FROM "gigs" WHERE "gigs"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered gigs/show.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 10ms (Views: 8.1ms | ActiveRecord: 0.2ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2013-03-15 13:42:47 -0700
+Processing by GigsController#index as HTML
+Redirected to http://www.example.com/users/sign_in
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+Started GET "/users/sign_in" for 127.0.0.1 at 2013-03-15 13:42:47 -0700
+Processing by Devise::SessionsController#new as HTML
+  Rendered /home/calico/.rvm/gems/ruby-1.9.3-p374/gems/devise-2.2.2/app/views/devise/shared/_links.erb (0.6ms)
+Completed 200 OK in 5ms (Views: 4.7ms | ActiveRecord: 0.0ms)
+Started GET "/gigs/new" for 127.0.0.1 at 2013-03-15 13:42:47 -0700
+Processing by GigsController#new as HTML
+  Rendered gigs/_form.html.erb (5.8ms)
+Completed 200 OK in 8ms (Views: 7.9ms | ActiveRecord: 0.0ms)
+Started POST "/gigs" for 127.0.0.1 at 2013-03-15 13:42:47 -0700
+Processing by GigsController#create as HTML
+  Parameters: {"utf8"=>"✓", "gig"=>{"title"=>"", "contact_name"=>"", "contact_phone"=>"", "contact_email"=>"", "venue"=>"", "city"=>"", "address"=>"", "zip"=>"", "total_budget"=>""}, "date"=>{"month"=>"3", "day"=>"15", "year"=>"2013"}, "commit"=>"Save Gig"}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  Rendered gigs/_form.html.erb (7.1ms)
+Completed 200 OK in 11ms (Views: 9.4ms | ActiveRecord: 0.1ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.5ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.5ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (26.0ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" = 'user1@example.com' LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."confirmation_token" = 'Y9EpmoFJYpKyyZXbXK5F' LIMIT 1
+Binary data inserted for `string` type on column `encrypted_password`
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "users" ("confirmation_sent_at", "confirmation_token", "confirmed_at", "created_at", "current_sign_in_at", "current_sign_in_ip", "email", "encrypted_password", "last_sign_in_at", "last_sign_in_ip", "remember_created_at", "reset_password_sent_at", "reset_password_token", "sign_in_count", "unconfirmed_email", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["confirmation_sent_at", Fri, 15 Mar 2013 20:56:46 UTC +00:00], ["confirmation_token", "Y9EpmoFJYpKyyZXbXK5F"], ["confirmed_at", nil], ["created_at", Fri, 15 Mar 2013 20:56:46 UTC +00:00], ["current_sign_in_at", nil], ["current_sign_in_ip", nil], ["email", "user1@example.com"], ["encrypted_password", "$2a$04$MCuJE4jIxWD5pG7y3GkL1OLddRFLaLEZSMatvQYMk85qGBcfX3Wvi"], ["last_sign_in_at", nil], ["last_sign_in_ip", nil], ["remember_created_at", nil], ["reset_password_sent_at", nil], ["reset_password_token", nil], ["sign_in_count", 0], ["unconfirmed_email", nil], ["updated_at", Fri, 15 Mar 2013 20:56:46 UTC +00:00]]
+  Rendered /home/calico/.rvm/gems/ruby-1.9.3-p374/gems/devise-2.2.2/app/views/devise/mailer/confirmation_instructions.html.erb (4.1ms)
+
+Sent mail to user1@example.com (44ms)
+Date: Fri, 15 Mar 2013 13:56:46 -0700
+From: please-change-me-at-config-initializers-devise@example.com
+Reply-To: please-change-me-at-config-initializers-devise@example.com
+To: user1@example.com
+Message-ID: <51438b0eeb4bc_12694c0601c886fa@homie.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Welcome user1@example.com!</p>
+
+<p>You can confirm your account email through the link below:</p>
+
+<p><a href="http://localhost:3000/users/confirmation?confirmation_token=Y9EpmoFJYpKyyZXbXK5F">Confirm my account</a></p>
+
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Started GET "/users/sign_in" for 127.0.0.1 at 2013-03-15 13:56:47 -0700
+Processing by Devise::SessionsController#new as HTML
+  Rendered /home/calico/.rvm/gems/ruby-1.9.3-p374/gems/devise-2.2.2/app/views/devise/shared/_links.erb (2.2ms)
+  Rendered /home/calico/.rvm/gems/ruby-1.9.3-p374/gems/devise-2.2.2/app/views/devise/sessions/new.html.erb within layouts/application (35.0ms)
+Completed 200 OK in 41ms (Views: 40.2ms | ActiveRecord: 0.0ms)
+Started POST "/users/sign_in" for 127.0.0.1 at 2013-03-15 13:56:47 -0700
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "user"=>{"email"=>"user1@example.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'user1@example.com' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Completed 401 Unauthorized in 36ms
+Started GET "/users/sign_in" for 127.0.0.1 at 2013-03-15 13:56:47 -0700
+Processing by Devise::SessionsController#new as HTML
+  Rendered /home/calico/.rvm/gems/ruby-1.9.3-p374/gems/devise-2.2.2/app/views/devise/shared/_links.erb (0.6ms)
+  Rendered /home/calico/.rvm/gems/ruby-1.9.3-p374/gems/devise-2.2.2/app/views/devise/sessions/new.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 5ms (Views: 4.8ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.5ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (25.7ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" = 'user1@example.com' LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."confirmation_token" = '36CpLNTDsgqYfvrEpxEp' LIMIT 1
+Binary data inserted for `string` type on column `encrypted_password`
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "users" ("confirmation_sent_at", "confirmation_token", "confirmed_at", "created_at", "current_sign_in_at", "current_sign_in_ip", "email", "encrypted_password", "last_sign_in_at", "last_sign_in_ip", "remember_created_at", "reset_password_sent_at", "reset_password_token", "sign_in_count", "unconfirmed_email", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["confirmation_sent_at", Fri, 15 Mar 2013 20:57:34 UTC +00:00], ["confirmation_token", "36CpLNTDsgqYfvrEpxEp"], ["confirmed_at", nil], ["created_at", Fri, 15 Mar 2013 20:57:34 UTC +00:00], ["current_sign_in_at", nil], ["current_sign_in_ip", nil], ["email", "user1@example.com"], ["encrypted_password", "$2a$04$qoJS2OoIoXz38rWdjY5L0.qbeXZYkzCtWDtH9ip3PkC68xwYaWcTq"], ["last_sign_in_at", nil], ["last_sign_in_ip", nil], ["remember_created_at", nil], ["reset_password_sent_at", nil], ["reset_password_token", nil], ["sign_in_count", 0], ["unconfirmed_email", nil], ["updated_at", Fri, 15 Mar 2013 20:57:34 UTC +00:00]]
+  Rendered /home/calico/.rvm/gems/ruby-1.9.3-p374/gems/devise-2.2.2/app/views/devise/mailer/confirmation_instructions.html.erb (4.1ms)
+
+Sent mail to user1@example.com (44ms)
+Date: Fri, 15 Mar 2013 13:57:35 -0700
+From: please-change-me-at-config-initializers-devise@example.com
+Reply-To: please-change-me-at-config-initializers-devise@example.com
+To: user1@example.com
+Message-ID: <51438b3f179ea_12734eab0101652@homie.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Welcome user1@example.com!</p>
+
+<p>You can confirm your account email through the link below:</p>
+
+<p><a href="http://localhost:3000/users/confirmation?confirmation_token=36CpLNTDsgqYfvrEpxEp">Confirm my account</a></p>
+
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.3ms)[0m  UPDATE "users" SET "confirmation_token" = NULL, "confirmed_at" = '2013-03-15 20:57:35.130244', "updated_at" = '2013-03-15 20:57:35.131025' WHERE "users"."id" = 1
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/users/sign_in" for 127.0.0.1 at 2013-03-15 13:57:35 -0700
+Processing by Devise::SessionsController#new as HTML
+  Rendered /home/calico/.rvm/gems/ruby-1.9.3-p374/gems/devise-2.2.2/app/views/devise/shared/_links.erb (2.2ms)
+  Rendered /home/calico/.rvm/gems/ruby-1.9.3-p374/gems/devise-2.2.2/app/views/devise/sessions/new.html.erb within layouts/application (35.0ms)
+Completed 200 OK in 41ms (Views: 40.3ms | ActiveRecord: 0.0ms)
+Started POST "/users/sign_in" for 127.0.0.1 at 2013-03-15 13:57:35 -0700
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "user"=>{"email"=>"user1@example.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'user1@example.com' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  UPDATE "users" SET "last_sign_in_at" = '2013-03-15 20:57:35.324301', "current_sign_in_at" = '2013-03-15 20:57:35.324301', "last_sign_in_ip" = '127.0.0.1', "current_sign_in_ip" = '127.0.0.1', "sign_in_count" = 1, "updated_at" = '2013-03-15 20:57:35.325046' WHERE "users"."id" = 1
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/
+Completed 302 Found in 43ms (ActiveRecord: 0.0ms)
+Started GET "/" for 127.0.0.1 at 2013-03-15 13:57:35 -0700
+Processing by GigsController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mGig Load (0.1ms)[0m  [1mSELECT "gigs".* FROM "gigs" WHERE "gigs"."user_id" = 1[0m
+  Rendered gigs/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 7ms (Views: 4.3ms | ActiveRecord: 0.7ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.5ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (25.8ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" = 'user1@example.com' LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."confirmation_token" = 'CqqxyXMBUJqsZVqyA3s1' LIMIT 1
+Binary data inserted for `string` type on column `encrypted_password`
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "users" ("confirmation_sent_at", "confirmation_token", "confirmed_at", "created_at", "current_sign_in_at", "current_sign_in_ip", "email", "encrypted_password", "last_sign_in_at", "last_sign_in_ip", "remember_created_at", "reset_password_sent_at", "reset_password_token", "sign_in_count", "unconfirmed_email", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["confirmation_sent_at", Fri, 15 Mar 2013 21:02:24 UTC +00:00], ["confirmation_token", "CqqxyXMBUJqsZVqyA3s1"], ["confirmed_at", nil], ["created_at", Fri, 15 Mar 2013 21:02:24 UTC +00:00], ["current_sign_in_at", nil], ["current_sign_in_ip", nil], ["email", "user1@example.com"], ["encrypted_password", "$2a$04$uPPWh1IKABWJ2NB7O07oheXgXtQM5On9NVchqoL9sbiYo4bOv9HMy"], ["last_sign_in_at", nil], ["last_sign_in_ip", nil], ["remember_created_at", nil], ["reset_password_sent_at", nil], ["reset_password_token", nil], ["sign_in_count", 0], ["unconfirmed_email", nil], ["updated_at", Fri, 15 Mar 2013 21:02:24 UTC +00:00]]
+  Rendered /home/calico/.rvm/gems/ruby-1.9.3-p374/gems/devise-2.2.2/app/views/devise/mailer/confirmation_instructions.html.erb (4.1ms)
+
+Sent mail to user1@example.com (45ms)
+Date: Fri, 15 Mar 2013 14:02:24 -0700
+From: please-change-me-at-config-initializers-devise@example.com
+Reply-To: please-change-me-at-config-initializers-devise@example.com
+To: user1@example.com
+Message-ID: <51438c60cc3cf_127e4d4280499814@homie.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Welcome user1@example.com!</p>
+
+<p>You can confirm your account email through the link below:</p>
+
+<p><a href="http://localhost:3000/users/confirmation?confirmation_token=CqqxyXMBUJqsZVqyA3s1">Confirm my account</a></p>
+
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  UPDATE "users" SET "confirmation_token" = NULL, "confirmed_at" = '2013-03-15 21:02:24.870594', "updated_at" = '2013-03-15 21:02:24.871405' WHERE "users"."id" = 1
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/users/sign_in" for 127.0.0.1 at 2013-03-15 14:02:24 -0700
+Processing by Devise::SessionsController#new as HTML
+  Rendered /home/calico/.rvm/gems/ruby-1.9.3-p374/gems/devise-2.2.2/app/views/devise/shared/_links.erb (2.2ms)
+  Rendered /home/calico/.rvm/gems/ruby-1.9.3-p374/gems/devise-2.2.2/app/views/devise/sessions/new.html.erb within layouts/application (35.0ms)
+Completed 200 OK in 41ms (Views: 40.3ms | ActiveRecord: 0.0ms)
+Started POST "/users/sign_in" for 127.0.0.1 at 2013-03-15 14:02:25 -0700
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "user"=>{"email"=>"user1@example.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'user1@example.com' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  UPDATE "users" SET "last_sign_in_at" = '2013-03-15 21:02:25.063500', "current_sign_in_at" = '2013-03-15 21:02:25.063500', "last_sign_in_ip" = '127.0.0.1', "current_sign_in_ip" = '127.0.0.1', "sign_in_count" = 1, "updated_at" = '2013-03-15 21:02:25.064236' WHERE "users"."id" = 1
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/
+Completed 302 Found in 42ms (ActiveRecord: 0.0ms)
+Started GET "/" for 127.0.0.1 at 2013-03-15 14:02:25 -0700
+Processing by GigsController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mGig Load (0.1ms)[0m  [1mSELECT "gigs".* FROM "gigs" WHERE "gigs"."user_id" = 1[0m
+  Rendered gigs/index.html.erb within layouts/application (1.6ms)
+Completed 500 Internal Server Error in 65ms
+  [1m[35m (0.2ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.5ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (25.7ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" = 'user1@example.com' LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."confirmation_token" = '1dPFnLvXtsdYrV8sVpJL' LIMIT 1
+Binary data inserted for `string` type on column `encrypted_password`
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "users" ("confirmation_sent_at", "confirmation_token", "confirmed_at", "created_at", "current_sign_in_at", "current_sign_in_ip", "email", "encrypted_password", "last_sign_in_at", "last_sign_in_ip", "remember_created_at", "reset_password_sent_at", "reset_password_token", "sign_in_count", "unconfirmed_email", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["confirmation_sent_at", Fri, 15 Mar 2013 21:04:42 UTC +00:00], ["confirmation_token", "1dPFnLvXtsdYrV8sVpJL"], ["confirmed_at", nil], ["created_at", Fri, 15 Mar 2013 21:04:42 UTC +00:00], ["current_sign_in_at", nil], ["current_sign_in_ip", nil], ["email", "user1@example.com"], ["encrypted_password", "$2a$04$IzKabZrq.0W8xz6KWgRUeOXqbQKBaJS7tk2ZT46JKWc/n9kRPCrjm"], ["last_sign_in_at", nil], ["last_sign_in_ip", nil], ["remember_created_at", nil], ["reset_password_sent_at", nil], ["reset_password_token", nil], ["sign_in_count", 0], ["unconfirmed_email", nil], ["updated_at", Fri, 15 Mar 2013 21:04:42 UTC +00:00]]
+  Rendered /home/calico/.rvm/gems/ruby-1.9.3-p374/gems/devise-2.2.2/app/views/devise/mailer/confirmation_instructions.html.erb (4.1ms)
+
+Sent mail to user1@example.com (44ms)
+Date: Fri, 15 Mar 2013 14:04:42 -0700
+From: please-change-me-at-config-initializers-devise@example.com
+Reply-To: please-change-me-at-config-initializers-devise@example.com
+To: user1@example.com
+Message-ID: <51438cea596d6_128a47d2004849bf@homie.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Welcome user1@example.com!</p>
+
+<p>You can confirm your account email through the link below:</p>
+
+<p><a href="http://localhost:3000/users/confirmation?confirmation_token=1dPFnLvXtsdYrV8sVpJL">Confirm my account</a></p>
+
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  UPDATE "users" SET "confirmation_token" = NULL, "confirmed_at" = '2013-03-15 21:04:42.399928', "updated_at" = '2013-03-15 21:04:42.400697' WHERE "users"."id" = 1
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/users/sign_in" for 127.0.0.1 at 2013-03-15 14:04:42 -0700
+Processing by Devise::SessionsController#new as HTML
+  Rendered /home/calico/.rvm/gems/ruby-1.9.3-p374/gems/devise-2.2.2/app/views/devise/shared/_links.erb (2.2ms)
+  Rendered /home/calico/.rvm/gems/ruby-1.9.3-p374/gems/devise-2.2.2/app/views/devise/sessions/new.html.erb within layouts/application (34.9ms)
+Completed 200 OK in 41ms (Views: 40.1ms | ActiveRecord: 0.0ms)
+Started POST "/users/sign_in" for 127.0.0.1 at 2013-03-15 14:04:42 -0700
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "user"=>{"email"=>"user1@example.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'user1@example.com' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  UPDATE "users" SET "last_sign_in_at" = '2013-03-15 21:04:42.592585', "current_sign_in_at" = '2013-03-15 21:04:42.592585', "last_sign_in_ip" = '127.0.0.1', "current_sign_in_ip" = '127.0.0.1', "sign_in_count" = 1, "updated_at" = '2013-03-15 21:04:42.593318' WHERE "users"."id" = 1
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/
+Completed 302 Found in 42ms (ActiveRecord: 0.0ms)
+Started GET "/" for 127.0.0.1 at 2013-03-15 14:04:42 -0700
+Processing by GigsController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mGig Load (0.1ms)[0m  [1mSELECT "gigs".* FROM "gigs" WHERE "gigs"."user_id" = 1[0m
+  Rendered gigs/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 8ms (Views: 4.6ms | ActiveRecord: 0.7ms)
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2013-03-15 14:04:42 -0700
+Processing by Devise::SessionsController#destroy as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://www.example.com/
+Completed 302 Found in 6ms (ActiveRecord: 0.3ms)
+Started GET "/" for 127.0.0.1 at 2013-03-15 14:04:42 -0700
+Processing by GigsController#index as HTML
+Redirected to http://www.example.com/users/sign_in
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+Started GET "/users/sign_in" for 127.0.0.1 at 2013-03-15 14:04:42 -0700
+Processing by Devise::SessionsController#new as HTML
+  Rendered /home/calico/.rvm/gems/ruby-1.9.3-p374/gems/devise-2.2.2/app/views/devise/shared/_links.erb (0.6ms)
+  Rendered /home/calico/.rvm/gems/ruby-1.9.3-p374/gems/devise-2.2.2/app/views/devise/sessions/new.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 5ms (Views: 4.7ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.5ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (25.6ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" = 'user1@example.com' LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."confirmation_token" = '8hdxqtexCf452QDmz2LN' LIMIT 1
+Binary data inserted for `string` type on column `encrypted_password`
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "users" ("confirmation_sent_at", "confirmation_token", "confirmed_at", "created_at", "current_sign_in_at", "current_sign_in_ip", "email", "encrypted_password", "last_sign_in_at", "last_sign_in_ip", "remember_created_at", "reset_password_sent_at", "reset_password_token", "sign_in_count", "unconfirmed_email", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["confirmation_sent_at", Fri, 15 Mar 2013 21:06:38 UTC +00:00], ["confirmation_token", "8hdxqtexCf452QDmz2LN"], ["confirmed_at", nil], ["created_at", Fri, 15 Mar 2013 21:06:38 UTC +00:00], ["current_sign_in_at", nil], ["current_sign_in_ip", nil], ["email", "user1@example.com"], ["encrypted_password", "$2a$04$vZ3r0iaRmySgUUJVbNDBquA9LLX4sGYT3BZda3y//gATd8oR8TJkq"], ["last_sign_in_at", nil], ["last_sign_in_ip", nil], ["remember_created_at", nil], ["reset_password_sent_at", nil], ["reset_password_token", nil], ["sign_in_count", 0], ["unconfirmed_email", nil], ["updated_at", Fri, 15 Mar 2013 21:06:38 UTC +00:00]]
+  Rendered /home/calico/.rvm/gems/ruby-1.9.3-p374/gems/devise-2.2.2/app/views/devise/mailer/confirmation_instructions.html.erb (4.1ms)
+
+Sent mail to user1@example.com (44ms)
+Date: Fri, 15 Mar 2013 14:06:38 -0700
+From: please-change-me-at-config-initializers-devise@example.com
+Reply-To: please-change-me-at-config-initializers-devise@example.com
+To: user1@example.com
+Message-ID: <51438d5edee34_12a44d810042944f@homie.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Welcome user1@example.com!</p>
+
+<p>You can confirm your account email through the link below:</p>
+
+<p><a href="http://localhost:3000/users/confirmation?confirmation_token=8hdxqtexCf452QDmz2LN">Confirm my account</a></p>
+
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  UPDATE "users" SET "confirmation_token" = NULL, "confirmed_at" = '2013-03-15 21:06:38.946497', "updated_at" = '2013-03-15 21:06:38.947298' WHERE "users"."id" = 1
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/users/sign_in" for 127.0.0.1 at 2013-03-15 14:06:38 -0700
+Processing by Devise::SessionsController#new as HTML
+  Rendered /home/calico/.rvm/gems/ruby-1.9.3-p374/gems/devise-2.2.2/app/views/devise/shared/_links.erb (2.2ms)
+  Rendered /home/calico/.rvm/gems/ruby-1.9.3-p374/gems/devise-2.2.2/app/views/devise/sessions/new.html.erb within layouts/application (34.9ms)
+Completed 200 OK in 41ms (Views: 40.3ms | ActiveRecord: 0.0ms)
+Started POST "/users/sign_in" for 127.0.0.1 at 2013-03-15 14:06:39 -0700
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "user"=>{"email"=>"user1@example.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'user1@example.com' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  UPDATE "users" SET "last_sign_in_at" = '2013-03-15 21:06:39.138198', "current_sign_in_at" = '2013-03-15 21:06:39.138198', "last_sign_in_ip" = '127.0.0.1', "current_sign_in_ip" = '127.0.0.1', "sign_in_count" = 1, "updated_at" = '2013-03-15 21:06:39.138969' WHERE "users"."id" = 1
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/
+Completed 302 Found in 42ms (ActiveRecord: 0.0ms)
+Started GET "/" for 127.0.0.1 at 2013-03-15 14:06:39 -0700
+Processing by GigsController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mGig Load (0.1ms)[0m  [1mSELECT "gigs".* FROM "gigs" WHERE "gigs"."user_id" = 1[0m
+  Rendered gigs/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 8ms (Views: 4.5ms | ActiveRecord: 0.7ms)
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2013-03-15 14:06:39 -0700
+Processing by Devise::SessionsController#destroy as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://www.example.com/
+Completed 302 Found in 6ms (ActiveRecord: 0.3ms)
+Started GET "/" for 127.0.0.1 at 2013-03-15 14:06:39 -0700
+Processing by GigsController#index as HTML
+Redirected to http://www.example.com/users/sign_in
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+Started GET "/users/sign_in" for 127.0.0.1 at 2013-03-15 14:06:39 -0700
+Processing by Devise::SessionsController#new as HTML
+  Rendered /home/calico/.rvm/gems/ruby-1.9.3-p374/gems/devise-2.2.2/app/views/devise/shared/_links.erb (0.6ms)
+  Rendered /home/calico/.rvm/gems/ruby-1.9.3-p374/gems/devise-2.2.2/app/views/devise/sessions/new.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 5ms (Views: 4.7ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.5ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (25.9ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" = 'user1@example.com' LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."confirmation_token" = '6qrY7jwYd5kyKxs6HBmW' LIMIT 1
+Binary data inserted for `string` type on column `encrypted_password`
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "users" ("confirmation_sent_at", "confirmation_token", "confirmed_at", "created_at", "current_sign_in_at", "current_sign_in_ip", "email", "encrypted_password", "last_sign_in_at", "last_sign_in_ip", "remember_created_at", "reset_password_sent_at", "reset_password_token", "sign_in_count", "unconfirmed_email", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["confirmation_sent_at", Fri, 15 Mar 2013 21:41:15 UTC +00:00], ["confirmation_token", "6qrY7jwYd5kyKxs6HBmW"], ["confirmed_at", nil], ["created_at", Fri, 15 Mar 2013 21:41:15 UTC +00:00], ["current_sign_in_at", nil], ["current_sign_in_ip", nil], ["email", "user1@example.com"], ["encrypted_password", "$2a$04$ujMNzEHu4HoGIUfOnyevy.VRClK3NKs5hvJ4X.RHk3.1MiM6JrNVy"], ["last_sign_in_at", nil], ["last_sign_in_ip", nil], ["remember_created_at", nil], ["reset_password_sent_at", nil], ["reset_password_token", nil], ["sign_in_count", 0], ["unconfirmed_email", nil], ["updated_at", Fri, 15 Mar 2013 21:41:15 UTC +00:00]]
+  Rendered /home/calico/.rvm/gems/ruby-1.9.3-p374/gems/devise-2.2.2/app/views/devise/mailer/confirmation_instructions.html.erb (4.1ms)
+
+Sent mail to user1@example.com (44ms)
+Date: Fri, 15 Mar 2013 14:41:15 -0700
+From: please-change-me-at-config-initializers-devise@example.com
+Reply-To: please-change-me-at-config-initializers-devise@example.com
+To: user1@example.com
+Message-ID: <5143957bcaa89_137a4787810687b8@homie.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Welcome user1@example.com!</p>
+
+<p>You can confirm your account email through the link below:</p>
+
+<p><a href="http://localhost:3000/users/confirmation?confirmation_token=6qrY7jwYd5kyKxs6HBmW">Confirm my account</a></p>
+
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  UPDATE "users" SET "confirmation_token" = NULL, "confirmed_at" = '2013-03-15 21:41:15.863598', "updated_at" = '2013-03-15 21:41:15.864373' WHERE "users"."id" = 1
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/users/sign_in" for 127.0.0.1 at 2013-03-15 14:41:15 -0700
+Processing by Devise::SessionsController#new as HTML
+  Rendered /home/calico/.rvm/gems/ruby-1.9.3-p374/gems/devise-2.2.2/app/views/devise/shared/_links.erb (2.2ms)
+  Rendered /home/calico/.rvm/gems/ruby-1.9.3-p374/gems/devise-2.2.2/app/views/devise/sessions/new.html.erb within layouts/application (35.0ms)
+Completed 200 OK in 41ms (Views: 40.3ms | ActiveRecord: 0.0ms)
+Started POST "/users/sign_in" for 127.0.0.1 at 2013-03-15 14:41:16 -0700
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "user"=>{"email"=>"user1@example.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'user1@example.com' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  UPDATE "users" SET "last_sign_in_at" = '2013-03-15 21:41:16.056893', "current_sign_in_at" = '2013-03-15 21:41:16.056893', "last_sign_in_ip" = '127.0.0.1', "current_sign_in_ip" = '127.0.0.1', "sign_in_count" = 1, "updated_at" = '2013-03-15 21:41:16.057640' WHERE "users"."id" = 1
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/
+Completed 302 Found in 43ms (ActiveRecord: 0.0ms)
+Started GET "/" for 127.0.0.1 at 2013-03-15 14:41:16 -0700
+Processing by GigsController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mGig Load (0.1ms)[0m  [1mSELECT "gigs".* FROM "gigs" WHERE "gigs"."user_id" = 1[0m
+  Rendered gigs/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 8ms (Views: 4.5ms | ActiveRecord: 0.7ms)
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2013-03-15 14:41:16 -0700
+Processing by Devise::SessionsController#destroy as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://www.example.com/
+Completed 302 Found in 6ms (ActiveRecord: 0.3ms)
+Started GET "/" for 127.0.0.1 at 2013-03-15 14:41:16 -0700
+Processing by GigsController#index as HTML
+Redirected to http://www.example.com/users/sign_in
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+Started GET "/users/sign_in" for 127.0.0.1 at 2013-03-15 14:41:16 -0700
+Processing by Devise::SessionsController#new as HTML
+  Rendered /home/calico/.rvm/gems/ruby-1.9.3-p374/gems/devise-2.2.2/app/views/devise/shared/_links.erb (0.6ms)
+  Rendered /home/calico/.rvm/gems/ruby-1.9.3-p374/gems/devise-2.2.2/app/views/devise/sessions/new.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 5ms (Views: 4.8ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.5ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (25.7ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" = 'user1@example.com' LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."confirmation_token" = 'Pxdoce1KXozp3DVx7BJx' LIMIT 1
+Binary data inserted for `string` type on column `encrypted_password`
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "users" ("confirmation_sent_at", "confirmation_token", "confirmed_at", "created_at", "current_sign_in_at", "current_sign_in_ip", "email", "encrypted_password", "last_sign_in_at", "last_sign_in_ip", "remember_created_at", "reset_password_sent_at", "reset_password_token", "sign_in_count", "unconfirmed_email", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["confirmation_sent_at", Fri, 15 Mar 2013 21:41:50 UTC +00:00], ["confirmation_token", "Pxdoce1KXozp3DVx7BJx"], ["confirmed_at", nil], ["created_at", Fri, 15 Mar 2013 21:41:50 UTC +00:00], ["current_sign_in_at", nil], ["current_sign_in_ip", nil], ["email", "user1@example.com"], ["encrypted_password", "$2a$04$NkIRRF5O7wEDcQoQpsLvkukqERu1nHEfC8JNherdEIybdM/KeiH0."], ["last_sign_in_at", nil], ["last_sign_in_ip", nil], ["remember_created_at", nil], ["reset_password_sent_at", nil], ["reset_password_token", nil], ["sign_in_count", 0], ["unconfirmed_email", nil], ["updated_at", Fri, 15 Mar 2013 21:41:50 UTC +00:00]]
+  Rendered /home/calico/.rvm/gems/ruby-1.9.3-p374/gems/devise-2.2.2/app/views/devise/mailer/confirmation_instructions.html.erb (4.1ms)
+
+Sent mail to user1@example.com (44ms)
+Date: Fri, 15 Mar 2013 14:41:51 -0700
+From: please-change-me-at-config-initializers-devise@example.com
+Reply-To: please-change-me-at-config-initializers-devise@example.com
+To: user1@example.com
+Message-ID: <5143959fe9a_13844ddc81494847@homie.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Welcome user1@example.com!</p>
+
+<p>You can confirm your account email through the link below:</p>
+
+<p><a href="http://localhost:3000/users/confirmation?confirmation_token=Pxdoce1KXozp3DVx7BJx">Confirm my account</a></p>
+
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.3ms)[0m  UPDATE "users" SET "confirmation_token" = NULL, "confirmed_at" = '2013-03-15 21:41:51.037041', "updated_at" = '2013-03-15 21:41:51.037957' WHERE "users"."id" = 1
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/users/sign_in" for 127.0.0.1 at 2013-03-15 14:41:51 -0700
+Processing by Devise::SessionsController#new as HTML
+  Rendered /home/calico/.rvm/gems/ruby-1.9.3-p374/gems/devise-2.2.2/app/views/devise/shared/_links.erb (2.2ms)
+  Rendered /home/calico/.rvm/gems/ruby-1.9.3-p374/gems/devise-2.2.2/app/views/devise/sessions/new.html.erb within layouts/application (35.0ms)
+Completed 200 OK in 41ms (Views: 40.2ms | ActiveRecord: 0.0ms)
+Started POST "/users/sign_in" for 127.0.0.1 at 2013-03-15 14:41:51 -0700
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "user"=>{"email"=>"user1@example.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'user1@example.com' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  UPDATE "users" SET "last_sign_in_at" = '2013-03-15 21:41:51.229499', "current_sign_in_at" = '2013-03-15 21:41:51.229499', "last_sign_in_ip" = '127.0.0.1', "current_sign_in_ip" = '127.0.0.1', "sign_in_count" = 1, "updated_at" = '2013-03-15 21:41:51.230237' WHERE "users"."id" = 1
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/
+Completed 302 Found in 42ms (ActiveRecord: 0.0ms)
+Started GET "/" for 127.0.0.1 at 2013-03-15 14:41:51 -0700
+Processing by GigsController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mGig Load (0.1ms)[0m  [1mSELECT "gigs".* FROM "gigs" WHERE "gigs"."user_id" = 1[0m
+  Rendered gigs/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 8ms (Views: 4.5ms | ActiveRecord: 0.7ms)
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2013-03-15 14:41:51 -0700
+Processing by Devise::SessionsController#destroy as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://www.example.com/
+Completed 302 Found in 6ms (ActiveRecord: 0.3ms)
+Started GET "/" for 127.0.0.1 at 2013-03-15 14:41:51 -0700
+Processing by GigsController#index as HTML
+Redirected to http://www.example.com/users/sign_in
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+Started GET "/users/sign_in" for 127.0.0.1 at 2013-03-15 14:41:51 -0700
+Processing by Devise::SessionsController#new as HTML
+  Rendered /home/calico/.rvm/gems/ruby-1.9.3-p374/gems/devise-2.2.2/app/views/devise/shared/_links.erb (0.6ms)
+  Rendered /home/calico/.rvm/gems/ruby-1.9.3-p374/gems/devise-2.2.2/app/views/devise/sessions/new.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 5ms (Views: 4.8ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.5ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (2.0ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" = 'user1@example.com' LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."confirmation_token" = 'cwcMhzVU7jeqYoYaC7EW' LIMIT 1
+Binary data inserted for `string` type on column `encrypted_password`
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "users" ("confirmation_sent_at", "confirmation_token", "confirmed_at", "created_at", "current_sign_in_at", "current_sign_in_ip", "email", "encrypted_password", "last_sign_in_at", "last_sign_in_ip", "remember_created_at", "reset_password_sent_at", "reset_password_token", "sign_in_count", "unconfirmed_email", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["confirmation_sent_at", Fri, 15 Mar 2013 21:43:01 UTC +00:00], ["confirmation_token", "cwcMhzVU7jeqYoYaC7EW"], ["confirmed_at", nil], ["created_at", Fri, 15 Mar 2013 21:43:01 UTC +00:00], ["current_sign_in_at", nil], ["current_sign_in_ip", nil], ["email", "user1@example.com"], ["encrypted_password", "$2a$04$Dl683jgYkdKPsVuw4jiCUOn9U8KLoj5VNjpMSyP5IZdkjVgdyxIhi"], ["last_sign_in_at", nil], ["last_sign_in_ip", nil], ["remember_created_at", nil], ["reset_password_sent_at", nil], ["reset_password_token", nil], ["sign_in_count", 0], ["unconfirmed_email", nil], ["updated_at", Fri, 15 Mar 2013 21:43:01 UTC +00:00]]
+  Rendered /home/calico/.rvm/gems/ruby-1.9.3-p374/gems/devise-2.2.2/app/views/devise/mailer/confirmation_instructions.html.erb (4.1ms)
+
+Sent mail to user1@example.com (45ms)
+Date: Fri, 15 Mar 2013 14:43:01 -0700
+From: please-change-me-at-config-initializers-devise@example.com
+Reply-To: please-change-me-at-config-initializers-devise@example.com
+To: user1@example.com
+Message-ID: <514395e54693d_138f426501c7021f@homie.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Welcome user1@example.com!</p>
+
+<p>You can confirm your account email through the link below:</p>
+
+<p><a href="http://localhost:3000/users/confirmation?confirmation_token=cwcMhzVU7jeqYoYaC7EW">Confirm my account</a></p>
+
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  UPDATE "users" SET "confirmation_token" = NULL, "confirmed_at" = '2013-03-15 21:43:01.324221', "updated_at" = '2013-03-15 21:43:01.325076' WHERE "users"."id" = 1
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/users/sign_in" for 127.0.0.1 at 2013-03-15 14:43:01 -0700
+Processing by Devise::SessionsController#new as HTML
+  Rendered /home/calico/.rvm/gems/ruby-1.9.3-p374/gems/devise-2.2.2/app/views/devise/shared/_links.erb (2.2ms)
+  Rendered /home/calico/.rvm/gems/ruby-1.9.3-p374/gems/devise-2.2.2/app/views/devise/sessions/new.html.erb within layouts/application (34.9ms)
+Completed 200 OK in 41ms (Views: 40.2ms | ActiveRecord: 0.0ms)
+Started POST "/users/sign_in" for 127.0.0.1 at 2013-03-15 14:43:01 -0700
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "user"=>{"email"=>"user1@example.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'user1@example.com' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  UPDATE "users" SET "last_sign_in_at" = '2013-03-15 21:43:01.516709', "current_sign_in_at" = '2013-03-15 21:43:01.516709', "last_sign_in_ip" = '127.0.0.1', "current_sign_in_ip" = '127.0.0.1', "sign_in_count" = 1, "updated_at" = '2013-03-15 21:43:01.517462' WHERE "users"."id" = 1
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/
+Completed 302 Found in 43ms (ActiveRecord: 0.0ms)
+Started GET "/" for 127.0.0.1 at 2013-03-15 14:43:01 -0700
+Processing by GigsController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mGig Load (0.1ms)[0m  [1mSELECT "gigs".* FROM "gigs" WHERE "gigs"."user_id" = 1[0m
+  Rendered gigs/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 8ms (Views: 4.7ms | ActiveRecord: 0.7ms)
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2013-03-15 14:43:01 -0700
+Processing by Devise::SessionsController#destroy as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://www.example.com/
+Completed 302 Found in 6ms (ActiveRecord: 0.3ms)
+Started GET "/" for 127.0.0.1 at 2013-03-15 14:43:01 -0700
+Processing by GigsController#index as HTML
+Redirected to http://www.example.com/users/sign_in
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+Started GET "/users/sign_in" for 127.0.0.1 at 2013-03-15 14:43:01 -0700
+Processing by Devise::SessionsController#new as HTML
+  Rendered /home/calico/.rvm/gems/ruby-1.9.3-p374/gems/devise-2.2.2/app/views/devise/shared/_links.erb (0.6ms)
+  Rendered /home/calico/.rvm/gems/ruby-1.9.3-p374/gems/devise-2.2.2/app/views/devise/sessions/new.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 5ms (Views: 4.7ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.5ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (26.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" = 'user1@example.com' LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."confirmation_token" = 'Q6ov4DHnqVSXxwN8KLWW' LIMIT 1
+Binary data inserted for `string` type on column `encrypted_password`
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "users" ("confirmation_sent_at", "confirmation_token", "confirmed_at", "created_at", "current_sign_in_at", "current_sign_in_ip", "email", "encrypted_password", "last_sign_in_at", "last_sign_in_ip", "remember_created_at", "reset_password_sent_at", "reset_password_token", "sign_in_count", "unconfirmed_email", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["confirmation_sent_at", Fri, 15 Mar 2013 21:43:16 UTC +00:00], ["confirmation_token", "Q6ov4DHnqVSXxwN8KLWW"], ["confirmed_at", nil], ["created_at", Fri, 15 Mar 2013 21:43:16 UTC +00:00], ["current_sign_in_at", nil], ["current_sign_in_ip", nil], ["email", "user1@example.com"], ["encrypted_password", "$2a$04$0vL.XE9katSCjQWx978YGO50ROgjHb5y7gjA3ABiz7kBHDoGTYrYi"], ["last_sign_in_at", nil], ["last_sign_in_ip", nil], ["remember_created_at", nil], ["reset_password_sent_at", nil], ["reset_password_token", nil], ["sign_in_count", 0], ["unconfirmed_email", nil], ["updated_at", Fri, 15 Mar 2013 21:43:16 UTC +00:00]]
+  Rendered /home/calico/.rvm/gems/ruby-1.9.3-p374/gems/devise-2.2.2/app/views/devise/mailer/confirmation_instructions.html.erb (4.1ms)
+
+Sent mail to user1@example.com (45ms)
+Date: Fri, 15 Mar 2013 14:43:16 -0700
+From: please-change-me-at-config-initializers-devise@example.com
+Reply-To: please-change-me-at-config-initializers-devise@example.com
+To: user1@example.com
+Message-ID: <514395f42dc3f_139949b680c6244a@homie.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Welcome user1@example.com!</p>
+
+<p>You can confirm your account email through the link below:</p>
+
+<p><a href="http://localhost:3000/users/confirmation?confirmation_token=Q6ov4DHnqVSXxwN8KLWW">Confirm my account</a></p>
+
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  UPDATE "users" SET "confirmation_token" = NULL, "confirmed_at" = '2013-03-15 21:43:16.221277', "updated_at" = '2013-03-15 21:43:16.222060' WHERE "users"."id" = 1
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/users/sign_in" for 127.0.0.1 at 2013-03-15 14:43:16 -0700
+Processing by Devise::SessionsController#new as HTML
+  Rendered /home/calico/.rvm/gems/ruby-1.9.3-p374/gems/devise-2.2.2/app/views/devise/shared/_links.erb (2.2ms)
+  Rendered /home/calico/.rvm/gems/ruby-1.9.3-p374/gems/devise-2.2.2/app/views/devise/sessions/new.html.erb within layouts/application (35.3ms)
+Completed 200 OK in 42ms (Views: 40.5ms | ActiveRecord: 0.0ms)
+Started POST "/users/sign_in" for 127.0.0.1 at 2013-03-15 14:43:16 -0700
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "user"=>{"email"=>"user1@example.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'user1@example.com' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  UPDATE "users" SET "last_sign_in_at" = '2013-03-15 21:43:16.414509', "current_sign_in_at" = '2013-03-15 21:43:16.414509', "last_sign_in_ip" = '127.0.0.1', "current_sign_in_ip" = '127.0.0.1', "sign_in_count" = 1, "updated_at" = '2013-03-15 21:43:16.415282' WHERE "users"."id" = 1
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/
+Completed 302 Found in 43ms (ActiveRecord: 0.0ms)
+Started GET "/" for 127.0.0.1 at 2013-03-15 14:43:16 -0700
+Processing by GigsController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mGig Load (0.1ms)[0m  [1mSELECT "gigs".* FROM "gigs" WHERE "gigs"."user_id" = 1[0m
+  Rendered gigs/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 7ms (Views: 4.5ms | ActiveRecord: 0.7ms)
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2013-03-15 14:43:16 -0700
+Processing by Devise::SessionsController#destroy as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://www.example.com/
+Completed 302 Found in 6ms (ActiveRecord: 0.3ms)
+Started GET "/" for 127.0.0.1 at 2013-03-15 14:43:16 -0700
+Processing by GigsController#index as HTML
+Redirected to http://www.example.com/users/sign_in
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+Started GET "/users/sign_in" for 127.0.0.1 at 2013-03-15 14:43:16 -0700
+Processing by Devise::SessionsController#new as HTML
+  Rendered /home/calico/.rvm/gems/ruby-1.9.3-p374/gems/devise-2.2.2/app/views/devise/shared/_links.erb (0.6ms)
+  Rendered /home/calico/.rvm/gems/ruby-1.9.3-p374/gems/devise-2.2.2/app/views/devise/sessions/new.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 5ms (Views: 4.8ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.5ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (25.7ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" = 'user1@example.com' LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."confirmation_token" = '8neHtN9KkQpWJyhPXQNY' LIMIT 1
+Binary data inserted for `string` type on column `encrypted_password`
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "users" ("confirmation_sent_at", "confirmation_token", "confirmed_at", "created_at", "current_sign_in_at", "current_sign_in_ip", "email", "encrypted_password", "last_sign_in_at", "last_sign_in_ip", "remember_created_at", "reset_password_sent_at", "reset_password_token", "sign_in_count", "unconfirmed_email", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["confirmation_sent_at", Fri, 15 Mar 2013 21:44:27 UTC +00:00], ["confirmation_token", "8neHtN9KkQpWJyhPXQNY"], ["confirmed_at", nil], ["created_at", Fri, 15 Mar 2013 21:44:27 UTC +00:00], ["current_sign_in_at", nil], ["current_sign_in_ip", nil], ["email", "user1@example.com"], ["encrypted_password", "$2a$04$fn18bH54pP/Rn9/sbOyuPOdfZBK2KdiPDbQTJWfyCJncpIs3lYzcW"], ["last_sign_in_at", nil], ["last_sign_in_ip", nil], ["remember_created_at", nil], ["reset_password_sent_at", nil], ["reset_password_token", nil], ["sign_in_count", 0], ["unconfirmed_email", nil], ["updated_at", Fri, 15 Mar 2013 21:44:27 UTC +00:00]]
+  Rendered /home/calico/.rvm/gems/ruby-1.9.3-p374/gems/devise-2.2.2/app/views/devise/mailer/confirmation_instructions.html.erb (4.1ms)
+
+Sent mail to user1@example.com (44ms)
+Date: Fri, 15 Mar 2013 14:44:28 -0700
+From: please-change-me-at-config-initializers-devise@example.com
+Reply-To: please-change-me-at-config-initializers-devise@example.com
+To: user1@example.com
+Message-ID: <5143963c26207_13a349d6814882e@homie.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Welcome user1@example.com!</p>
+
+<p>You can confirm your account email through the link below:</p>
+
+<p><a href="http://localhost:3000/users/confirmation?confirmation_token=8neHtN9KkQpWJyhPXQNY">Confirm my account</a></p>
+
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  UPDATE "users" SET "confirmation_token" = NULL, "confirmed_at" = '2013-03-15 21:44:28.189644', "updated_at" = '2013-03-15 21:44:28.190439' WHERE "users"."id" = 1
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/users/sign_in" for 127.0.0.1 at 2013-03-15 14:44:28 -0700
+Processing by Devise::SessionsController#new as HTML
+  Rendered /home/calico/.rvm/gems/ruby-1.9.3-p374/gems/devise-2.2.2/app/views/devise/shared/_links.erb (2.2ms)
+  Rendered /home/calico/.rvm/gems/ruby-1.9.3-p374/gems/devise-2.2.2/app/views/devise/sessions/new.html.erb within layouts/application (34.9ms)
+Completed 200 OK in 41ms (Views: 40.1ms | ActiveRecord: 0.0ms)
+Started POST "/users/sign_in" for 127.0.0.1 at 2013-03-15 14:44:28 -0700
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "user"=>{"email"=>"user1@example.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'user1@example.com' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  UPDATE "users" SET "last_sign_in_at" = '2013-03-15 21:44:28.382483', "current_sign_in_at" = '2013-03-15 21:44:28.382483', "last_sign_in_ip" = '127.0.0.1', "current_sign_in_ip" = '127.0.0.1', "sign_in_count" = 1, "updated_at" = '2013-03-15 21:44:28.383223' WHERE "users"."id" = 1
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/
+Completed 302 Found in 42ms (ActiveRecord: 0.0ms)
+Started GET "/" for 127.0.0.1 at 2013-03-15 14:44:28 -0700
+Processing by GigsController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mGig Load (0.1ms)[0m  [1mSELECT "gigs".* FROM "gigs" WHERE "gigs"."user_id" = 1[0m
+  Rendered gigs/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 7ms (Views: 4.5ms | ActiveRecord: 0.7ms)
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2013-03-15 14:44:28 -0700
+Processing by Devise::SessionsController#destroy as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://www.example.com/
+Completed 302 Found in 6ms (ActiveRecord: 0.3ms)
+Started GET "/" for 127.0.0.1 at 2013-03-15 14:44:28 -0700
+Processing by GigsController#index as HTML
+Redirected to http://www.example.com/users/sign_in
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+Started GET "/users/sign_in" for 127.0.0.1 at 2013-03-15 14:44:28 -0700
+Processing by Devise::SessionsController#new as HTML
+  Rendered /home/calico/.rvm/gems/ruby-1.9.3-p374/gems/devise-2.2.2/app/views/devise/shared/_links.erb (0.6ms)
+  Rendered /home/calico/.rvm/gems/ruby-1.9.3-p374/gems/devise-2.2.2/app/views/devise/sessions/new.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 5ms (Views: 4.7ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.5ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (1.8ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" = 'user1@example.com' LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."confirmation_token" = 'ugXYKy9QsR3Wpb1qHYrs' LIMIT 1
+Binary data inserted for `string` type on column `encrypted_password`
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "users" ("confirmation_sent_at", "confirmation_token", "confirmed_at", "created_at", "current_sign_in_at", "current_sign_in_ip", "email", "encrypted_password", "last_sign_in_at", "last_sign_in_ip", "remember_created_at", "reset_password_sent_at", "reset_password_token", "sign_in_count", "unconfirmed_email", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["confirmation_sent_at", Fri, 15 Mar 2013 21:58:01 UTC +00:00], ["confirmation_token", "ugXYKy9QsR3Wpb1qHYrs"], ["confirmed_at", nil], ["created_at", Fri, 15 Mar 2013 21:58:01 UTC +00:00], ["current_sign_in_at", nil], ["current_sign_in_ip", nil], ["email", "user1@example.com"], ["encrypted_password", "$2a$04$AxmwCccrcbNZVsbkS9Oca.WMmISiOy.3D05od4WiIbeWnxcSG9q8m"], ["last_sign_in_at", nil], ["last_sign_in_ip", nil], ["remember_created_at", nil], ["reset_password_sent_at", nil], ["reset_password_token", nil], ["sign_in_count", 0], ["unconfirmed_email", nil], ["updated_at", Fri, 15 Mar 2013 21:58:01 UTC +00:00]]
+  Rendered /home/calico/.rvm/gems/ruby-1.9.3-p374/gems/devise-2.2.2/app/views/devise/mailer/confirmation_instructions.html.erb (4.6ms)
+
+Sent mail to user1@example.com (44ms)
+Date: Fri, 15 Mar 2013 14:58:01 -0700
+From: please-change-me-at-config-initializers-devise@example.com
+Reply-To: please-change-me-at-config-initializers-devise@example.com
+To: user1@example.com
+Message-ID: <51439969429a5_13df4c4981c930a8@homie.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Welcome user1@example.com!</p>
+
+<p>You can confirm your account email through the link below:</p>
+
+<p><a href="http://localhost:3000/users/confirmation?confirmation_token=ugXYKy9QsR3Wpb1qHYrs">Confirm my account</a></p>
+
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  UPDATE "users" SET "confirmation_token" = NULL, "confirmed_at" = '2013-03-15 21:58:01.306227', "updated_at" = '2013-03-15 21:58:01.306997' WHERE "users"."id" = 1
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/users/sign_in" for 127.0.0.1 at 2013-03-15 14:58:01 -0700
+Processing by Devise::SessionsController#new as HTML
+  Rendered /home/calico/.rvm/gems/ruby-1.9.3-p374/gems/devise-2.2.2/app/views/devise/shared/_links.erb (2.2ms)
+  Rendered /home/calico/.rvm/gems/ruby-1.9.3-p374/gems/devise-2.2.2/app/views/devise/sessions/new.html.erb within layouts/application (35.1ms)
+Completed 200 OK in 41ms (Views: 40.4ms | ActiveRecord: 0.0ms)
+Started POST "/users/sign_in" for 127.0.0.1 at 2013-03-15 14:58:01 -0700
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "user"=>{"email"=>"user1@example.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'user1@example.com' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  UPDATE "users" SET "last_sign_in_at" = '2013-03-15 21:58:01.524560', "current_sign_in_at" = '2013-03-15 21:58:01.524560', "last_sign_in_ip" = '127.0.0.1', "current_sign_in_ip" = '127.0.0.1', "sign_in_count" = 1, "updated_at" = '2013-03-15 21:58:01.525310' WHERE "users"."id" = 1
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/
+Completed 302 Found in 43ms (ActiveRecord: 0.0ms)
+Started GET "/" for 127.0.0.1 at 2013-03-15 14:58:01 -0700
+Processing by GigsController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mGig Load (0.1ms)[0m  [1mSELECT "gigs".* FROM "gigs" WHERE "gigs"."user_id" = 1[0m
+  Rendered gigs/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 12ms (Views: 9.0ms | ActiveRecord: 0.7ms)
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2013-03-15 14:58:01 -0700
+Processing by Devise::SessionsController#destroy as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://www.example.com/
+Completed 302 Found in 6ms (ActiveRecord: 0.3ms)
+Started GET "/" for 127.0.0.1 at 2013-03-15 14:58:01 -0700
+Processing by GigsController#index as HTML
+Redirected to http://www.example.com/users/sign_in
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+Started GET "/users/sign_in" for 127.0.0.1 at 2013-03-15 14:58:01 -0700
+Processing by Devise::SessionsController#new as HTML
+  Rendered /home/calico/.rvm/gems/ruby-1.9.3-p374/gems/devise-2.2.2/app/views/devise/shared/_links.erb (0.6ms)
+  Rendered /home/calico/.rvm/gems/ruby-1.9.3-p374/gems/devise-2.2.2/app/views/devise/sessions/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 6ms (Views: 5.1ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.5ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (1.9ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" = 'user1@example.com' LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."confirmation_token" = 'QmXi4d1TWvCfxeqDd3pq' LIMIT 1
+Binary data inserted for `string` type on column `encrypted_password`
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "users" ("confirmation_sent_at", "confirmation_token", "confirmed_at", "created_at", "current_sign_in_at", "current_sign_in_ip", "email", "encrypted_password", "last_sign_in_at", "last_sign_in_ip", "remember_created_at", "reset_password_sent_at", "reset_password_token", "sign_in_count", "unconfirmed_email", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["confirmation_sent_at", Fri, 15 Mar 2013 21:58:31 UTC +00:00], ["confirmation_token", "QmXi4d1TWvCfxeqDd3pq"], ["confirmed_at", nil], ["created_at", Fri, 15 Mar 2013 21:58:31 UTC +00:00], ["current_sign_in_at", nil], ["current_sign_in_ip", nil], ["email", "user1@example.com"], ["encrypted_password", "$2a$04$HZdB2IRF2Cf8jMNk374kkOCVTNrjwF9x9iDX3wGGBc4J09b.qK4C2"], ["last_sign_in_at", nil], ["last_sign_in_ip", nil], ["remember_created_at", nil], ["reset_password_sent_at", nil], ["reset_password_token", nil], ["sign_in_count", 0], ["unconfirmed_email", nil], ["updated_at", Fri, 15 Mar 2013 21:58:31 UTC +00:00]]
+  Rendered /home/calico/.rvm/gems/ruby-1.9.3-p374/gems/devise-2.2.2/app/views/devise/mailer/confirmation_instructions.html.erb (4.0ms)
+
+Sent mail to user1@example.com (45ms)
+Date: Fri, 15 Mar 2013 14:58:31 -0700
+From: please-change-me-at-config-initializers-devise@example.com
+Reply-To: please-change-me-at-config-initializers-devise@example.com
+To: user1@example.com
+Message-ID: <51439987ddc91_13e949aa00c9458d@homie.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Welcome user1@example.com!</p>
+
+<p>You can confirm your account email through the link below:</p>
+
+<p><a href="http://localhost:3000/users/confirmation?confirmation_token=QmXi4d1TWvCfxeqDd3pq">Confirm my account</a></p>
+
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  UPDATE "users" SET "confirmation_token" = NULL, "confirmed_at" = '2013-03-15 21:58:31.942200', "updated_at" = '2013-03-15 21:58:31.942970' WHERE "users"."id" = 1
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/users/sign_in" for 127.0.0.1 at 2013-03-15 14:58:31 -0700
+Processing by Devise::SessionsController#new as HTML
+  Rendered /home/calico/.rvm/gems/ruby-1.9.3-p374/gems/devise-2.2.2/app/views/devise/shared/_links.erb (2.2ms)
+  Rendered /home/calico/.rvm/gems/ruby-1.9.3-p374/gems/devise-2.2.2/app/views/devise/sessions/new.html.erb within layouts/application (34.9ms)
+Completed 200 OK in 41ms (Views: 40.1ms | ActiveRecord: 0.0ms)
+Started POST "/users/sign_in" for 127.0.0.1 at 2013-03-15 14:58:32 -0700
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "user"=>{"email"=>"user1@example.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'user1@example.com' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  UPDATE "users" SET "last_sign_in_at" = '2013-03-15 21:58:32.159611', "current_sign_in_at" = '2013-03-15 21:58:32.159611', "last_sign_in_ip" = '127.0.0.1', "current_sign_in_ip" = '127.0.0.1', "sign_in_count" = 1, "updated_at" = '2013-03-15 21:58:32.160357' WHERE "users"."id" = 1
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/
+Completed 302 Found in 43ms (ActiveRecord: 0.0ms)
+Started GET "/" for 127.0.0.1 at 2013-03-15 14:58:32 -0700
+Processing by GigsController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mGig Load (0.1ms)[0m  [1mSELECT "gigs".* FROM "gigs" WHERE "gigs"."user_id" = 1[0m
+  Rendered gigs/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 7ms (Views: 4.5ms | ActiveRecord: 0.7ms)
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2013-03-15 14:58:32 -0700
+Processing by Devise::SessionsController#destroy as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://www.example.com/
+Completed 302 Found in 6ms (ActiveRecord: 0.3ms)
+Started GET "/" for 127.0.0.1 at 2013-03-15 14:58:32 -0700
+Processing by GigsController#index as HTML
+Redirected to http://www.example.com/users/sign_in
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+Started GET "/users/sign_in" for 127.0.0.1 at 2013-03-15 14:58:32 -0700
+Processing by Devise::SessionsController#new as HTML
+  Rendered /home/calico/.rvm/gems/ruby-1.9.3-p374/gems/devise-2.2.2/app/views/devise/shared/_links.erb (0.6ms)
+  Rendered /home/calico/.rvm/gems/ruby-1.9.3-p374/gems/devise-2.2.2/app/views/devise/sessions/new.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 6ms (Views: 5.2ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (1.8ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" = 'user1@example.com' LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."confirmation_token" = 'PSw7nDCH819drLNujLmo' LIMIT 1
+Binary data inserted for `string` type on column `encrypted_password`
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "users" ("confirmation_sent_at", "confirmation_token", "confirmed_at", "created_at", "current_sign_in_at", "current_sign_in_ip", "email", "encrypted_password", "last_sign_in_at", "last_sign_in_ip", "remember_created_at", "reset_password_sent_at", "reset_password_token", "sign_in_count", "unconfirmed_email", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["confirmation_sent_at", Fri, 15 Mar 2013 22:00:16 UTC +00:00], ["confirmation_token", "PSw7nDCH819drLNujLmo"], ["confirmed_at", nil], ["created_at", Fri, 15 Mar 2013 22:00:16 UTC +00:00], ["current_sign_in_at", nil], ["current_sign_in_ip", nil], ["email", "user1@example.com"], ["encrypted_password", "$2a$04$iULd1zHgsrLz/3xE7NaolOOpA1eC/dL4uUrHLsscDvWOMYn1d6po."], ["last_sign_in_at", nil], ["last_sign_in_ip", nil], ["remember_created_at", nil], ["reset_password_sent_at", nil], ["reset_password_token", nil], ["sign_in_count", 0], ["unconfirmed_email", nil], ["updated_at", Fri, 15 Mar 2013 22:00:16 UTC +00:00]]
+  Rendered /home/calico/.rvm/gems/ruby-1.9.3-p374/gems/devise-2.2.2/app/views/devise/mailer/confirmation_instructions.html.erb (4.0ms)
+
+Sent mail to user1@example.com (44ms)
+Date: Fri, 15 Mar 2013 15:00:16 -0700
+From: please-change-me-at-config-initializers-devise@example.com
+Reply-To: please-change-me-at-config-initializers-devise@example.com
+To: user1@example.com
+Message-ID: <514399f06a45e_13f441aa014845e6@homie.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Welcome user1@example.com!</p>
+
+<p>You can confirm your account email through the link below:</p>
+
+<p><a href="http://localhost:3000/users/confirmation?confirmation_token=PSw7nDCH819drLNujLmo">Confirm my account</a></p>
+
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  UPDATE "users" SET "confirmation_token" = NULL, "confirmed_at" = '2013-03-15 22:00:16.468994', "updated_at" = '2013-03-15 22:00:16.469766' WHERE "users"."id" = 1
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/users/sign_in" for 127.0.0.1 at 2013-03-15 15:00:16 -0700
+Processing by Devise::SessionsController#new as HTML
+  Rendered /home/calico/.rvm/gems/ruby-1.9.3-p374/gems/devise-2.2.2/app/views/devise/shared/_links.erb (2.2ms)
+  Rendered /home/calico/.rvm/gems/ruby-1.9.3-p374/gems/devise-2.2.2/app/views/devise/sessions/new.html.erb within layouts/application (35.0ms)
+Completed 200 OK in 41ms (Views: 40.2ms | ActiveRecord: 0.0ms)
+Started POST "/users/sign_in" for 127.0.0.1 at 2013-03-15 15:00:16 -0700
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "user"=>{"email"=>"user1@example.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'user1@example.com' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  UPDATE "users" SET "last_sign_in_at" = '2013-03-15 22:00:16.687040', "current_sign_in_at" = '2013-03-15 22:00:16.687040', "last_sign_in_ip" = '127.0.0.1', "current_sign_in_ip" = '127.0.0.1', "sign_in_count" = 1, "updated_at" = '2013-03-15 22:00:16.687823' WHERE "users"."id" = 1
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/
+Completed 302 Found in 43ms (ActiveRecord: 0.0ms)
+Started GET "/" for 127.0.0.1 at 2013-03-15 15:00:16 -0700
+Processing by GigsController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mGig Load (0.1ms)[0m  [1mSELECT "gigs".* FROM "gigs" WHERE "gigs"."user_id" = 1[0m
+  Rendered gigs/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 7ms (Views: 4.5ms | ActiveRecord: 0.7ms)
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2013-03-15 15:00:16 -0700
+Processing by Devise::SessionsController#destroy as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://www.example.com/
+Completed 302 Found in 6ms (ActiveRecord: 0.3ms)
+Started GET "/" for 127.0.0.1 at 2013-03-15 15:00:16 -0700
+Processing by GigsController#index as HTML
+Redirected to http://www.example.com/users/sign_in
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+Started GET "/users/sign_in" for 127.0.0.1 at 2013-03-15 15:00:16 -0700
+Processing by Devise::SessionsController#new as HTML
+  Rendered /home/calico/.rvm/gems/ruby-1.9.3-p374/gems/devise-2.2.2/app/views/devise/shared/_links.erb (0.6ms)
+  Rendered /home/calico/.rvm/gems/ruby-1.9.3-p374/gems/devise-2.2.2/app/views/devise/sessions/new.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 6ms (Views: 5.1ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.5ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (1.9ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" = 'user1@example.com' LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."confirmation_token" = 'ndcD3QVFF5BY9ftbVWwG' LIMIT 1
+Binary data inserted for `string` type on column `encrypted_password`
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "users" ("confirmation_sent_at", "confirmation_token", "confirmed_at", "created_at", "current_sign_in_at", "current_sign_in_ip", "email", "encrypted_password", "last_sign_in_at", "last_sign_in_ip", "remember_created_at", "reset_password_sent_at", "reset_password_token", "sign_in_count", "unconfirmed_email", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["confirmation_sent_at", Fri, 15 Mar 2013 22:05:50 UTC +00:00], ["confirmation_token", "ndcD3QVFF5BY9ftbVWwG"], ["confirmed_at", nil], ["created_at", Fri, 15 Mar 2013 22:05:50 UTC +00:00], ["current_sign_in_at", nil], ["current_sign_in_ip", nil], ["email", "user1@example.com"], ["encrypted_password", "$2a$04$iln2i2QCwPkosDqtzIEEV./8.rUrp..SilJSKWVrNRv6hQSrymar2"], ["last_sign_in_at", nil], ["last_sign_in_ip", nil], ["remember_created_at", nil], ["reset_password_sent_at", nil], ["reset_password_token", nil], ["sign_in_count", 0], ["unconfirmed_email", nil], ["updated_at", Fri, 15 Mar 2013 22:05:50 UTC +00:00]]
+  Rendered /home/calico/.rvm/gems/ruby-1.9.3-p374/gems/devise-2.2.2/app/views/devise/mailer/confirmation_instructions.html.erb (4.1ms)
+
+Sent mail to user1@example.com (45ms)
+Date: Fri, 15 Mar 2013 15:05:51 -0700
+From: please-change-me-at-config-initializers-devise@example.com
+Reply-To: please-change-me-at-config-initializers-devise@example.com
+To: user1@example.com
+Message-ID: <51439b3f1bddd_14054f358143643@homie.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Welcome user1@example.com!</p>
+
+<p>You can confirm your account email through the link below:</p>
+
+<p><a href="http://localhost:3000/users/confirmation?confirmation_token=ndcD3QVFF5BY9ftbVWwG">Confirm my account</a></p>
+
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  UPDATE "users" SET "confirmation_token" = NULL, "confirmed_at" = '2013-03-15 22:05:51.147909', "updated_at" = '2013-03-15 22:05:51.148672' WHERE "users"."id" = 1
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/users/sign_in" for 127.0.0.1 at 2013-03-15 15:05:51 -0700
+Processing by Devise::SessionsController#new as HTML
+  Rendered /home/calico/.rvm/gems/ruby-1.9.3-p374/gems/devise-2.2.2/app/views/devise/shared/_links.erb (2.2ms)
+  Rendered /home/calico/.rvm/gems/ruby-1.9.3-p374/gems/devise-2.2.2/app/views/devise/sessions/new.html.erb within layouts/application (35.1ms)
+Completed 200 OK in 41ms (Views: 40.3ms | ActiveRecord: 0.0ms)
+Started POST "/users/sign_in" for 127.0.0.1 at 2013-03-15 15:05:51 -0700
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "user"=>{"email"=>"user1@example.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'user1@example.com' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  UPDATE "users" SET "last_sign_in_at" = '2013-03-15 22:05:51.365375', "current_sign_in_at" = '2013-03-15 22:05:51.365375', "last_sign_in_ip" = '127.0.0.1', "current_sign_in_ip" = '127.0.0.1', "sign_in_count" = 1, "updated_at" = '2013-03-15 22:05:51.366119' WHERE "users"."id" = 1
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/
+Completed 302 Found in 43ms (ActiveRecord: 0.0ms)
+Started GET "/" for 127.0.0.1 at 2013-03-15 15:05:51 -0700
+Processing by GigsController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mGig Load (0.1ms)[0m  [1mSELECT "gigs".* FROM "gigs" WHERE "gigs"."user_id" = 1[0m
+  Rendered gigs/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 8ms (Views: 4.7ms | ActiveRecord: 0.7ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.5ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (1.8ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" = 'user1@example.com' LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."confirmation_token" = '77trS7r4pmTAH9BLyNG3' LIMIT 1
+Binary data inserted for `string` type on column `encrypted_password`
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "users" ("confirmation_sent_at", "confirmation_token", "confirmed_at", "created_at", "current_sign_in_at", "current_sign_in_ip", "email", "encrypted_password", "last_sign_in_at", "last_sign_in_ip", "remember_created_at", "reset_password_sent_at", "reset_password_token", "sign_in_count", "unconfirmed_email", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["confirmation_sent_at", Fri, 15 Mar 2013 22:17:34 UTC +00:00], ["confirmation_token", "77trS7r4pmTAH9BLyNG3"], ["confirmed_at", nil], ["created_at", Fri, 15 Mar 2013 22:17:34 UTC +00:00], ["current_sign_in_at", nil], ["current_sign_in_ip", nil], ["email", "user1@example.com"], ["encrypted_password", "$2a$04$ulm.hPzL8aC6sexCoozYLuXiWBzRxREuE/XPiFvoOezwwCShlmmx6"], ["last_sign_in_at", nil], ["last_sign_in_ip", nil], ["remember_created_at", nil], ["reset_password_sent_at", nil], ["reset_password_token", nil], ["sign_in_count", 0], ["unconfirmed_email", nil], ["updated_at", Fri, 15 Mar 2013 22:17:34 UTC +00:00]]
+  Rendered /home/calico/.rvm/gems/ruby-1.9.3-p374/gems/devise-2.2.2/app/views/devise/mailer/confirmation_instructions.html.erb (4.1ms)
+
+Sent mail to user1@example.com (45ms)
+Date: Fri, 15 Mar 2013 15:17:35 -0700
+From: please-change-me-at-config-initializers-devise@example.com
+Reply-To: please-change-me-at-config-initializers-devise@example.com
+To: user1@example.com
+Message-ID: <51439dff47a2_1479411a81052248@homie.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Welcome user1@example.com!</p>
+
+<p>You can confirm your account email through the link below:</p>
+
+<p><a href="http://localhost:3000/users/confirmation?confirmation_token=77trS7r4pmTAH9BLyNG3">Confirm my account</a></p>
+
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  UPDATE "users" SET "confirmation_token" = NULL, "confirmed_at" = '2013-03-15 22:17:35.052186', "updated_at" = '2013-03-15 22:17:35.052949' WHERE "users"."id" = 1
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/users/sign_in" for 127.0.0.1 at 2013-03-15 15:17:35 -0700
+Processing by Devise::SessionsController#new as HTML
+  Rendered /home/calico/.rvm/gems/ruby-1.9.3-p374/gems/devise-2.2.2/app/views/devise/shared/_links.erb (2.2ms)
+  Rendered /home/calico/.rvm/gems/ruby-1.9.3-p374/gems/devise-2.2.2/app/views/devise/sessions/new.html.erb within layouts/application (35.0ms)
+Completed 200 OK in 41ms (Views: 40.3ms | ActiveRecord: 0.0ms)
+Started POST "/users/sign_in" for 127.0.0.1 at 2013-03-15 15:17:35 -0700
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "user"=>{"email"=>"user1@example.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'user1@example.com' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  UPDATE "users" SET "last_sign_in_at" = '2013-03-15 22:17:35.270509', "current_sign_in_at" = '2013-03-15 22:17:35.270509', "last_sign_in_ip" = '127.0.0.1', "current_sign_in_ip" = '127.0.0.1', "sign_in_count" = 1, "updated_at" = '2013-03-15 22:17:35.271323' WHERE "users"."id" = 1
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/
+Completed 302 Found in 43ms (ActiveRecord: 0.0ms)
+Started GET "/" for 127.0.0.1 at 2013-03-15 15:17:35 -0700
+Processing by GigsController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mGig Load (0.1ms)[0m  [1mSELECT "gigs".* FROM "gigs" WHERE "gigs"."user_id" = 1[0m
+  Rendered gigs/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 7ms (Views: 4.5ms | ActiveRecord: 0.7ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (1.8ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" = 'user1@example.com' LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."confirmation_token" = 'awAAHziqHU26wrB6EwGK' LIMIT 1
+Binary data inserted for `string` type on column `encrypted_password`
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "users" ("confirmation_sent_at", "confirmation_token", "confirmed_at", "created_at", "current_sign_in_at", "current_sign_in_ip", "email", "encrypted_password", "last_sign_in_at", "last_sign_in_ip", "remember_created_at", "reset_password_sent_at", "reset_password_token", "sign_in_count", "unconfirmed_email", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["confirmation_sent_at", Fri, 15 Mar 2013 22:17:54 UTC +00:00], ["confirmation_token", "awAAHziqHU26wrB6EwGK"], ["confirmed_at", nil], ["created_at", Fri, 15 Mar 2013 22:17:54 UTC +00:00], ["current_sign_in_at", nil], ["current_sign_in_ip", nil], ["email", "user1@example.com"], ["encrypted_password", "$2a$04$AABjSkJyUR2xCaHz1qB7ceXHttvW2oEFKlhDuNByfzYf8r.IWxUHm"], ["last_sign_in_at", nil], ["last_sign_in_ip", nil], ["remember_created_at", nil], ["reset_password_sent_at", nil], ["reset_password_token", nil], ["sign_in_count", 0], ["unconfirmed_email", nil], ["updated_at", Fri, 15 Mar 2013 22:17:54 UTC +00:00]]
+  Rendered /home/calico/.rvm/gems/ruby-1.9.3-p374/gems/devise-2.2.2/app/views/devise/mailer/confirmation_instructions.html.erb (4.0ms)
+
+Sent mail to user1@example.com (44ms)
+Date: Fri, 15 Mar 2013 15:17:55 -0700
+From: please-change-me-at-config-initializers-devise@example.com
+Reply-To: please-change-me-at-config-initializers-devise@example.com
+To: user1@example.com
+Message-ID: <51439e131e8b9_14834c780049595@homie.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Welcome user1@example.com!</p>
+
+<p>You can confirm your account email through the link below:</p>
+
+<p><a href="http://localhost:3000/users/confirmation?confirmation_token=awAAHziqHU26wrB6EwGK">Confirm my account</a></p>
+
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  UPDATE "users" SET "confirmation_token" = NULL, "confirmed_at" = '2013-03-15 22:17:55.158629', "updated_at" = '2013-03-15 22:17:55.159421' WHERE "users"."id" = 1
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/users/sign_in" for 127.0.0.1 at 2013-03-15 15:17:55 -0700
+Processing by Devise::SessionsController#new as HTML
+  Rendered /home/calico/.rvm/gems/ruby-1.9.3-p374/gems/devise-2.2.2/app/views/devise/shared/_links.erb (2.2ms)
+  Rendered /home/calico/.rvm/gems/ruby-1.9.3-p374/gems/devise-2.2.2/app/views/devise/sessions/new.html.erb within layouts/application (35.0ms)
+Completed 200 OK in 41ms (Views: 40.2ms | ActiveRecord: 0.0ms)
+Started POST "/users/sign_in" for 127.0.0.1 at 2013-03-15 15:17:55 -0700
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "user"=>{"email"=>"user1@example.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'user1@example.com' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  UPDATE "users" SET "last_sign_in_at" = '2013-03-15 22:17:55.376087', "current_sign_in_at" = '2013-03-15 22:17:55.376087', "last_sign_in_ip" = '127.0.0.1', "current_sign_in_ip" = '127.0.0.1', "sign_in_count" = 1, "updated_at" = '2013-03-15 22:17:55.376842' WHERE "users"."id" = 1
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/
+Completed 302 Found in 43ms (ActiveRecord: 0.0ms)
+Started GET "/" for 127.0.0.1 at 2013-03-15 15:17:55 -0700
+Processing by GigsController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mGig Load (0.1ms)[0m  [1mSELECT "gigs".* FROM "gigs" WHERE "gigs"."user_id" = 1[0m
+  Rendered gigs/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 8ms (Views: 4.5ms | ActiveRecord: 0.7ms)
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2013-03-15 15:17:55 -0700
+Processing by Devise::SessionsController#destroy as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://www.example.com/
+Completed 302 Found in 6ms (ActiveRecord: 0.3ms)
+Started GET "/" for 127.0.0.1 at 2013-03-15 15:17:55 -0700
+Processing by GigsController#index as HTML
+Redirected to http://www.example.com/users/sign_in
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+Started GET "/users/sign_in" for 127.0.0.1 at 2013-03-15 15:17:55 -0700
+Processing by Devise::SessionsController#new as HTML
+  Rendered /home/calico/.rvm/gems/ruby-1.9.3-p374/gems/devise-2.2.2/app/views/devise/shared/_links.erb (0.6ms)
+  Rendered /home/calico/.rvm/gems/ruby-1.9.3-p374/gems/devise-2.2.2/app/views/devise/sessions/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 6ms (Views: 5.1ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (1.8ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" = 'user1@example.com' LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."confirmation_token" = 'Nq2yyj3R9W3NtPDvNVj9' LIMIT 1
+Binary data inserted for `string` type on column `encrypted_password`
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "users" ("confirmation_sent_at", "confirmation_token", "confirmed_at", "created_at", "current_sign_in_at", "current_sign_in_ip", "email", "encrypted_password", "last_sign_in_at", "last_sign_in_ip", "remember_created_at", "reset_password_sent_at", "reset_password_token", "sign_in_count", "unconfirmed_email", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["confirmation_sent_at", Fri, 15 Mar 2013 22:38:58 UTC +00:00], ["confirmation_token", "Nq2yyj3R9W3NtPDvNVj9"], ["confirmed_at", nil], ["created_at", Fri, 15 Mar 2013 22:38:58 UTC +00:00], ["current_sign_in_at", nil], ["current_sign_in_ip", nil], ["email", "user1@example.com"], ["encrypted_password", "$2a$04$eRkh8657ja7ddHzOeCmAb.8hpdJu3Anp15Wj0KY11tlc3hC0mEq6W"], ["last_sign_in_at", nil], ["last_sign_in_ip", nil], ["remember_created_at", nil], ["reset_password_sent_at", nil], ["reset_password_token", nil], ["sign_in_count", 0], ["unconfirmed_email", nil], ["updated_at", Fri, 15 Mar 2013 22:38:58 UTC +00:00]]
+  Rendered /home/calico/.rvm/gems/ruby-1.9.3-p374/gems/devise-2.2.2/app/views/devise/mailer/confirmation_instructions.html.erb (4.0ms)
+
+Sent mail to user1@example.com (44ms)
+Date: Fri, 15 Mar 2013 15:38:58 -0700
+From: please-change-me-at-config-initializers-devise@example.com
+Reply-To: please-change-me-at-config-initializers-devise@example.com
+To: user1@example.com
+Message-ID: <5143a302e80d5_14b740e48141673a@homie.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Welcome user1@example.com!</p>
+
+<p>You can confirm your account email through the link below:</p>
+
+<p><a href="http://localhost:3000/users/confirmation?confirmation_token=Nq2yyj3R9W3NtPDvNVj9">Confirm my account</a></p>
+
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  UPDATE "users" SET "confirmation_token" = NULL, "confirmed_at" = '2013-03-15 22:38:58.959654', "updated_at" = '2013-03-15 22:38:58.960424' WHERE "users"."id" = 1
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (1.8ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" = 'user1@example.com' LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."confirmation_token" = 'KUm9TYCJWiTD9acopyCr' LIMIT 1
+Binary data inserted for `string` type on column `encrypted_password`
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "users" ("confirmation_sent_at", "confirmation_token", "confirmed_at", "created_at", "current_sign_in_at", "current_sign_in_ip", "email", "encrypted_password", "last_sign_in_at", "last_sign_in_ip", "remember_created_at", "reset_password_sent_at", "reset_password_token", "sign_in_count", "unconfirmed_email", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["confirmation_sent_at", Fri, 15 Mar 2013 22:40:18 UTC +00:00], ["confirmation_token", "KUm9TYCJWiTD9acopyCr"], ["confirmed_at", nil], ["created_at", Fri, 15 Mar 2013 22:40:18 UTC +00:00], ["current_sign_in_at", nil], ["current_sign_in_ip", nil], ["email", "user1@example.com"], ["encrypted_password", "$2a$04$5Zv6CVhyk8Gu9z1D2eNo/ewxca0qfQ6Vn5lUR9H4z8RGCGc1eQ3FG"], ["last_sign_in_at", nil], ["last_sign_in_ip", nil], ["remember_created_at", nil], ["reset_password_sent_at", nil], ["reset_password_token", nil], ["sign_in_count", 0], ["unconfirmed_email", nil], ["updated_at", Fri, 15 Mar 2013 22:40:18 UTC +00:00]]
+  Rendered /home/calico/.rvm/gems/ruby-1.9.3-p374/gems/devise-2.2.2/app/views/devise/mailer/confirmation_instructions.html.erb (4.1ms)
+
+Sent mail to user1@example.com (44ms)
+Date: Fri, 15 Mar 2013 15:40:18 -0700
+From: please-change-me-at-config-initializers-devise@example.com
+Reply-To: please-change-me-at-config-initializers-devise@example.com
+To: user1@example.com
+Message-ID: <5143a352e8e3b_14c146998047806b@homie.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Welcome user1@example.com!</p>
+
+<p>You can confirm your account email through the link below:</p>
+
+<p><a href="http://localhost:3000/users/confirmation?confirmation_token=KUm9TYCJWiTD9acopyCr">Confirm my account</a></p>
+
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  UPDATE "users" SET "confirmation_token" = NULL, "confirmed_at" = '2013-03-15 22:40:18.962986', "updated_at" = '2013-03-15 22:40:18.963774' WHERE "users"."id" = 1
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by GigsController#create as HTML
+  Parameters: {"user_id"=>"1"}
+Completed 500 Internal Server Error in 41ms
+  [1m[35m (0.2ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (1.9ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" = 'user1@example.com' LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."confirmation_token" = 'XrGfUMGxfFPPa4vE1DhE' LIMIT 1
+Binary data inserted for `string` type on column `encrypted_password`
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "users" ("confirmation_sent_at", "confirmation_token", "confirmed_at", "created_at", "current_sign_in_at", "current_sign_in_ip", "email", "encrypted_password", "last_sign_in_at", "last_sign_in_ip", "remember_created_at", "reset_password_sent_at", "reset_password_token", "sign_in_count", "unconfirmed_email", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["confirmation_sent_at", Fri, 15 Mar 2013 23:07:09 UTC +00:00], ["confirmation_token", "XrGfUMGxfFPPa4vE1DhE"], ["confirmed_at", nil], ["created_at", Fri, 15 Mar 2013 23:07:09 UTC +00:00], ["current_sign_in_at", nil], ["current_sign_in_ip", nil], ["email", "user1@example.com"], ["encrypted_password", "$2a$04$b0Wy4VUPkZT026pvKh/jZOHGjPDVm2uUt66jD.zaQBXvBQ2HVjw8u"], ["last_sign_in_at", nil], ["last_sign_in_ip", nil], ["remember_created_at", nil], ["reset_password_sent_at", nil], ["reset_password_token", nil], ["sign_in_count", 0], ["unconfirmed_email", nil], ["updated_at", Fri, 15 Mar 2013 23:07:09 UTC +00:00]]
+  Rendered /home/calico/.rvm/gems/ruby-1.9.3-p374/gems/devise-2.2.2/app/views/devise/mailer/confirmation_instructions.html.erb (4.0ms)
+
+Sent mail to user1@example.com (44ms)
+Date: Fri, 15 Mar 2013 16:07:09 -0700
+From: please-change-me-at-config-initializers-devise@example.com
+Reply-To: please-change-me-at-config-initializers-devise@example.com
+To: user1@example.com
+Message-ID: <5143a99db625a_15ad440601074950@homie.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Welcome user1@example.com!</p>
+
+<p>You can confirm your account email through the link below:</p>
+
+<p><a href="http://localhost:3000/users/confirmation?confirmation_token=XrGfUMGxfFPPa4vE1DhE">Confirm my account</a></p>
+
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  UPDATE "users" SET "confirmation_token" = NULL, "confirmed_at" = '2013-03-15 23:07:09.755214', "updated_at" = '2013-03-15 23:07:09.756002' WHERE "users"."id" = 1
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by GigsController#create as HTML
+  Parameters: {"user_id"=>"1"}
+Completed 500 Internal Server Error in 41ms
+  [1m[35m (0.2ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (1.9ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" = 'user1@example.com' LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."confirmation_token" = 'UuxNxUXyXqLJgxbGvqZD' LIMIT 1
+Binary data inserted for `string` type on column `encrypted_password`
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "users" ("confirmation_sent_at", "confirmation_token", "confirmed_at", "created_at", "current_sign_in_at", "current_sign_in_ip", "email", "encrypted_password", "last_sign_in_at", "last_sign_in_ip", "remember_created_at", "reset_password_sent_at", "reset_password_token", "sign_in_count", "unconfirmed_email", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["confirmation_sent_at", Fri, 15 Mar 2013 23:09:35 UTC +00:00], ["confirmation_token", "UuxNxUXyXqLJgxbGvqZD"], ["confirmed_at", nil], ["created_at", Fri, 15 Mar 2013 23:09:35 UTC +00:00], ["current_sign_in_at", nil], ["current_sign_in_ip", nil], ["email", "user1@example.com"], ["encrypted_password", "$2a$04$UtBjI9Ebi7OUsQJxSAt0YufaghgnQDsvabMF88vsCgILbQyRUeZbC"], ["last_sign_in_at", nil], ["last_sign_in_ip", nil], ["remember_created_at", nil], ["reset_password_sent_at", nil], ["reset_password_token", nil], ["sign_in_count", 0], ["unconfirmed_email", nil], ["updated_at", Fri, 15 Mar 2013 23:09:35 UTC +00:00]]
+  Rendered /home/calico/.rvm/gems/ruby-1.9.3-p374/gems/devise-2.2.2/app/views/devise/mailer/confirmation_instructions.html.erb (4.1ms)
+
+Sent mail to user1@example.com (44ms)
+Date: Fri, 15 Mar 2013 16:09:35 -0700
+From: please-change-me-at-config-initializers-devise@example.com
+Reply-To: please-change-me-at-config-initializers-devise@example.com
+To: user1@example.com
+Message-ID: <5143aa2fe72b3_15b74dac81c8703a@homie.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Welcome user1@example.com!</p>
+
+<p>You can confirm your account email through the link below:</p>
+
+<p><a href="http://localhost:3000/users/confirmation?confirmation_token=UuxNxUXyXqLJgxbGvqZD">Confirm my account</a></p>
+
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  UPDATE "users" SET "confirmation_token" = NULL, "confirmed_at" = '2013-03-15 23:09:35.955984', "updated_at" = '2013-03-15 23:09:35.956745' WHERE "users"."id" = 1
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by GigsController#create as HTML
+  Parameters: {"user_id"=>"1", "title"=>"Whatever"}
+Completed 500 Internal Server Error in 41ms
+  [1m[35m (0.2ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (1.8ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" = 'user1@example.com' LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."confirmation_token" = 'qqpx7XRN7sr1w8grKTxV' LIMIT 1
+Binary data inserted for `string` type on column `encrypted_password`
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "users" ("confirmation_sent_at", "confirmation_token", "confirmed_at", "created_at", "current_sign_in_at", "current_sign_in_ip", "email", "encrypted_password", "last_sign_in_at", "last_sign_in_ip", "remember_created_at", "reset_password_sent_at", "reset_password_token", "sign_in_count", "unconfirmed_email", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["confirmation_sent_at", Fri, 15 Mar 2013 23:16:35 UTC +00:00], ["confirmation_token", "qqpx7XRN7sr1w8grKTxV"], ["confirmed_at", nil], ["created_at", Fri, 15 Mar 2013 23:16:35 UTC +00:00], ["current_sign_in_at", nil], ["current_sign_in_ip", nil], ["email", "user1@example.com"], ["encrypted_password", "$2a$04$GCKW3mf97neS7kaFRm7REeaP9HhbZdJmq5ly3Hl6gQeDy8ItMv1a2"], ["last_sign_in_at", nil], ["last_sign_in_ip", nil], ["remember_created_at", nil], ["reset_password_sent_at", nil], ["reset_password_token", nil], ["sign_in_count", 0], ["unconfirmed_email", nil], ["updated_at", Fri, 15 Mar 2013 23:16:35 UTC +00:00]]
+  Rendered /home/calico/.rvm/gems/ruby-1.9.3-p374/gems/devise-2.2.2/app/views/devise/mailer/confirmation_instructions.html.erb (4.0ms)
+
+Sent mail to user1@example.com (44ms)
+Date: Fri, 15 Mar 2013 16:16:36 -0700
+From: please-change-me-at-config-initializers-devise@example.com
+Reply-To: please-change-me-at-config-initializers-devise@example.com
+To: user1@example.com
+Message-ID: <5143abd49352_15c64c5b81430317@homie.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Welcome user1@example.com!</p>
+
+<p>You can confirm your account email through the link below:</p>
+
+<p><a href="http://localhost:3000/users/confirmation?confirmation_token=qqpx7XRN7sr1w8grKTxV">Confirm my account</a></p>
+
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  UPDATE "users" SET "confirmation_token" = NULL, "confirmed_at" = '2013-03-15 23:16:36.046872', "updated_at" = '2013-03-15 23:16:36.047650' WHERE "users"."id" = 1
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by GigsController#create as HTML
+  Parameters: {"gig"=>{"user_id"=>"1", "title"=>"Whatever"}}
+Completed 500 Internal Server Error in 41ms
+  [1m[35m (0.2ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (1.8ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" = 'user1@example.com' LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."confirmation_token" = 'JxSryR46CpXMKmbqtpLe' LIMIT 1
+Binary data inserted for `string` type on column `encrypted_password`
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "users" ("confirmation_sent_at", "confirmation_token", "confirmed_at", "created_at", "current_sign_in_at", "current_sign_in_ip", "email", "encrypted_password", "last_sign_in_at", "last_sign_in_ip", "remember_created_at", "reset_password_sent_at", "reset_password_token", "sign_in_count", "unconfirmed_email", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["confirmation_sent_at", Fri, 15 Mar 2013 23:44:46 UTC +00:00], ["confirmation_token", "JxSryR46CpXMKmbqtpLe"], ["confirmed_at", nil], ["created_at", Fri, 15 Mar 2013 23:44:46 UTC +00:00], ["current_sign_in_at", nil], ["current_sign_in_ip", nil], ["email", "user1@example.com"], ["encrypted_password", "$2a$04$zkIjkiM7v1php/kVn7N3hu238RxD5pDNiJLk4vcu31SJeaNP3vZh."], ["last_sign_in_at", nil], ["last_sign_in_ip", nil], ["remember_created_at", nil], ["reset_password_sent_at", nil], ["reset_password_token", nil], ["sign_in_count", 0], ["unconfirmed_email", nil], ["updated_at", Fri, 15 Mar 2013 23:44:46 UTC +00:00]]
+  Rendered /home/calico/.rvm/gems/ruby-1.9.3-p374/gems/devise-2.2.2/app/views/devise/mailer/confirmation_instructions.html.erb (4.0ms)
+
+Sent mail to user1@example.com (44ms)
+Date: Fri, 15 Mar 2013 16:44:46 -0700
+From: please-change-me-at-config-initializers-devise@example.com
+Reply-To: please-change-me-at-config-initializers-devise@example.com
+To: user1@example.com
+Message-ID: <5143b26e7ce8f_165d4f35814256f@homie.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Welcome user1@example.com!</p>
+
+<p>You can confirm your account email through the link below:</p>
+
+<p><a href="http://localhost:3000/users/confirmation?confirmation_token=JxSryR46CpXMKmbqtpLe">Confirm my account</a></p>
+
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  UPDATE "users" SET "confirmation_token" = NULL, "confirmed_at" = '2013-03-15 23:44:46.520684', "updated_at" = '2013-03-15 23:44:46.521449' WHERE "users"."id" = 1
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by GigsController#create as HTML
+  Parameters: {"gig"=>{"user_id"=>"1", "title"=>"Whatever"}}
+Completed 500 Internal Server Error in 41ms
+  [1m[35m (0.2ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (1.8ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" = 'user1@example.com' LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."confirmation_token" = 'espRFpTTtnmnQnZPcgxJ' LIMIT 1
+Binary data inserted for `string` type on column `encrypted_password`
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "users" ("confirmation_sent_at", "confirmation_token", "confirmed_at", "created_at", "current_sign_in_at", "current_sign_in_ip", "email", "encrypted_password", "last_sign_in_at", "last_sign_in_ip", "remember_created_at", "reset_password_sent_at", "reset_password_token", "sign_in_count", "unconfirmed_email", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["confirmation_sent_at", Fri, 15 Mar 2013 23:47:17 UTC +00:00], ["confirmation_token", "espRFpTTtnmnQnZPcgxJ"], ["confirmed_at", nil], ["created_at", Fri, 15 Mar 2013 23:47:17 UTC +00:00], ["current_sign_in_at", nil], ["current_sign_in_ip", nil], ["email", "user1@example.com"], ["encrypted_password", "$2a$04$KKY48q.HntI3PCXgAv1eVOkpIjxRDUk.UJD312koEbjlWchvaIYz."], ["last_sign_in_at", nil], ["last_sign_in_ip", nil], ["remember_created_at", nil], ["reset_password_sent_at", nil], ["reset_password_token", nil], ["sign_in_count", 0], ["unconfirmed_email", nil], ["updated_at", Fri, 15 Mar 2013 23:47:17 UTC +00:00]]
+  Rendered /home/calico/.rvm/gems/ruby-1.9.3-p374/gems/devise-2.2.2/app/views/devise/mailer/confirmation_instructions.html.erb (4.1ms)
+
+Sent mail to user1@example.com (44ms)
+Date: Fri, 15 Mar 2013 16:47:17 -0700
+From: please-change-me-at-config-initializers-devise@example.com
+Reply-To: please-change-me-at-config-initializers-devise@example.com
+To: user1@example.com
+Message-ID: <5143b3056b2b4_1670434581081443@homie.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Welcome user1@example.com!</p>
+
+<p>You can confirm your account email through the link below:</p>
+
+<p><a href="http://localhost:3000/users/confirmation?confirmation_token=espRFpTTtnmnQnZPcgxJ">Confirm my account</a></p>
+
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  UPDATE "users" SET "confirmation_token" = NULL, "confirmed_at" = '2013-03-15 23:47:17.448045', "updated_at" = '2013-03-15 23:47:17.448808' WHERE "users"."id" = 1
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by GigsController#create as HTML
+  Parameters: {"gig"=>{"title"=>"We think this will work", "user_id"=>"1"}, "date"=>{"month"=>"3", "day"=>"15", "year"=>"2013"}}
+3
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "gigs" ("address", "city", "contact_email", "contact_name", "contact_phone", "created_at", "day", "month", "title", "total_budget", "updated_at", "user_id", "venue", "year", "zip") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["address", nil], ["city", nil], ["contact_email", nil], ["contact_name", nil], ["contact_phone", nil], ["created_at", Fri, 15 Mar 2013 23:47:17 UTC +00:00], ["day", 15], ["month", 3], ["title", "We think this will work"], ["total_budget", nil], ["updated_at", Fri, 15 Mar 2013 23:47:17 UTC +00:00], ["user_id", 1], ["venue", nil], ["year", 2013], ["zip", nil]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/gigs/1
+Completed 302 Found in 45ms (ActiveRecord: 0.9ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35mGig Load (0.2ms)[0m  SELECT "gigs".* FROM "gigs" WHERE "gigs"."user_id" = 1
+Connecting to database specified by database.yml
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (1.8ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" = 'user1@example.com' LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."confirmation_token" = 'R4VBQVg4fXSxBZkAWzQb' LIMIT 1
+Binary data inserted for `string` type on column `encrypted_password`
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "users" ("confirmation_sent_at", "confirmation_token", "confirmed_at", "created_at", "current_sign_in_at", "current_sign_in_ip", "email", "encrypted_password", "last_sign_in_at", "last_sign_in_ip", "remember_created_at", "reset_password_sent_at", "reset_password_token", "sign_in_count", "unconfirmed_email", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["confirmation_sent_at", Fri, 15 Mar 2013 23:49:38 UTC +00:00], ["confirmation_token", "R4VBQVg4fXSxBZkAWzQb"], ["confirmed_at", nil], ["created_at", Fri, 15 Mar 2013 23:49:38 UTC +00:00], ["current_sign_in_at", nil], ["current_sign_in_ip", nil], ["email", "user1@example.com"], ["encrypted_password", "$2a$04$Ke8zxZiWWjkDBeTY7KitROfzobZfx8O4is7evw9mnMVx/.vyWyaZi"], ["last_sign_in_at", nil], ["last_sign_in_ip", nil], ["remember_created_at", nil], ["reset_password_sent_at", nil], ["reset_password_token", nil], ["sign_in_count", 0], ["unconfirmed_email", nil], ["updated_at", Fri, 15 Mar 2013 23:49:38 UTC +00:00]]
+  Rendered /home/calico/.rvm/gems/ruby-1.9.3-p374/gems/devise-2.2.2/app/views/devise/mailer/confirmation_instructions.html.erb (4.2ms)
+
+Sent mail to user1@example.com (44ms)
+Date: Fri, 15 Mar 2013 16:49:38 -0700
+From: please-change-me-at-config-initializers-devise@example.com
+Reply-To: please-change-me-at-config-initializers-devise@example.com
+To: user1@example.com
+Message-ID: <5143b392de37c_167b420200c754dd@homie.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Welcome user1@example.com!</p>
+
+<p>You can confirm your account email through the link below:</p>
+
+<p><a href="http://localhost:3000/users/confirmation?confirmation_token=R4VBQVg4fXSxBZkAWzQb">Confirm my account</a></p>
+
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  UPDATE "users" SET "confirmation_token" = NULL, "confirmed_at" = '2013-03-15 23:49:38.919284', "updated_at" = '2013-03-15 23:49:38.920052' WHERE "users"."id" = 1
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by GigsController#create as HTML
+  Parameters: {"gig"=>{"title"=>"We think this will work", "user_id"=>"1"}, "date"=>{"month"=>"3", "day"=>"15", "year"=>"2013"}}
+3
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "gigs" ("address", "city", "contact_email", "contact_name", "contact_phone", "created_at", "day", "month", "title", "total_budget", "updated_at", "user_id", "venue", "year", "zip") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["address", nil], ["city", nil], ["contact_email", nil], ["contact_name", nil], ["contact_phone", nil], ["created_at", Fri, 15 Mar 2013 23:49:38 UTC +00:00], ["day", 15], ["month", 3], ["title", "We think this will work"], ["total_budget", nil], ["updated_at", Fri, 15 Mar 2013 23:49:38 UTC +00:00], ["user_id", 1], ["venue", nil], ["year", 2013], ["zip", nil]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/gigs/1
+Completed 302 Found in 45ms (ActiveRecord: 0.9ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35mGig Load (0.2ms)[0m  SELECT "gigs".* FROM "gigs" WHERE "gigs"."user_id" = 1
+Connecting to database specified by database.yml
+  [1m[36m (0.5ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (1.8ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" = 'user1@example.com' LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."confirmation_token" = 'mnYHGyYW3kMYkAfh86Np' LIMIT 1
+Binary data inserted for `string` type on column `encrypted_password`
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "users" ("confirmation_sent_at", "confirmation_token", "confirmed_at", "created_at", "current_sign_in_at", "current_sign_in_ip", "email", "encrypted_password", "last_sign_in_at", "last_sign_in_ip", "remember_created_at", "reset_password_sent_at", "reset_password_token", "sign_in_count", "unconfirmed_email", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["confirmation_sent_at", Fri, 15 Mar 2013 23:52:57 UTC +00:00], ["confirmation_token", "mnYHGyYW3kMYkAfh86Np"], ["confirmed_at", nil], ["created_at", Fri, 15 Mar 2013 23:52:57 UTC +00:00], ["current_sign_in_at", nil], ["current_sign_in_ip", nil], ["email", "user1@example.com"], ["encrypted_password", "$2a$04$jxtpFvn0GIAN1/88PaGqsODZs3Xe5eEkLSqrxdM0SdujGDZm2n8cu"], ["last_sign_in_at", nil], ["last_sign_in_ip", nil], ["remember_created_at", nil], ["reset_password_sent_at", nil], ["reset_password_token", nil], ["sign_in_count", 0], ["unconfirmed_email", nil], ["updated_at", Fri, 15 Mar 2013 23:52:57 UTC +00:00]]
+  Rendered /home/calico/.rvm/gems/ruby-1.9.3-p374/gems/devise-2.2.2/app/views/devise/mailer/confirmation_instructions.html.erb (4.0ms)
+
+Sent mail to user1@example.com (44ms)
+Date: Fri, 15 Mar 2013 16:52:57 -0700
+From: please-change-me-at-config-initializers-devise@example.com
+Reply-To: please-change-me-at-config-initializers-devise@example.com
+To: user1@example.com
+Message-ID: <5143b459b8b14_1686501101c625b@homie.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Welcome user1@example.com!</p>
+
+<p>You can confirm your account email through the link below:</p>
+
+<p><a href="http://localhost:3000/users/confirmation?confirmation_token=mnYHGyYW3kMYkAfh86Np">Confirm my account</a></p>
+
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  UPDATE "users" SET "confirmation_token" = NULL, "confirmed_at" = '2013-03-15 23:52:57.765628', "updated_at" = '2013-03-15 23:52:57.766382' WHERE "users"."id" = 1
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by GigsController#create as HTML
+  Parameters: {"gig"=>{"title"=>"We think this will work", "user_id"=>"1"}, "date"=>{"month"=>"3", "day"=>"15", "year"=>"2013"}}
+3
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "gigs" ("address", "city", "contact_email", "contact_name", "contact_phone", "created_at", "day", "month", "title", "total_budget", "updated_at", "user_id", "venue", "year", "zip") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["address", nil], ["city", nil], ["contact_email", nil], ["contact_name", nil], ["contact_phone", nil], ["created_at", Fri, 15 Mar 2013 23:52:57 UTC +00:00], ["day", 15], ["month", 3], ["title", "We think this will work"], ["total_budget", nil], ["updated_at", Fri, 15 Mar 2013 23:52:57 UTC +00:00], ["user_id", 1], ["venue", nil], ["year", 2013], ["zip", nil]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/gigs/1
+Completed 302 Found in 45ms (ActiveRecord: 0.9ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.5ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (2.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" = 'user1@example.com' LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."confirmation_token" = '6jFPP5bdfihz2VKHehUr' LIMIT 1
+Binary data inserted for `string` type on column `encrypted_password`
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "users" ("confirmation_sent_at", "confirmation_token", "confirmed_at", "created_at", "current_sign_in_at", "current_sign_in_ip", "email", "encrypted_password", "last_sign_in_at", "last_sign_in_ip", "remember_created_at", "reset_password_sent_at", "reset_password_token", "sign_in_count", "unconfirmed_email", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["confirmation_sent_at", Fri, 15 Mar 2013 23:53:44 UTC +00:00], ["confirmation_token", "6jFPP5bdfihz2VKHehUr"], ["confirmed_at", nil], ["created_at", Fri, 15 Mar 2013 23:53:44 UTC +00:00], ["current_sign_in_at", nil], ["current_sign_in_ip", nil], ["email", "user1@example.com"], ["encrypted_password", "$2a$04$eWpEFcsrUXz/dGhbtmm21.j26.os4ZjcIk.ATdXciwKl/Ju5Xi0my"], ["last_sign_in_at", nil], ["last_sign_in_ip", nil], ["remember_created_at", nil], ["reset_password_sent_at", nil], ["reset_password_token", nil], ["sign_in_count", 0], ["unconfirmed_email", nil], ["updated_at", Fri, 15 Mar 2013 23:53:44 UTC +00:00]]
+  Rendered /home/calico/.rvm/gems/ruby-1.9.3-p374/gems/devise-2.2.2/app/views/devise/mailer/confirmation_instructions.html.erb (4.4ms)
+
+Sent mail to user1@example.com (53ms)
+Date: Fri, 15 Mar 2013 16:53:44 -0700
+From: please-change-me-at-config-initializers-devise@example.com
+Reply-To: please-change-me-at-config-initializers-devise@example.com
+To: user1@example.com
+Message-ID: <5143b488e9a7c_169b426701031582@homie.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Welcome user1@example.com!</p>
+
+<p>You can confirm your account email through the link below:</p>
+
+<p><a href="http://localhost:3000/users/confirmation?confirmation_token=6jFPP5bdfihz2VKHehUr">Confirm my account</a></p>
+
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  UPDATE "users" SET "confirmation_token" = NULL, "confirmed_at" = '2013-03-15 23:53:44.966704', "updated_at" = '2013-03-15 23:53:44.967466' WHERE "users"."id" = 1
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by GigsController#create as HTML
+  Parameters: {"gig"=>{"title"=>"We think this will work", "user_id"=>"1"}, "date"=>{"month"=>"3", "day"=>"15", "year"=>"2013"}}
+3
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "gigs" ("address", "city", "contact_email", "contact_name", "contact_phone", "created_at", "day", "month", "title", "total_budget", "updated_at", "user_id", "venue", "year", "zip") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["address", nil], ["city", nil], ["contact_email", nil], ["contact_name", nil], ["contact_phone", nil], ["created_at", Fri, 15 Mar 2013 23:53:45 UTC +00:00], ["day", 15], ["month", 3], ["title", "We think this will work"], ["total_budget", nil], ["updated_at", Fri, 15 Mar 2013 23:53:45 UTC +00:00], ["user_id", 1], ["venue", nil], ["year", 2013], ["zip", nil]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/gigs/1
+Completed 302 Found in 20ms (ActiveRecord: 0.9ms)
+  [1m[36mGig Load (0.5ms)[0m  [1mSELECT "gigs".* FROM "gigs" WHERE "gigs"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mGig Load (0.5ms)[0m  SELECT "gigs".* FROM "gigs" WHERE "gigs"."user_id" = 1
+  [1m[36mGig Load (0.1ms)[0m  [1mSELECT "gigs".* FROM "gigs" WHERE "gigs"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.5ms)[0m  rollback transaction
+  [1m[36mGig Load (0.5ms)[0m  [1mSELECT "gigs".* FROM "gigs" WHERE "gigs"."user_id" = 1[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.5ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (2.3ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" = 'user1@example.com' LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."confirmation_token" = 'jriqUqN3izpYvzCypKm9' LIMIT 1
+Binary data inserted for `string` type on column `encrypted_password`
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "users" ("confirmation_sent_at", "confirmation_token", "confirmed_at", "created_at", "current_sign_in_at", "current_sign_in_ip", "email", "encrypted_password", "last_sign_in_at", "last_sign_in_ip", "remember_created_at", "reset_password_sent_at", "reset_password_token", "sign_in_count", "unconfirmed_email", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["confirmation_sent_at", Fri, 15 Mar 2013 23:57:30 UTC +00:00], ["confirmation_token", "jriqUqN3izpYvzCypKm9"], ["confirmed_at", nil], ["created_at", Fri, 15 Mar 2013 23:57:30 UTC +00:00], ["current_sign_in_at", nil], ["current_sign_in_ip", nil], ["email", "user1@example.com"], ["encrypted_password", "$2a$04$TKlZcOeoUXkc8hRykIkt.eFiX7rlAu1DBW/kWEY5Z5P8.rC4Auoj6"], ["last_sign_in_at", nil], ["last_sign_in_ip", nil], ["remember_created_at", nil], ["reset_password_sent_at", nil], ["reset_password_token", nil], ["sign_in_count", 0], ["unconfirmed_email", nil], ["updated_at", Fri, 15 Mar 2013 23:57:30 UTC +00:00]]
+  Rendered /home/calico/.rvm/gems/ruby-1.9.3-p374/gems/devise-2.2.2/app/views/devise/mailer/confirmation_instructions.html.erb (4.4ms)
+
+Sent mail to user1@example.com (53ms)
+Date: Fri, 15 Mar 2013 16:57:30 -0700
+From: please-change-me-at-config-initializers-devise@example.com
+Reply-To: please-change-me-at-config-initializers-devise@example.com
+To: user1@example.com
+Message-ID: <5143b56ac0de1_16a943d1810816f7@homie.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Welcome user1@example.com!</p>
+
+<p>You can confirm your account email through the link below:</p>
+
+<p><a href="http://localhost:3000/users/confirmation?confirmation_token=jriqUqN3izpYvzCypKm9">Confirm my account</a></p>
+
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  UPDATE "users" SET "confirmation_token" = NULL, "confirmed_at" = '2013-03-15 23:57:30.799747', "updated_at" = '2013-03-15 23:57:30.800509' WHERE "users"."id" = 1
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by GigsController#create as HTML
+  Parameters: {"gig"=>{"title"=>"We think this will work", "user_id"=>"1"}, "date"=>{"month"=>"3", "day"=>"15", "year"=>"2013"}}
+3
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "gigs" ("address", "city", "contact_email", "contact_name", "contact_phone", "created_at", "day", "month", "title", "total_budget", "updated_at", "user_id", "venue", "year", "zip") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["address", nil], ["city", nil], ["contact_email", nil], ["contact_name", nil], ["contact_phone", nil], ["created_at", Fri, 15 Mar 2013 23:57:30 UTC +00:00], ["day", 15], ["month", 3], ["title", "We think this will work"], ["total_budget", nil], ["updated_at", Fri, 15 Mar 2013 23:57:30 UTC +00:00], ["user_id", 1], ["venue", nil], ["year", 2013], ["zip", nil]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/gigs/1
+Completed 302 Found in 20ms (ActiveRecord: 0.9ms)
+  [1m[36mGig Load (0.2ms)[0m  [1mSELECT "gigs".* FROM "gigs" WHERE "gigs"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.3ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.5ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (2.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" = 'user1@example.com' LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."confirmation_token" = 'Q87cUvsArasWyU5WB6b4' LIMIT 1
+Binary data inserted for `string` type on column `encrypted_password`
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "users" ("confirmation_sent_at", "confirmation_token", "confirmed_at", "created_at", "current_sign_in_at", "current_sign_in_ip", "email", "encrypted_password", "last_sign_in_at", "last_sign_in_ip", "remember_created_at", "reset_password_sent_at", "reset_password_token", "sign_in_count", "unconfirmed_email", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["confirmation_sent_at", Fri, 15 Mar 2013 23:57:55 UTC +00:00], ["confirmation_token", "Q87cUvsArasWyU5WB6b4"], ["confirmed_at", nil], ["created_at", Fri, 15 Mar 2013 23:57:55 UTC +00:00], ["current_sign_in_at", nil], ["current_sign_in_ip", nil], ["email", "user1@example.com"], ["encrypted_password", "$2a$04$6pIFOwUZavDXty3uy4.H7.D6.JVc5hn7l8h2E8q5oXxs7Dvyl0jeG"], ["last_sign_in_at", nil], ["last_sign_in_ip", nil], ["remember_created_at", nil], ["reset_password_sent_at", nil], ["reset_password_token", nil], ["sign_in_count", 0], ["unconfirmed_email", nil], ["updated_at", Fri, 15 Mar 2013 23:57:55 UTC +00:00]]
+  Rendered /home/calico/.rvm/gems/ruby-1.9.3-p374/gems/devise-2.2.2/app/views/devise/mailer/confirmation_instructions.html.erb (4.4ms)
+
+Sent mail to user1@example.com (53ms)
+Date: Fri, 15 Mar 2013 16:57:55 -0700
+From: please-change-me-at-config-initializers-devise@example.com
+Reply-To: please-change-me-at-config-initializers-devise@example.com
+To: user1@example.com
+Message-ID: <5143b583c1327_16b64fe08041467e@homie.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Welcome user1@example.com!</p>
+
+<p>You can confirm your account email through the link below:</p>
+
+<p><a href="http://localhost:3000/users/confirmation?confirmation_token=Q87cUvsArasWyU5WB6b4">Confirm my account</a></p>
+
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  UPDATE "users" SET "confirmation_token" = NULL, "confirmed_at" = '2013-03-15 23:57:55.800954', "updated_at" = '2013-03-15 23:57:55.801710' WHERE "users"."id" = 1
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by GigsController#create as HTML
+  Parameters: {"gig"=>{"title"=>"We think this will work", "user_id"=>"1"}, "date"=>{"month"=>"3", "day"=>"15", "year"=>"2013"}}
+3
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "gigs" ("address", "city", "contact_email", "contact_name", "contact_phone", "created_at", "day", "month", "title", "total_budget", "updated_at", "user_id", "venue", "year", "zip") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["address", nil], ["city", nil], ["contact_email", nil], ["contact_name", nil], ["contact_phone", nil], ["created_at", Fri, 15 Mar 2013 23:57:55 UTC +00:00], ["day", 15], ["month", 3], ["title", "We think this will work"], ["total_budget", nil], ["updated_at", Fri, 15 Mar 2013 23:57:55 UTC +00:00], ["user_id", 1], ["venue", nil], ["year", 2013], ["zip", nil]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/gigs/1
+Completed 302 Found in 20ms (ActiveRecord: 0.9ms)
+  [1m[36mGig Load (0.2ms)[0m  [1mSELECT "gigs".* FROM "gigs" WHERE "gigs"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.2ms)[0m  rollback transaction

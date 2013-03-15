@@ -4,12 +4,14 @@ class GigsController < ApplicationController
     if current_user
 		  @gigs = Gig.where(:user_id => current_user.id)
     else
-      redirect_to "/users/sign_in"
+    	flash.keep
+      redirect_to new_user_session_path
     end
 	end
 
 	def new
 		@gig = Gig.new
+		@user_id = current_user.id
 	end
 
 	def create
@@ -17,6 +19,7 @@ class GigsController < ApplicationController
 		@gig.month = params["date"]["month"].to_i
 		@gig.day = params["date"]["day"].to_i
 		@gig.year = params["date"]["year"].to_i
+		logger.info @gig.month
 
 		if @gig.save
 			flash[:notice] = "Gig saved!"

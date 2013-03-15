@@ -16526,3 +16526,898 @@ Served asset /application.css - 304 Not Modified (0ms)
 
 Started GET "/assets/giggerator_logo_transparent.png" for 127.0.0.1 at 2013-03-13 16:26:29 -0700
 Served asset /giggerator_logo_transparent.png - 304 Not Modified (0ms)
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2013-03-15 15:57:36 -0700
+Processing by GigsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mGig Load (0.2ms)[0m  SELECT "gigs".* FROM "gigs" WHERE "gigs"."user_id" = 1
+  Rendered gigs/index.html.erb within layouts/application (21.6ms)
+Completed 200 OK in 193ms (Views: 72.1ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-15 15:57:36 -0700
+Served asset /application.css - 304 Not Modified (10ms)
+
+
+Started GET "/assets/gigs.css?body=1" for 127.0.0.1 at 2013-03-15 15:57:36 -0700
+Served asset /gigs.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-15 15:57:36 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-15 15:57:36 -0700
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/gigs.js?body=1" for 127.0.0.1 at 2013-03-15 15:57:36 -0700
+Served asset /gigs.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-15 15:57:36 -0700
+Served asset /application.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/ampgrillbackground.gif" for 127.0.0.1 at 2013-03-15 15:57:37 -0700
+Served asset /ampgrillbackground.gif - 304 Not Modified (1ms)
+
+
+Started GET "/assets/giggerator_logo_transparent.png" for 127.0.0.1 at 2013-03-15 15:57:37 -0700
+Served asset /giggerator_logo_transparent.png - 304 Not Modified (1ms)
+
+
+Started GET "/gigs/new" for 127.0.0.1 at 2013-03-15 15:57:40 -0700
+Processing by GigsController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  Rendered gigs/_form.html.erb (15.7ms)
+  Rendered gigs/new.html.erb within layouts/application (21.9ms)
+Completed 200 OK in 31ms (Views: 28.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-15 15:57:40 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/gigs.css?body=1" for 127.0.0.1 at 2013-03-15 15:57:40 -0700
+Served asset /gigs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-15 15:57:40 -0700
+Served asset /jquery.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/gigs.js?body=1" for 127.0.0.1 at 2013-03-15 15:57:40 -0700
+Served asset /gigs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-15 15:57:40 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-15 15:57:40 -0700
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/giggerator_logo_transparent.png" for 127.0.0.1 at 2013-03-15 15:57:40 -0700
+Served asset /giggerator_logo_transparent.png - 304 Not Modified (0ms)
+
+
+Started GET "/gigs/new" for 127.0.0.1 at 2013-03-15 15:58:23 -0700
+Processing by GigsController#new as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  Rendered gigs/_form.html.erb (9.8ms)
+  Rendered gigs/new.html.erb within layouts/application (10.5ms)
+Completed 200 OK in 19ms (Views: 17.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-15 15:58:23 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-15 15:58:23 -0700
+Served asset /application.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/gigs.css?body=1" for 127.0.0.1 at 2013-03-15 15:58:23 -0700
+Served asset /gigs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/gigs.js?body=1" for 127.0.0.1 at 2013-03-15 15:58:23 -0700
+Served asset /gigs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-15 15:58:23 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-15 15:58:23 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/giggerator_logo_transparent.png" for 127.0.0.1 at 2013-03-15 15:58:23 -0700
+Served asset /giggerator_logo_transparent.png - 304 Not Modified (0ms)
+
+
+Started POST "/gigs" for 127.0.0.1 at 2013-03-15 15:59:24 -0700
+Processing by GigsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"vYs5ZjX7b9pUh2VdA6I98jPisXuQQOV6lMJ6fMAoZzg=", "gig"=>{"title"=>"ok, this should really have a hidden tag", "contact_name"=>"", "contact_phone"=>"", "contact_email"=>"", "venue"=>"", "city"=>"", "address"=>"", "zip"=>"", "total_budget"=>""}, "date"=>{"month"=>"3", "day"=>"15", "year"=>"2013"}, "user_id"=>"1", "commit"=>"Save Gig"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (3.9ms)[0m  INSERT INTO "gigs" ("address", "city", "contact_email", "contact_name", "contact_phone", "created_at", "day", "month", "title", "total_budget", "updated_at", "user_id", "venue", "year", "zip") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["address", ""], ["city", ""], ["contact_email", ""], ["contact_name", ""], ["contact_phone", ""], ["created_at", Fri, 15 Mar 2013 22:59:24 UTC +00:00], ["day", 15], ["month", 3], ["title", "ok, this should really have a hidden tag"], ["total_budget", nil], ["updated_at", Fri, 15 Mar 2013 22:59:24 UTC +00:00], ["user_id", nil], ["venue", ""], ["year", 2013], ["zip", nil]]
+  [1m[36m (262.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/gigs/41
+Completed 302 Found in 271ms (ActiveRecord: 265.9ms)
+
+
+Started GET "/gigs/41" for 127.0.0.1 at 2013-03-15 15:59:24 -0700
+Processing by GigsController#show as HTML
+  Parameters: {"id"=>"41"}
+  [1m[35mGig Load (0.2ms)[0m  SELECT "gigs".* FROM "gigs" WHERE "gigs"."id" = ? LIMIT 1  [["id", "41"]]
+  Rendered gigs/show.html.erb within layouts/application (1.1ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Completed 200 OK in 10ms (Views: 8.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-15 15:59:25 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/gigs.js?body=1" for 127.0.0.1 at 2013-03-15 15:59:25 -0700
+Served asset /gigs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-15 15:59:25 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-15 15:59:25 -0700
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/gigs.css?body=1" for 127.0.0.1 at 2013-03-15 15:59:25 -0700
+Served asset /gigs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-15 15:59:25 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/giggerator_logo_transparent.png" for 127.0.0.1 at 2013-03-15 15:59:25 -0700
+Served asset /giggerator_logo_transparent.png - 304 Not Modified (0ms)
+
+
+Started GET "/gigs/new" for 127.0.0.1 at 2013-03-15 16:01:11 -0700
+Processing by GigsController#new as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  Rendered gigs/_form.html.erb (66.2ms)
+  Rendered gigs/new.html.erb within layouts/application (66.8ms)
+Completed 500 Internal Server Error in 70ms
+
+ActionView::Template::Error (undefined method `hidden_field_tag' for #<ActionView::Helpers::FormBuilder:0xaad0b24>):
+    61:   <%= f.text_field :total_budget %>
+    62: </p>
+    63: 
+    64: <%= f.hidden_field_tag 'user_id', @user_id %>
+    65: 
+    66: <%= f.submit "Save Gig" %>
+    67: 
+  app/views/gigs/_form.html.erb:64:in `block in _app_views_gigs__form_html_erb___468611648_89530270'
+  app/views/gigs/_form.html.erb:1:in `_app_views_gigs__form_html_erb___468611648_89530270'
+  app/views/gigs/new.html.erb:3:in `_app_views_gigs_new_html_erb__891890056_89191350'
+
+
+  Rendered /home/calico/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+  Rendered /home/calico/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /home/calico/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (9.3ms)
+
+
+Started GET "/gigs/new" for 127.0.0.1 at 2013-03-15 16:03:09 -0700
+Processing by GigsController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  Rendered gigs/_form.html.erb (9.6ms)
+  Rendered gigs/new.html.erb within layouts/application (10.3ms)
+Completed 500 Internal Server Error in 15ms
+
+ActionView::Template::Error (undefined method `merge' for 1:Fixnum):
+    61:   <%= f.text_field :total_budget %>
+    62: </p>
+    63: 
+    64: <%= f.hidden_field :user_id, @user_id %>
+    65: 
+    66: <%= f.submit "Save Gig" %>
+    67: 
+  app/views/gigs/_form.html.erb:64:in `block in _app_views_gigs__form_html_erb___468611648_89029560'
+  app/views/gigs/_form.html.erb:1:in `_app_views_gigs__form_html_erb___468611648_89029560'
+  app/views/gigs/new.html.erb:3:in `_app_views_gigs_new_html_erb__891890056_89191350'
+
+
+  Rendered /home/calico/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+  Rendered /home/calico/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /home/calico/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (8.9ms)
+
+
+Started GET "/gigs/new" for 127.0.0.1 at 2013-03-15 16:03:11 -0700
+Processing by GigsController#new as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  Rendered gigs/_form.html.erb (8.8ms)
+  Rendered gigs/new.html.erb within layouts/application (9.4ms)
+Completed 500 Internal Server Error in 13ms
+
+ActionView::Template::Error (undefined method `merge' for 1:Fixnum):
+    61:   <%= f.text_field :total_budget %>
+    62: </p>
+    63: 
+    64: <%= f.hidden_field :user_id, @user_id %>
+    65: 
+    66: <%= f.submit "Save Gig" %>
+    67: 
+  app/views/gigs/_form.html.erb:64:in `block in _app_views_gigs__form_html_erb___468611648_89029560'
+  app/views/gigs/_form.html.erb:1:in `_app_views_gigs__form_html_erb___468611648_89029560'
+  app/views/gigs/new.html.erb:3:in `_app_views_gigs_new_html_erb__891890056_89191350'
+
+
+  Rendered /home/calico/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.6ms)
+  Rendered /home/calico/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (25.2ms)
+  Rendered /home/calico/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (33.6ms)
+
+
+Started GET "/gigs/new" for 127.0.0.1 at 2013-03-15 16:04:01 -0700
+Processing by GigsController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  Rendered gigs/_form.html.erb (8.9ms)
+  Rendered gigs/new.html.erb within layouts/application (9.7ms)
+Completed 500 Internal Server Error in 14ms
+
+ActionView::Template::Error (undefined method `merge' for "@user_id":String):
+    61:   <%= f.text_field :total_budget %>
+    62: </p>
+    63: 
+    64: <%= f.hidden_field :user_id, '@user_id' %>
+    65: 
+    66: <%= f.submit "Save Gig" %>
+    67: 
+  app/views/gigs/_form.html.erb:64:in `block in _app_views_gigs__form_html_erb___468611648_88592080'
+  app/views/gigs/_form.html.erb:1:in `_app_views_gigs__form_html_erb___468611648_88592080'
+  app/views/gigs/new.html.erb:3:in `_app_views_gigs_new_html_erb__891890056_89191350'
+
+
+  Rendered /home/calico/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+  Rendered /home/calico/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /home/calico/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (9.1ms)
+
+
+Started GET "/gigs/new" for 127.0.0.1 at 2013-03-15 16:04:58 -0700
+Processing by GigsController#new as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  Rendered gigs/_form.html.erb (7.7ms)
+  Rendered gigs/new.html.erb within layouts/application (8.5ms)
+Completed 200 OK in 20ms (Views: 16.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-15 16:04:58 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/gigs.css?body=1" for 127.0.0.1 at 2013-03-15 16:04:58 -0700
+Served asset /gigs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-15 16:04:58 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-15 16:04:58 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/gigs.js?body=1" for 127.0.0.1 at 2013-03-15 16:04:58 -0700
+Served asset /gigs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-15 16:04:58 -0700
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/giggerator_logo_transparent.png" for 127.0.0.1 at 2013-03-15 16:04:58 -0700
+Served asset /giggerator_logo_transparent.png - 304 Not Modified (0ms)
+
+
+Started POST "/gigs" for 127.0.0.1 at 2013-03-15 16:05:24 -0700
+Processing by GigsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"vYs5ZjX7b9pUh2VdA6I98jPisXuQQOV6lMJ6fMAoZzg=", "gig"=>{"title"=>"THis is the real one.", "contact_name"=>"you guys, hidden field. it's there.", "contact_phone"=>"", "contact_email"=>"", "venue"=>"", "city"=>"", "address"=>"", "zip"=>"", "total_budget"=>"", "user_id"=>"1"}, "date"=>{"month"=>"3", "day"=>"15", "year"=>"2013"}, "commit"=>"Save Gig"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "gigs" ("address", "city", "contact_email", "contact_name", "contact_phone", "created_at", "day", "month", "title", "total_budget", "updated_at", "user_id", "venue", "year", "zip") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["address", ""], ["city", ""], ["contact_email", ""], ["contact_name", "you guys, hidden field. it's there."], ["contact_phone", ""], ["created_at", Fri, 15 Mar 2013 23:05:24 UTC +00:00], ["day", 15], ["month", 3], ["title", "THis is the real one."], ["total_budget", nil], ["updated_at", Fri, 15 Mar 2013 23:05:24 UTC +00:00], ["user_id", 1], ["venue", ""], ["year", 2013], ["zip", nil]]
+  [1m[36m (260.3ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/gigs/42
+Completed 302 Found in 264ms (ActiveRecord: 261.0ms)
+
+
+Started GET "/gigs/42" for 127.0.0.1 at 2013-03-15 16:05:25 -0700
+Processing by GigsController#show as HTML
+  Parameters: {"id"=>"42"}
+  [1m[35mGig Load (0.1ms)[0m  SELECT "gigs".* FROM "gigs" WHERE "gigs"."id" = ? LIMIT 1  [["id", "42"]]
+  Rendered gigs/show.html.erb within layouts/application (0.6ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Completed 200 OK in 9ms (Views: 7.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-15 16:05:25 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/gigs.css?body=1" for 127.0.0.1 at 2013-03-15 16:05:25 -0700
+Served asset /gigs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-15 16:05:25 -0700
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-15 16:05:25 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/gigs.js?body=1" for 127.0.0.1 at 2013-03-15 16:05:25 -0700
+Served asset /gigs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-15 16:05:25 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/giggerator_logo_transparent.png" for 127.0.0.1 at 2013-03-15 16:05:25 -0700
+Served asset /giggerator_logo_transparent.png - 304 Not Modified (0ms)
+
+
+Started GET "/gigs/new" for 127.0.0.1 at 2013-03-15 16:17:17 -0700
+Processing by GigsController#new as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  Rendered gigs/_form.html.erb (7.1ms)
+  Rendered gigs/new.html.erb within layouts/application (7.8ms)
+Completed 200 OK in 15ms (Views: 13.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-15 16:17:17 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/gigs.css?body=1" for 127.0.0.1 at 2013-03-15 16:17:17 -0700
+Served asset /gigs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-15 16:17:17 -0700
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-15 16:17:17 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/gigs.js?body=1" for 127.0.0.1 at 2013-03-15 16:17:17 -0700
+Served asset /gigs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-15 16:17:17 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/giggerator_logo_transparent.png" for 127.0.0.1 at 2013-03-15 16:17:17 -0700
+Served asset /giggerator_logo_transparent.png - 304 Not Modified (0ms)
+
+
+Started POST "/gigs" for 127.0.0.1 at 2013-03-15 16:19:29 -0700
+Processing by GigsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"vYs5ZjX7b9pUh2VdA6I98jPisXuQQOV6lMJ6fMAoZzg=", "gig"=>{"title"=>"the date should be inside", "contact_name"=>"", "contact_phone"=>"", "contact_email"=>"", "venue"=>"", "city"=>"", "address"=>"", "zip"=>"", "total_budget"=>"", "user_id"=>"1"}, "date"=>{"month"=>"3", "day"=>"15", "year"=>"2013"}, "commit"=>"Save Gig"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "gigs" ("address", "city", "contact_email", "contact_name", "contact_phone", "created_at", "day", "month", "title", "total_budget", "updated_at", "user_id", "venue", "year", "zip") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["address", ""], ["city", ""], ["contact_email", ""], ["contact_name", ""], ["contact_phone", ""], ["created_at", Fri, 15 Mar 2013 23:19:29 UTC +00:00], ["day", 15], ["month", 3], ["title", "the date should be inside"], ["total_budget", nil], ["updated_at", Fri, 15 Mar 2013 23:19:29 UTC +00:00], ["user_id", 1], ["venue", ""], ["year", 2013], ["zip", nil]]
+  [1m[36m (251.5ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/gigs/43
+Completed 302 Found in 255ms (ActiveRecord: 252.2ms)
+
+
+Started GET "/gigs/43" for 127.0.0.1 at 2013-03-15 16:19:30 -0700
+Processing by GigsController#show as HTML
+  Parameters: {"id"=>"43"}
+  [1m[35mGig Load (0.1ms)[0m  SELECT "gigs".* FROM "gigs" WHERE "gigs"."id" = ? LIMIT 1  [["id", "43"]]
+  Rendered gigs/show.html.erb within layouts/application (0.6ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Completed 200 OK in 43ms (Views: 41.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-15 16:19:30 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-15 16:19:30 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-15 16:19:30 -0700
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/gigs.js?body=1" for 127.0.0.1 at 2013-03-15 16:19:30 -0700
+Served asset /gigs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-15 16:19:30 -0700
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/gigs.css?body=1" for 127.0.0.1 at 2013-03-15 16:19:30 -0700
+Served asset /gigs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/giggerator_logo_transparent.png" for 127.0.0.1 at 2013-03-15 16:19:30 -0700
+Served asset /giggerator_logo_transparent.png - 304 Not Modified (0ms)
+
+
+Started GET "/gigs/new" for 127.0.0.1 at 2013-03-15 16:29:07 -0700
+Processing by GigsController#new as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+ERROR: compiling _app_views_gigs__form_html_erb___468611648_88320700 RAISED /home/calico/codefellows/Giggerator/app/views/gigs/_form.html.erb:68: syntax error, unexpected keyword_end, expecting ')'
+'); end 
+       ^
+/home/calico/codefellows/Giggerator/app/views/gigs/_form.html.erb:70: syntax error, unexpected keyword_ensure, expecting ')'
+/home/calico/codefellows/Giggerator/app/views/gigs/_form.html.erb:72: syntax error, unexpected keyword_end, expecting ')'
+Function body:           def _app_views_gigs__form_html_erb___468611648_88320700(local_assigns, output_buffer)
+            _old_virtual_path, @virtual_path = @virtual_path, "gigs/_form";_old_output_buffer = @output_buffer;form = local_assigns[:form];;@output_buffer = output_buffer || ActionView::OutputBuffer.new;@output_buffer.append=  form_for(@gig) do |f| @output_buffer.safe_concat('
+');@output_buffer.append= ( f.error_messages );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('
+<p>
+  ');@output_buffer.append= ( f.label :title );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('  ');@output_buffer.append= ( f.text_field :title );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('</p>
+
+<p>
+  ');@output_buffer.append= ( f.label :contact_name, "Contact Name" );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('  ');@output_buffer.append= ( f.text_field :contact_name );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('</p>
+
+<p>
+  ');@output_buffer.append= ( f.label :contact_phone, "Contact Phone" );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('  ');@output_buffer.append= ( f.text_field :contact_phone );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('</p>
+
+<p>
+  ');@output_buffer.append= ( f.label :contact_email, "Contact Email" );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('  ');@output_buffer.append= ( f.text_field :contact_email );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('</p>
+
+<p>
+  ');@output_buffer.append= ( f.label :month );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('  ');@output_buffer.append= ( f.select_month(Time.now, name: "gig[month]" );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('</p>
+
+<p>
+  ');@output_buffer.append= ( f.label :day );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('  ');@output_buffer.append= ( f.select_day(Time.now) );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('</p>
+
+<p>
+  ');@output_buffer.append= ( f.label :year );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('  ');@output_buffer.append= ( f.select_year(Time.now) );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('</p>
+
+<p>
+  ');@output_buffer.append= ( f.label :venue );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('  ');@output_buffer.append= ( f.text_field :venue );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('</p>
+
+<p>
+  ');@output_buffer.append= ( f.label :city );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('  ');@output_buffer.append= ( f.text_field :city );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('</p>
+
+<p>
+  ');@output_buffer.append= ( f.label :address );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('  ');@output_buffer.append= ( f.text_field :address );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('</p>
+
+<p>
+  ');@output_buffer.append= ( f.label :zip );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('  ');@output_buffer.append= ( f.text_field :zip );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('</p>
+
+<p>
+  ');@output_buffer.append= ( f.label :total_budget, "Total Budget" );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('  ');@output_buffer.append= ( f.text_field :total_budget );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('</p>
+
+');@output_buffer.append= ( f.hidden_field :user_id, :value => @user_id );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('
+');@output_buffer.append= ( f.submit "Save Gig" );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('
+'); end 
+@output_buffer.to_s
+          ensure
+            @virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+
+Backtrace: /home/calico/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.12/lib/action_view/template.rb:297:in `module_eval'
+/home/calico/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.12/lib/action_view/template.rb:297:in `compile'
+/home/calico/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.12/lib/action_view/template.rb:244:in `block in compile!'
+<internal:prelude>:10:in `synchronize'
+/home/calico/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.12/lib/action_view/template.rb:232:in `compile!'
+/home/calico/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.12/lib/action_view/template.rb:144:in `block in render'
+/home/calico/.rvm/gems/ruby-1.9.3-p374/gems/activesupport-3.2.12/lib/active_support/notifications.rb:125:in `instrument'
+/home/calico/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.12/lib/action_view/template.rb:143:in `render'
+/home/calico/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.12/lib/action_view/renderer/partial_renderer.rb:265:in `render_partial'
+/home/calico/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.12/lib/action_view/renderer/partial_renderer.rb:238:in `block in render'
+/home/calico/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.12/lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+/home/calico/.rvm/gems/ruby-1.9.3-p374/gems/activesupport-3.2.12/lib/active_support/notifications.rb:123:in `block in instrument'
+/home/calico/.rvm/gems/ruby-1.9.3-p374/gems/activesupport-3.2.12/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/home/calico/.rvm/gems/ruby-1.9.3-p374/gems/activesupport-3.2.12/lib/active_support/notifications.rb:123:in `instrument'
+/home/calico/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.12/lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+/home/calico/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.12/lib/action_view/renderer/partial_renderer.rb:237:in `render'
+/home/calico/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.12/lib/action_view/renderer/renderer.rb:41:in `render_partial'
+/home/calico/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.12/lib/action_view/helpers/rendering_helper.rb:27:in `render'
+/home/calico/codefellows/Giggerator/app/views/gigs/new.html.erb:3:in `_app_views_gigs_new_html_erb__891890056_89191350'
+/home/calico/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.12/lib/action_view/template.rb:145:in `block in render'
+/home/calico/.rvm/gems/ruby-1.9.3-p374/gems/activesupport-3.2.12/lib/active_support/notifications.rb:125:in `instrument'
+/home/calico/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.12/lib/action_view/template.rb:143:in `render'
+/home/calico/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.12/lib/action_view/renderer/template_renderer.rb:47:in `block (2 levels) in render_template'
+/home/calico/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.12/lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+/home/calico/.rvm/gems/ruby-1.9.3-p374/gems/activesupport-3.2.12/lib/active_support/notifications.rb:123:in `block in instrument'
+/home/calico/.rvm/gems/ruby-1.9.3-p374/gems/activesupport-3.2.12/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/home/calico/.rvm/gems/ruby-1.9.3-p374/gems/activesupport-3.2.12/lib/active_support/notifications.rb:123:in `instrument'
+/home/calico/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.12/lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+/home/calico/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.12/lib/action_view/renderer/template_renderer.rb:46:in `block in render_template'
+/home/calico/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.12/lib/action_view/renderer/template_renderer.rb:54:in `render_with_layout'
+/home/calico/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.12/lib/action_view/renderer/template_renderer.rb:45:in `render_template'
+/home/calico/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.12/lib/action_view/renderer/template_renderer.rb:18:in `render'
+/home/calico/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.12/lib/action_view/renderer/renderer.rb:36:in `render_template'
+/home/calico/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.12/lib/action_view/renderer/renderer.rb:17:in `render'
+/home/calico/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.12/lib/abstract_controller/rendering.rb:110:in `_render_template'
+/home/calico/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.12/lib/action_controller/metal/streaming.rb:225:in `_render_template'
+/home/calico/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.12/lib/abstract_controller/rendering.rb:103:in `render_to_body'
+/home/calico/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.12/lib/action_controller/metal/renderers.rb:28:in `render_to_body'
+/home/calico/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.12/lib/action_controller/metal/compatibility.rb:50:in `render_to_body'
+/home/calico/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.12/lib/abstract_controller/rendering.rb:88:in `render'
+/home/calico/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.12/lib/action_controller/metal/rendering.rb:16:in `render'
+/home/calico/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.12/lib/action_controller/metal/instrumentation.rb:40:in `block (2 levels) in render'
+/home/calico/.rvm/gems/ruby-1.9.3-p374/gems/activesupport-3.2.12/lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
+/home/calico/.rvm/rubies/ruby-1.9.3-p374/lib/ruby/1.9.1/benchmark.rb:295:in `realtime'
+/home/calico/.rvm/gems/ruby-1.9.3-p374/gems/activesupport-3.2.12/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+/home/calico/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.12/lib/action_controller/metal/instrumentation.rb:40:in `block in render'
+/home/calico/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.12/lib/action_controller/metal/instrumentation.rb:83:in `cleanup_view_runtime'
+/home/calico/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.12/lib/active_record/railties/controller_runtime.rb:24:in `cleanup_view_runtime'
+/home/calico/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.12/lib/action_controller/metal/instrumentation.rb:39:in `render'
+/home/calico/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.12/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+/home/calico/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.12/lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+/home/calico/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.12/lib/abstract_controller/base.rb:167:in `process_action'
+/home/calico/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.12/lib/action_controller/metal/rendering.rb:10:in `process_action'
+/home/calico/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.12/lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+/home/calico/.rvm/gems/ruby-1.9.3-p374/gems/activesupport-3.2.12/lib/active_support/callbacks.rb:414:in `_run__278686707__process_action__426050558__callbacks'
+/home/calico/.rvm/gems/ruby-1.9.3-p374/gems/activesupport-3.2.12/lib/active_support/callbacks.rb:405:in `__run_callback'
+/home/calico/.rvm/gems/ruby-1.9.3-p374/gems/activesupport-3.2.12/lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'
+/home/calico/.rvm/gems/ruby-1.9.3-p374/gems/activesupport-3.2.12/lib/active_support/callbacks.rb:81:in `run_callbacks'
+/home/calico/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.12/lib/abstract_controller/callbacks.rb:17:in `process_action'
+/home/calico/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.12/lib/action_controller/metal/rescue.rb:29:in `process_action'
+/home/calico/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.12/lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+/home/calico/.rvm/gems/ruby-1.9.3-p374/gems/activesupport-3.2.12/lib/active_support/notifications.rb:123:in `block in instrument'
+/home/calico/.rvm/gems/ruby-1.9.3-p374/gems/activesupport-3.2.12/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/home/calico/.rvm/gems/ruby-1.9.3-p374/gems/activesupport-3.2.12/lib/active_support/notifications.rb:123:in `instrument'
+/home/calico/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.12/lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+/home/calico/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.12/lib/action_controller/metal/params_wrapper.rb:207:in `process_action'
+/home/calico/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.12/lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+/home/calico/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.12/lib/abstract_controller/base.rb:121:in `process'
+/home/calico/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.12/lib/abstract_controller/rendering.rb:45:in `process'
+/home/calico/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.12/lib/action_controller/metal.rb:203:in `dispatch'
+/home/calico/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.12/lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+/home/calico/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.12/lib/action_controller/metal.rb:246:in `block in action'
+/home/calico/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.12/lib/action_dispatch/routing/route_set.rb:73:in `call'
+/home/calico/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.12/lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+/home/calico/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.12/lib/action_dispatch/routing/route_set.rb:36:in `call'
+/home/calico/.rvm/gems/ruby-1.9.3-p374/gems/journey-1.0.4/lib/journey/router.rb:68:in `block in call'
+/home/calico/.rvm/gems/ruby-1.9.3-p374/gems/journey-1.0.4/lib/journey/router.rb:56:in `each'
+/home/calico/.rvm/gems/ruby-1.9.3-p374/gems/journey-1.0.4/lib/journey/router.rb:56:in `call'
+/home/calico/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.12/lib/action_dispatch/routing/route_set.rb:601:in `call'
+/home/calico/.rvm/gems/ruby-1.9.3-p374/gems/warden-1.2.1/lib/warden/manager.rb:35:in `block in call'
+/home/calico/.rvm/gems/ruby-1.9.3-p374/gems/warden-1.2.1/lib/warden/manager.rb:34:in `catch'
+/home/calico/.rvm/gems/ruby-1.9.3-p374/gems/warden-1.2.1/lib/warden/manager.rb:34:in `call'
+/home/calico/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.12/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+/home/calico/.rvm/gems/ruby-1.9.3-p374/gems/rack-1.4.5/lib/rack/etag.rb:23:in `call'
+/home/calico/.rvm/gems/ruby-1.9.3-p374/gems/rack-1.4.5/lib/rack/conditionalget.rb:25:in `call'
+/home/calico/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.12/lib/action_dispatch/middleware/head.rb:14:in `call'
+/home/calico/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.12/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+/home/calico/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.12/lib/action_dispatch/middleware/flash.rb:242:in `call'
+/home/calico/.rvm/gems/ruby-1.9.3-p374/gems/rack-1.4.5/lib/rack/session/abstract/id.rb:210:in `context'
+/home/calico/.rvm/gems/ruby-1.9.3-p374/gems/rack-1.4.5/lib/rack/session/abstract/id.rb:205:in `call'
+/home/calico/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.12/lib/action_dispatch/middleware/cookies.rb:341:in `call'
+/home/calico/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.12/lib/active_record/query_cache.rb:64:in `call'
+/home/calico/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.12/lib/active_record/connection_adapters/abstract/connection_pool.rb:479:in `call'
+/home/calico/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.12/lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+/home/calico/.rvm/gems/ruby-1.9.3-p374/gems/activesupport-3.2.12/lib/active_support/callbacks.rb:405:in `_run__589260775__call__711515521__callbacks'
+/home/calico/.rvm/gems/ruby-1.9.3-p374/gems/activesupport-3.2.12/lib/active_support/callbacks.rb:405:in `__run_callback'
+/home/calico/.rvm/gems/ruby-1.9.3-p374/gems/activesupport-3.2.12/lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+/home/calico/.rvm/gems/ruby-1.9.3-p374/gems/activesupport-3.2.12/lib/active_support/callbacks.rb:81:in `run_callbacks'
+/home/calico/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.12/lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+/home/calico/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.12/lib/action_dispatch/middleware/reloader.rb:65:in `call'
+/home/calico/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.12/lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+/home/calico/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.12/lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+/home/calico/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.12/lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+/home/calico/.rvm/gems/ruby-1.9.3-p374/gems/railties-3.2.12/lib/rails/rack/logger.rb:32:in `call_app'
+/home/calico/.rvm/gems/ruby-1.9.3-p374/gems/railties-3.2.12/lib/rails/rack/logger.rb:16:in `block in call'
+/home/calico/.rvm/gems/ruby-1.9.3-p374/gems/activesupport-3.2.12/lib/active_support/tagged_logging.rb:22:in `tagged'
+/home/calico/.rvm/gems/ruby-1.9.3-p374/gems/railties-3.2.12/lib/rails/rack/logger.rb:16:in `call'
+/home/calico/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.12/lib/action_dispatch/middleware/request_id.rb:22:in `call'
+/home/calico/.rvm/gems/ruby-1.9.3-p374/gems/rack-1.4.5/lib/rack/methodoverride.rb:21:in `call'
+/home/calico/.rvm/gems/ruby-1.9.3-p374/gems/rack-1.4.5/lib/rack/runtime.rb:17:in `call'
+/home/calico/.rvm/gems/ruby-1.9.3-p374/gems/activesupport-3.2.12/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+/home/calico/.rvm/gems/ruby-1.9.3-p374/gems/rack-1.4.5/lib/rack/lock.rb:15:in `call'
+/home/calico/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.12/lib/action_dispatch/middleware/static.rb:62:in `call'
+/home/calico/.rvm/gems/ruby-1.9.3-p374/gems/railties-3.2.12/lib/rails/engine.rb:479:in `call'
+/home/calico/.rvm/gems/ruby-1.9.3-p374/gems/railties-3.2.12/lib/rails/application.rb:223:in `call'
+/home/calico/.rvm/gems/ruby-1.9.3-p374/gems/rack-1.4.5/lib/rack/content_length.rb:14:in `call'
+/home/calico/.rvm/gems/ruby-1.9.3-p374/gems/railties-3.2.12/lib/rails/rack/log_tailer.rb:17:in `call'
+/home/calico/.rvm/gems/ruby-1.9.3-p374/gems/rack-1.4.5/lib/rack/handler/webrick.rb:59:in `service'
+/home/calico/.rvm/rubies/ruby-1.9.3-p374/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+/home/calico/.rvm/rubies/ruby-1.9.3-p374/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+/home/calico/.rvm/rubies/ruby-1.9.3-p374/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+  Rendered gigs/_form.html.erb (1.7ms)
+  Rendered gigs/new.html.erb within layouts/application (2.3ms)
+Completed 500 Internal Server Error in 5ms
+
+ActionView::Template::Error (/home/calico/codefellows/Giggerator/app/views/gigs/_form.html.erb:68: syntax error, unexpected keyword_end, expecting ')'
+'); end 
+       ^
+/home/calico/codefellows/Giggerator/app/views/gigs/_form.html.erb:70: syntax error, unexpected keyword_ensure, expecting ')'
+/home/calico/codefellows/Giggerator/app/views/gigs/_form.html.erb:72: syntax error, unexpected keyword_end, expecting ')'):
+    65: 
+    66: <%= f.submit "Save Gig" %>
+    67: 
+    68: <% end %>
+  app/views/gigs/new.html.erb:3:in `_app_views_gigs_new_html_erb__891890056_89191350'
+
+
+  Rendered /home/calico/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+  Rendered /home/calico/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /home/calico/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (9.5ms)
+
+
+Started GET "/gigs/new" for 127.0.0.1 at 2013-03-15 16:29:25 -0700
+Processing by GigsController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  Rendered gigs/_form.html.erb (27.3ms)
+  Rendered gigs/new.html.erb within layouts/application (28.0ms)
+Completed 500 Internal Server Error in 31ms
+
+ActionView::Template::Error (undefined method `select_month' for #<ActionView::Helpers::FormBuilder:0xaa691a4>):
+    23: 
+    24: <p>
+    25:   <%= f.label :month %>
+    26:   <%= f.select_month(Time.now, name: "gig[month]") %>
+    27: </p>
+    28: 
+    29: <p>
+  app/views/gigs/_form.html.erb:26:in `block in _app_views_gigs__form_html_erb___468611648_89289260'
+  app/views/gigs/_form.html.erb:1:in `_app_views_gigs__form_html_erb___468611648_89289260'
+  app/views/gigs/new.html.erb:3:in `_app_views_gigs_new_html_erb__891890056_89191350'
+
+
+  Rendered /home/calico/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.6ms)
+  Rendered /home/calico/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /home/calico/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (9.4ms)
+
+
+Started GET "/gigs/new" for 127.0.0.1 at 2013-03-15 16:30:17 -0700
+Processing by GigsController#new as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  Rendered gigs/_form.html.erb (8.9ms)
+  Rendered gigs/new.html.erb within layouts/application (9.6ms)
+Completed 200 OK in 18ms (Views: 15.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-15 16:30:17 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/gigs.css?body=1" for 127.0.0.1 at 2013-03-15 16:30:17 -0700
+Served asset /gigs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-15 16:30:17 -0700
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-15 16:30:17 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/gigs.js?body=1" for 127.0.0.1 at 2013-03-15 16:30:17 -0700
+Served asset /gigs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-15 16:30:17 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/giggerator_logo_transparent.png" for 127.0.0.1 at 2013-03-15 16:30:18 -0700
+Served asset /giggerator_logo_transparent.png - 304 Not Modified (0ms)
+
+
+Started GET "/gigs/new" for 127.0.0.1 at 2013-03-15 16:34:45 -0700
+Processing by GigsController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  Rendered gigs/_form.html.erb (43.5ms)
+  Rendered gigs/new.html.erb within layouts/application (44.1ms)
+Completed 200 OK in 58ms (Views: 50.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-15 16:34:45 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/gigs.css?body=1" for 127.0.0.1 at 2013-03-15 16:34:45 -0700
+Served asset /gigs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-15 16:34:45 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-15 16:34:45 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-15 16:34:45 -0700
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/gigs.js?body=1" for 127.0.0.1 at 2013-03-15 16:34:45 -0700
+Served asset /gigs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/giggerator_logo_transparent.png" for 127.0.0.1 at 2013-03-15 16:34:45 -0700
+Served asset /giggerator_logo_transparent.png - 304 Not Modified (0ms)
+
+
+Started GET "/gigs/new" for 127.0.0.1 at 2013-03-15 16:35:49 -0700
+Processing by GigsController#new as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  Rendered gigs/_form.html.erb (15.1ms)
+  Rendered gigs/new.html.erb within layouts/application (15.9ms)
+Completed 500 Internal Server Error in 19ms
+
+ActionView::Template::Error (undefined local variable or method `html_options' for #<#<Class:0xa86c1bc>:0xa9d2754>):
+    23: 
+    24: <p>
+    25:   <%= f.label :month %>
+    26:   <%= select_month(Time.now, html_options => { name: "gig[month]" } ) %>
+    27: </p>
+    28: 
+    29: <p>
+  app/views/gigs/_form.html.erb:26:in `block in _app_views_gigs__form_html_erb___468611648_89028800'
+  app/views/gigs/_form.html.erb:1:in `_app_views_gigs__form_html_erb___468611648_89028800'
+  app/views/gigs/new.html.erb:3:in `_app_views_gigs_new_html_erb__891890056_89191350'
+
+
+  Rendered /home/calico/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+  Rendered /home/calico/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /home/calico/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (9.0ms)
+
+
+Started GET "/gigs/new" for 127.0.0.1 at 2013-03-15 16:36:05 -0700
+Processing by GigsController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  Rendered gigs/_form.html.erb (9.1ms)
+  Rendered gigs/new.html.erb within layouts/application (9.9ms)
+Completed 200 OK in 18ms (Views: 16.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-15 16:36:05 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/gigs.js?body=1" for 127.0.0.1 at 2013-03-15 16:36:05 -0700
+Served asset /gigs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-15 16:36:05 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/gigs.css?body=1" for 127.0.0.1 at 2013-03-15 16:36:05 -0700
+Served asset /gigs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-15 16:36:05 -0700
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-15 16:36:05 -0700
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/giggerator_logo_transparent.png" for 127.0.0.1 at 2013-03-15 16:36:05 -0700
+Served asset /giggerator_logo_transparent.png - 304 Not Modified (0ms)
+
+
+Started GET "/gigs/new" for 127.0.0.1 at 2013-03-15 16:42:00 -0700
+Processing by GigsController#new as HTML
+  [1m[35mUser Load (0.9ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  Rendered gigs/_form.html.erb (8.2ms)
+  Rendered gigs/new.html.erb within layouts/application (8.8ms)
+Completed 200 OK in 87ms (Views: 15.2ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-15 16:42:00 -0700
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/gigs.css?body=1" for 127.0.0.1 at 2013-03-15 16:42:00 -0700
+Served asset /gigs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-15 16:42:00 -0700
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-15 16:42:00 -0700
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-15 16:42:00 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/gigs.js?body=1" for 127.0.0.1 at 2013-03-15 16:42:00 -0700
+Served asset /gigs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/giggerator_logo_transparent.png" for 127.0.0.1 at 2013-03-15 16:42:01 -0700
+Served asset /giggerator_logo_transparent.png - 304 Not Modified (0ms)
+
+
+Started POST "/gigs" for 127.0.0.1 at 2013-03-15 16:42:19 -0700
+Processing by GigsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"vYs5ZjX7b9pUh2VdA6I98jPisXuQQOV6lMJ6fMAoZzg=", "gig"=>{"title"=>"We think this will work", "contact_name"=>"", "contact_phone"=>"", "contact_email"=>"", "venue"=>"", "city"=>"", "address"=>"", "zip"=>"", "total_budget"=>"", "user_id"=>"1"}, "date"=>{"month"=>"3", "day"=>"15", "year"=>"2013"}, "commit"=>"Save Gig"}
+3
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "gigs" ("address", "city", "contact_email", "contact_name", "contact_phone", "created_at", "day", "month", "title", "total_budget", "updated_at", "user_id", "venue", "year", "zip") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["address", ""], ["city", ""], ["contact_email", ""], ["contact_name", ""], ["contact_phone", ""], ["created_at", Fri, 15 Mar 2013 23:42:19 UTC +00:00], ["day", 15], ["month", 3], ["title", "We think this will work"], ["total_budget", nil], ["updated_at", Fri, 15 Mar 2013 23:42:19 UTC +00:00], ["user_id", 1], ["venue", ""], ["year", 2013], ["zip", nil]]
+  [1m[36m (271.8ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/gigs/44
+Completed 302 Found in 278ms (ActiveRecord: 272.4ms)
+
+
+Started GET "/gigs/44" for 127.0.0.1 at 2013-03-15 16:42:19 -0700
+Processing by GigsController#show as HTML
+  Parameters: {"id"=>"44"}
+  [1m[35mGig Load (0.2ms)[0m  SELECT "gigs".* FROM "gigs" WHERE "gigs"."id" = ? LIMIT 1  [["id", "44"]]
+  Rendered gigs/show.html.erb within layouts/application (0.6ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Completed 200 OK in 10ms (Views: 8.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-15 16:42:20 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-15 16:42:20 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/gigs.css?body=1" for 127.0.0.1 at 2013-03-15 16:42:20 -0700
+Served asset /gigs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/gigs.js?body=1" for 127.0.0.1 at 2013-03-15 16:42:20 -0700
+Served asset /gigs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-15 16:42:20 -0700
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-15 16:42:20 -0700
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/giggerator_logo_transparent.png" for 127.0.0.1 at 2013-03-15 16:42:20 -0700
+Served asset /giggerator_logo_transparent.png - 304 Not Modified (0ms)
