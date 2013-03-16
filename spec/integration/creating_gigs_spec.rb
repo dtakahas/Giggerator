@@ -24,20 +24,6 @@ feature "Creating gigs" do
 		page.should have_content "Gig saved!"
 	end
 
-	scenario "creating gigs while signed in" do
-		user = Factory(:user)
-		user.confirm!
-		sign_in_as!(user)
-		click_link "Create Gig"
-
-
-		#else
-		#  create gig with associated user_id using a factory
-		#  make sure we're on show and have signed-in-as
-
-
-	#end
-
 	scenario "can not create gigs without title" do
 		fill_in "Title", :with => ""
 		click_button "Save Gig"

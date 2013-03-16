@@ -8549,3 +8549,4 @@ Redirected to http://test.host/gigs/1
 Completed 302 Found in 20ms (ActiveRecord: 0.9ms)
   [1m[36mGig Load (0.2ms)[0m  [1mSELECT "gigs".* FROM "gigs" WHERE "gigs"."id" = ? LIMIT 1[0m  [["id", 1]]
   [1m[35m (0.2ms)[0m  rollback transaction
+Connecting to database specified by database.yml
