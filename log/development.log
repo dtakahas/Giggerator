@@ -17932,3 +17932,112 @@ Connecting to database specified by database.yml
   [1m[35m (1.3ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20130311212722')
   [1m[36m (1.3ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20130313195453')[0m
   [1m[35m (1.3ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20130313204652')
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2013-03-15 19:50:19 -0700
+Processing by GigsController#index as HTML
+Redirected to http://localhost:3000/users/sign_in
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2013-03-15 19:50:19 -0700
+Processing by Devise::SessionsController#new as HTML
+  Rendered /Users/Dave/.rvm/gems/ruby-1.9.3-p392@rails3/gems/devise-2.2.2/app/views/devise/shared/_links.erb (1.5ms)
+  Rendered /Users/Dave/.rvm/gems/ruby-1.9.3-p392@rails3/gems/devise-2.2.2/app/views/devise/sessions/new.html.erb within layouts/application (36.0ms)
+Completed 200 OK in 240ms (Views: 187.4ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-15 19:50:19 -0700
+Served asset /application.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/gigs.js?body=1" for 127.0.0.1 at 2013-03-15 19:50:19 -0700
+Served asset /gigs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-15 19:50:19 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-15 19:50:19 -0700
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/gigs.css?body=1" for 127.0.0.1 at 2013-03-15 19:50:19 -0700
+Served asset /gigs.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-15 19:50:19 -0700
+Served asset /application.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/ampgrillbackground.gif" for 127.0.0.1 at 2013-03-15 19:50:19 -0700
+Served asset /ampgrillbackground.gif - 304 Not Modified (8ms)
+
+
+Started GET "/assets/giggerator_logo_transparent.png" for 127.0.0.1 at 2013-03-15 19:50:19 -0700
+Served asset /giggerator_logo_transparent.png - 304 Not Modified (19ms)
+
+
+Started GET "/gigs/new" for 127.0.0.1 at 2013-03-15 19:50:22 -0700
+Processing by GigsController#new as HTML
+Completed 500 Internal Server Error in 16ms
+
+RuntimeError (Called id for nil, which would mistakenly be 4 -- if you really wanted the id of nil, use object_id):
+  app/controllers/gigs_controller.rb:14:in `new'
+
+
+  Rendered /Users/Dave/.rvm/gems/ruby-1.9.3-p392@rails3/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /Users/Dave/.rvm/gems/ruby-1.9.3-p392@rails3/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /Users/Dave/.rvm/gems/ruby-1.9.3-p392@rails3/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (19.9ms)
+
+
+Started GET "/gigs/new" for 127.0.0.1 at 2013-03-15 19:51:32 -0700
+Processing by GigsController#new as HTML
+  Rendered gigs/_form.html.erb (6.0ms)
+  Rendered gigs/new.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 29ms (Views: 11.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-15 19:51:32 -0700
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-15 19:51:32 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/gigs.js?body=1" for 127.0.0.1 at 2013-03-15 19:51:32 -0700
+Served asset /gigs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-15 19:51:32 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/gigs.css?body=1" for 127.0.0.1 at 2013-03-15 19:51:32 -0700
+Served asset /gigs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-15 19:51:32 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/giggerator_logo_transparent.png" for 127.0.0.1 at 2013-03-15 19:51:32 -0700
+Served asset /giggerator_logo_transparent.png - 304 Not Modified (0ms)
+Connecting to database specified by database.yml
+  [1m[36m (1.3ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.2ms)[0m  select sqlite_version(*)
+  [1m[36m (19.6ms)[0m  [1mCREATE TABLE "gigs" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "month" integer, "day" integer, "year" integer, "venue" varchar(255), "city" varchar(255), "address" varchar(255), "zip" integer, "total_budget" float, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "contact_name" varchar(255), "contact_phone" varchar(255), "contact_email" varchar(255), "user_id" integer) [0m
+  [1m[35m (1.5ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar(255) DEFAULT '' NOT NULL, "encrypted_password" varchar(255) DEFAULT '' NOT NULL, "reset_password_token" varchar(255), "reset_password_sent_at" datetime, "remember_created_at" datetime, "sign_in_count" integer DEFAULT 0, "current_sign_in_at" datetime, "last_sign_in_at" datetime, "current_sign_in_ip" varchar(255), "last_sign_in_ip" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "confirmation_token" varchar(255), "confirmed_at" datetime, "confirmation_sent_at" datetime, "unconfirmed_email" varchar(255)) 
+  [1m[36m (1.7ms)[0m  [1mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  [1m[35m (1.9ms)[0m  CREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")
+  [1m[36m (2.0ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35m (2.0ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.1ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (1.4ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20130313222857')
+  [1m[36m (1.8ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20130308220619')[0m
+  [1m[35m (1.9ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20130311212722')
+  [1m[36m (1.8ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20130313195453')[0m
+  [1m[35m (1.7ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20130313204652')

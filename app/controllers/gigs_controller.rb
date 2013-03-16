@@ -11,7 +11,9 @@ class GigsController < ApplicationController
 
 	def new
 		@gig = Gig.new
-		@user_id = current_user.id
+    if current_user
+		 @user_id = current_user.id
+    end
 	end
 
 	def create
