@@ -3,8 +3,10 @@ require 'spec_helper'
 feature "Creating gigs" do
 
 	before do
-		visit "/"
-		click_link "Create Gig"
+		user = Factory(:user)
+    user.confirm!
+    sign_in_as!(user)
+    click_link "Create Gig"
 	end
 
 	scenario "can create gigs" do

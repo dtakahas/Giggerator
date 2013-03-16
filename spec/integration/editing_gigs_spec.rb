@@ -3,7 +3,10 @@ require 'spec_helper'
 feature "Updating a gig" do
 
   scenario "can update a gig" do
-    Factory(:gig)
+    user = Factory(:user)
+    user.confirm!
+    sign_in_as!(user)
+    Factory(:gig, :title => "Old Title", :user_id => user.id)
     visit '/'
     click_link "Edit"
     fill_in "Title", :with => "Better Title"
