@@ -3,5 +3,5 @@ class Gig < ActiveRecord::Base
                   :zip, :contact_name, :contact_phone, :contact_email, :user_id
 
   validates :title, :presence => true
-
+  belongs_to :user
 end
