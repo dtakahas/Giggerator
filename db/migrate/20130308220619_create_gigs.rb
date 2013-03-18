@@ -9,7 +9,7 @@ class CreateGigs < ActiveRecord::Migration
       t.string :city
       t.string :address
       t.integer :zip
-      t.float :total_budget
+      t.float :total_budget, :default => 0.0
 
       t.timestamps
     end
