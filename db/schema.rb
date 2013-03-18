@@ -22,9 +22,9 @@ ActiveRecord::Schema.define(:version => 20130313222857) do
     t.string   "city"
     t.string   "address"
     t.integer  "zip"
-    t.float    "total_budget"
-    t.datetime "created_at",    :null => false
-    t.datetime "updated_at",    :null => false
+    t.float    "total_budget",  :default => 0.0
+    t.datetime "created_at",                     :null => false
+    t.datetime "updated_at",                     :null => false
     t.string   "contact_name"
     t.string   "contact_phone"
     t.string   "contact_email"
