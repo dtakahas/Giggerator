@@ -1,0 +1,14 @@
+<%= link_to "New Contact", new_contact_path %>
+
+<table>
+  <% @contacts.each do |contact| %>
+  <tr>
+    <td><%= link_to contact.first_name, contact %></td>
+    <td><%= link_to "Edit", edit_contact_path(contact) %></td>
+  </tr>
+  <% end %>
+</table>
+
+
+
+

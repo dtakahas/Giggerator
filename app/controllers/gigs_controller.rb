@@ -11,19 +11,21 @@ class GigsController < ApplicationController
 
 	def new
 		@gig = Gig.new
+		@contact = Contact.new
     if current_user
 		 @user_id = current_user.id
     end
 	end
 
 	def create
+		@contact = Contact.new(params[:contact])
 		@gig = Gig.new(params[:gig])
 		@gig.month = params["date"]["month"].to_i
 		@gig.day = params["date"]["day"].to_i
 		@gig.year = params["date"]["year"].to_i
 		logger.info @gig.month
 
-		if @gig.save
+		if @gig.save && @contact.save
 			flash[:notice] = "Gig saved!"
 			redirect_to @gig
 		else
@@ -56,6 +58,10 @@ class GigsController < ApplicationController
     @gig.destroy
     flash[:notice] = "Gig deleted!"
     redirect_to '/'
+	end
+
+	def add_to_contacts
+		Contact.create(:first_name => params[:contact_name])
 	end
 
 

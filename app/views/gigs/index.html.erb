@@ -5,7 +5,8 @@
 <table>
   <% @gigs.each do |gig| %>
   <tr>
-    <td><%= link_to gig.title, gig %></td><td><%= link_to "Edit", edit_gig_path(gig) %></td>
+    <td><%= link_to gig.title, gig %></td>
+    <td><%= link_to "Edit", edit_gig_path(gig) %></td>
   </tr>
   <% end %>
 </table>

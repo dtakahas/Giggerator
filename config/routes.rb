@@ -5,6 +5,7 @@ Temp::Application.routes.draw do
   root :to => 'gigs#index'
 
   resources :gigs
+  resources :contacts
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

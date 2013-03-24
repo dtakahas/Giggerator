@@ -5,7 +5,7 @@ feature "Creating budget" do
 	before do
 		user = Factory(:confirmed_user)
 		sign_in_as!(user)
-		gig = Factory(:gig, :budget => 5000)
+		gig = Factory(:gig, :budget => 5000, :user => user)
 	end
 
 	scenario "can create (save) budget" do
