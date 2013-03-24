@@ -38,6 +38,7 @@ feature "Creating contacts" do
     page.should have_content "Pope John Paul"
   end
 
+  # IS THIS LEFT OVER FROM THAT OTHER IDEA?
   # scenario "can create contact from gig show" do
   #   sign_in_as!(user)
   #   click_link "Jazz Bash at the Casbah"
@@ -48,12 +49,13 @@ feature "Creating contacts" do
   #   page.should have_content("Contact saved!")
   # end
 
-  # scenario "cannot create a contact without a name" do
-  #   sign_in_as!(user)
-  #   visit '/'
-  #   click_link "New Contact"
-  #   click_button "Save Contact"
-  #   page.should have_content("Please enter a name!")
-  # end
+  scenario "cannot create a contact without a name" do
+    sign_in_as!(user)
+    visit '/'
+    click_link "Contacts"
+    click_link "New Contact"
+    click_button "Save Contact"
+    page.should have_content("First name can't be blank")
+  end
 
 end
