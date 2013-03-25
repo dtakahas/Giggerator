@@ -4,7 +4,7 @@ class Gig < ActiveRecord::Base
   attr_accessor :add_to_contacts
   validates :title, :presence => true
   belongs_to :user
-  has_and_belongs_to_many :contact
+  has_many :contacts
 
   def add_to_contacts
   end

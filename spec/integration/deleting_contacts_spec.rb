@@ -8,9 +8,7 @@ feature "Deleting contacts" do
     sign_in_as!(user)
     visit '/'
     click_link "Contacts"
-    click_link "George Costanza"
-    click_link "Edit"
-    click_link "Delete Contact"
+    click_link "Delete"
     page.should have_content("Contact deleted!")
   end
 end
