@@ -1,0 +1,18 @@
+<%= form_for(@gig, :html => {:id => "edit-form"}) do |f| %>
+  <%= f.error_messages %>
+
+    <div id="budget_items" class="clearfix">
+      <%= f.fields_for :budget_items, :positive => true do |item_form| %>
+        <%= render :partial => "budget_items/fields", :locals => { :f => item_form } %>
+      <% end %>
+    </div>
+
+  <br />
+  <%= link_to "Add another budget item", :controller => "budget_items", :action => "new", :gig_id => @gig.id %>
+
+    <%= f.submit "Save Budget" %>
+  <% end %>
+
+  <br />
+
+  Total: $<span id="budget-total"><%= @sum %></span>

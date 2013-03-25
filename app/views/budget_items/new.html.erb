@@ -1,0 +1,11 @@
+<% form_for(@budget) do |f| %>
+<%= f.error_messages %>
+
+<p>
+  <%= f.label :total_budget %>
+  <%= f.text_field :total_budget %>
+</p>
+
+<%= f.submit "Save Budget" %>
+
+<% end %>

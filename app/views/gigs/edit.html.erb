@@ -1,8 +1,26 @@
-<h2>Editing gig</h2>
+<script>
+  $(document).ready(function() {
+    var $form = $('#edit-form'), $amounts = $form.find('.budget-field');
+    $form.delegate('.budget-field', 'keyup', function() {
+      var total = 0
+      $amounts.each(function() {
+        var form_value = Number($(this).val());
+        if (!isNaN(form_value)) total += form_value;
+      });
+      $('#budget-total').text(total);
+    });
+  });
+</script>
 
-<%= render "form" %>
+<h2>
+  <% if params[:form] == "budgets" %>Budget for:
+  <% else %>Editing:
+  <% end %> <%= @gig.title %>
+</h2>
 
-<br/><br/>
+<%= render "#{params[:form]}_form" %>
+
+<br/>
 
 <div>
   <%= link_to "Delete Gig", gig_path(@gig), :method => :delete, :confirm => "Are you sure? Gig WILL be deleted." %>

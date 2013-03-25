@@ -19,7 +19,7 @@
 
 <div id="main">
 <nav>
-	<%= link_to "Create Gig", new_gig_path %>
+	<%= link_to "Create Gig", new_gig_path(:form => "properties") %>
 
 	<% if user_signed_in? %>
 		Signed in as <%= current_user.email %>

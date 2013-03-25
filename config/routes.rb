@@ -4,7 +4,10 @@ Temp::Application.routes.draw do
 
   root :to => 'gigs#index'
 
-  resources :gigs
+  resources :gigs do
+    resources :budget_items
+  end
+
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

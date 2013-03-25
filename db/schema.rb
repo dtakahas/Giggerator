@@ -11,7 +11,20 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130313222857) do
+ActiveRecord::Schema.define(:version => 20130319201202) do
+
+  create_table "budget_items", :force => true do |t|
+    t.integer  "gig_id"
+    t.float    "amount"
+    t.string   "label"
+    t.boolean  "positive"
+    t.integer  "user_id"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  add_index "budget_items", ["gig_id"], :name => "index_budget_items_on_gig_id"
+  add_index "budget_items", ["user_id"], :name => "index_budget_items_on_user_id"
 
   create_table "gigs", :force => true do |t|
     t.string   "title"
@@ -22,9 +35,9 @@ ActiveRecord::Schema.define(:version => 20130313222857) do
     t.string   "city"
     t.string   "address"
     t.integer  "zip"
-    t.float    "total_budget",  :default => 0.0
-    t.datetime "created_at",                     :null => false
-    t.datetime "updated_at",                     :null => false
+    t.float    "total_budget"
+    t.datetime "created_at",    :null => false
+    t.datetime "updated_at",    :null => false
     t.string   "contact_name"
     t.string   "contact_phone"
     t.string   "contact_email"

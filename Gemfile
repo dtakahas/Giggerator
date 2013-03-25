@@ -1,4 +1,4 @@
-source 'http://rubygems.org'
+source 'https://rubygems.org'
 
 gem 'rails', '3.2.12'
 gem 'dynamic_form', '1.1.4'
@@ -47,4 +47,5 @@ end
 group :test do
 	gem 'capybara', '1.1.2'
 	gem 'email_spec'
+  gem 'simplecov', :require => false
 end

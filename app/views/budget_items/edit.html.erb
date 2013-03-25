@@ -1,0 +1,28 @@
+
+<% form_for(@gig) do |f| %>
+  <%= f.error_messages %>
+  <% @items.each do |item| %>
+  <div id="budget_items">
+  <%= fields_for item do |x| %>
+  <p>
+     <p>
+       <%= x.label :item, "Item" %>
+       <%= x.text_field :item, :value => item.label %>
+    </p>
+    <p>
+       <%= x.label :amount, "Amount" %>
+       <%= x.text_field :amount, :value => item.amount %>
+     </p>
+    <% end %>
+  </p>
+  </div>
+
+    <% end %>
+
+    <%= f.submit %>
+  <% end %>
+
+
+
+
+

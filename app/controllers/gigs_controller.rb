@@ -38,12 +38,27 @@ class GigsController < ApplicationController
 
 	def edit
 		@gig = Gig.find(params[:id])
+    @items = @gig.budget_items
+
+    if @items.empty? && params[:form] == "budgets"
+      @budget = BudgetItem.new(:gig_id => @gig.id, :label => "Total Budget", :positive => true, :amount => @gig.total_budget)
+      @budget.save!
+      flash[:notice] = "Budget saved!"
+      redirect_to edit_gig_path(@gig, :form => "budgets")
+    end
+
+    @sum = 0
+    @items.each do |x|
+      @sum = @sum + x.amount
+    end
+    @sum
+
 	end
 
 	def update
 		@gig = Gig.find(params[:id])
 		if @gig.update_attributes(params[:gig])
-      flash[:notice] = "Gig saved!"
+      flash[:notice] = "Updated!"
       redirect_to @gig
     else
       flash[:alert] = "Gig NOT saved."

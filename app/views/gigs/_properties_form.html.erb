@@ -1,0 +1,68 @@
+<%= form_for(@gig) do |f| %>
+<%= f.error_messages %>
+
+<p>
+  <%= f.label :title %>
+  <%= f.text_field :title %>
+</p>
+
+<p>
+  <%= f.label :contact_name, "Contact Name" %>
+  <%= f.text_field :contact_name %>
+</p>
+
+<p>
+  <%= f.label :contact_phone, "Contact Phone" %>
+  <%= f.text_field :contact_phone %>
+</p>
+
+<p>
+  <%= f.label :contact_email, "Contact Email" %>
+  <%= f.text_field :contact_email %>
+</p>
+
+<p>
+  <%= f.label :month %>
+  <%= select_month(Time.now) %>
+</p>
+
+<p>
+  <%= f.label :day %>
+  <%= select_day(Time.now) %>
+</p>
+
+<p>
+  <%= f.label :year %>
+  <%= select_year(Time.now) %>
+</p>
+
+<p>
+  <%= f.label :venue %>
+  <%= f.text_field :venue %>
+</p>
+
+<p>
+  <%= f.label :city %>
+  <%= f.text_field :city %>
+</p>
+
+<p>
+  <%= f.label :address %>
+  <%= f.text_field :address %>
+</p>
+
+<p>
+  <%= f.label :zip %>
+  <%= f.text_field :zip %>
+</p>
+
+<p>
+  <%= f.label :total_budget, "Total Budget" %>
+  <%= f.text_field :total_budget %>
+</p>
+
+<%= f.hidden_field :user_id, :value => @user_id %>
+
+<%= f.submit "Save Gig" %>
+
+<% end %>
