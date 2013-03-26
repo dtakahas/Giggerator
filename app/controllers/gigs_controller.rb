@@ -23,15 +23,15 @@ class GigsController < ApplicationController
 		@gig.month = params["date"]["month"].to_i
 		@gig.day = params["date"]["day"].to_i
 		@gig.year = params["date"]["year"].to_i
-    @gig.user_id = current_user.id
 		logger.info @gig.month
 
 		if @gig.save && @contact.save
+			@gig.user_id = current_user.id
 			flash[:notice] = "Gig saved!"
 			redirect_to @gig
 		else
-			flash[:alert] = "Gig NOT saved."
-			render :action => "new"
+			flash[:alert] = "Title can't be blank"
+      redirect_to new_gig_path(@gig, :form => "properties")
 		end
 	end
 
@@ -43,6 +43,12 @@ class GigsController < ApplicationController
 		@gig = Gig.find(params[:id])
     @items = @gig.budget_items
     @expenses = @gig.expense_items
+		# @contact = Contact.find_by_gig_id(params[:id])
+
+		# if not @contact
+		# 	@contact = Contact.new(params[:contact])
+		# end
+		# THIS IS A BIG MESS
 
     if @items.empty? && params[:form] == "budgets"
       @budget = BudgetItem.new(:gig_id => @gig.id, :label => "Total Budget", :positive => true, :amount => @gig.total_budget)
