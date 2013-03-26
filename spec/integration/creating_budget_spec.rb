@@ -17,12 +17,12 @@ feature "Creating budget" do
 		page.should have_content "Budget Saved!"
 	end
 
-  scenario "can add new budget item" do
+  scenario "can add new income item" do
     visit '/'
     click_link  "Jazz Bash at the Casbah"
     click_link "Budget Breakdown"
     click_link "Add another budget item"
-    find_field("Item").value.should eql("Total Budget")
+    find_field("Income").value.should eql("Total Budget")
   end
 
   scenario "can add a new expense item" do

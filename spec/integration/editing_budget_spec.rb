@@ -18,7 +18,7 @@ feature "Editing budget" do
 	#checking for jquery auto updating totals
   scenario "can add positive line item" do
   	click_link "Add another budget item"
-  	fill_in "Item", :with => "tips"
+  	fill_in "Income", :with => "tips"
   	fill_in "Amount", :with => 30
     click_button "Save Budget"
 		find('#budget-total').should have_content(30.00)

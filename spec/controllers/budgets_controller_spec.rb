@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe BudgetsController do
+describe BudgetItemsController do
 
   describe "GET 'edit'" do
     it "returns http success" do
