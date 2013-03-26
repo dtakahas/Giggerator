@@ -6,10 +6,6 @@ feature "Creating budget" do
 
   before do
 		sign_in_as!(user)
-<<<<<<< HEAD
-=======
-		gig = Factory(:gig, :budget => 5000, :user => user)
->>>>>>> 3ca29b499d1352f3361c58fc6c53fddeb6722e66
 	end
 
 	scenario "can create (save) budget" do

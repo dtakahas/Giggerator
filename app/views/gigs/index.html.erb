@@ -5,9 +5,8 @@
 <table>
   <% @gigs.each do |gig| %>
   <tr>
-    <td><%= link_to gig.title, gig %></td><td><%= link_to "Edit", edit_gig_path(gig, :form => "properties") %></td>
     <td><%= link_to gig.title, gig %></td>
-    <td><%= link_to "Edit", edit_gig_path(gig) %></td>
+    <td><%= link_to "Edit", edit_gig_path(gig, :form => "properties") %></td>
     <td><%= link_to "Delete", gig_path(gig), :method => :delete, :confirm => "Are you sure? Gig WILL be deleted." %></td>
   </tr>
   <% end %>
