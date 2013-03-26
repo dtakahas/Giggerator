@@ -11,6 +11,34 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
+<<<<<<< HEAD
+ActiveRecord::Schema.define(:version => 20130325214751) do
+
+  create_table "budget_items", :force => true do |t|
+    t.integer  "gig_id"
+    t.float    "amount"
+    t.string   "label"
+    t.boolean  "positive"
+    t.integer  "user_id"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  add_index "budget_items", ["gig_id"], :name => "index_budget_items_on_gig_id"
+  add_index "budget_items", ["user_id"], :name => "index_budget_items_on_user_id"
+
+  create_table "expense_items", :force => true do |t|
+    t.integer  "gig_id"
+    t.float    "amount"
+    t.string   "label"
+    t.integer  "user_id"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  add_index "expense_items", ["gig_id"], :name => "index_expense_items_on_gig_id"
+  add_index "expense_items", ["user_id"], :name => "index_expense_items_on_user_id"
+=======
 ActiveRecord::Schema.define(:version => 20130322235601) do
 
   create_table "contacts", :force => true do |t|
@@ -23,6 +51,7 @@ ActiveRecord::Schema.define(:version => 20130322235601) do
     t.datetime "updated_at", :null => false
     t.integer  "user_id"
   end
+>>>>>>> 3ca29b499d1352f3361c58fc6c53fddeb6722e66
 
   create_table "gigs", :force => true do |t|
     t.string   "title"
@@ -33,9 +62,18 @@ ActiveRecord::Schema.define(:version => 20130322235601) do
     t.string   "city"
     t.string   "address"
     t.integer  "zip"
+<<<<<<< HEAD
+    t.float    "total_budget"
+    t.datetime "created_at",    :null => false
+    t.datetime "updated_at",    :null => false
+    t.string   "contact_name"
+    t.string   "contact_phone"
+    t.string   "contact_email"
+=======
     t.float    "total_budget", :default => 0.0
     t.datetime "created_at",                    :null => false
     t.datetime "updated_at",                    :null => false
+>>>>>>> 3ca29b499d1352f3361c58fc6c53fddeb6722e66
     t.integer  "user_id"
   end
 

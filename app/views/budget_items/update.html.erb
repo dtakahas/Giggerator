@@ -1,0 +1,11 @@
+<% @items.each do |item| %>
+
+<%= form_tag(gig_budget_path, :method => 'put') %>
+<div>
+<%= text_field_tag "Item", item.label %>
+<%= text_field_tag "Amount", item.amount %>
+</div>
+<% end %>
+
+<br />
+<%= submit_tag "Save Budget" %>

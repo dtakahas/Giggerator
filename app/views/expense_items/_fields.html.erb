@@ -1,0 +1,17 @@
+<div class="expense_container clearfix">
+  <p class="budget_form">
+    <%= f.label :label, "Expense" %>
+    <%= f.text_field :label %>
+  </p>
+  <p class="budget_form">
+    <%= f.label :amount, "Amount" %>
+    <%= f.text_field :amount, :class => "budget-field", :value => (number_with_precision(f.object.amount, :precision => 2 || 0)) %>
+  </p>
+
+  <p class="budget_form">
+    <%= f.label :_destroy, "Delete" %>
+    <%= f.check_box :_destroy %>
+  </p>
+
+
+</div>

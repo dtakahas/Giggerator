@@ -1,16 +1,18 @@
 require 'spec_helper'
 
 feature "Viewing budget" do
+	let!(:user) { Factory(:confirmed_user)}
+	let!(:gig) { Factory(:gig, :total_budget => 5000, :user => user) }
 
 	before do
-		user = Factory(:confirmed_user)
 		sign_in_as!(user)
-		gig = Factory(:gig, :budget => 5000)
 	end
 
 	scenario "user can view budget for a gig" do
+		visit '/'
+		click_link  "Jazz Bash at the Casbah"
 		click_link "Budget Breakdown"
-		page.should have_content gig.title
-		find_field('Income').value.should eql(gig.total_budget)
+		page.should have_content(gig.title)
+		find_field('Amount').value.should eql("5000.00")  #(number_with_precision(gig.total_budget, :precision => 2).to_s)
 	end
 end

@@ -28,7 +28,8 @@
 		<% end %>
 	</div>
 <nav>
-	<%= link_to "Create Gig", new_gig_path %>
+
+	<%= link_to "Create Gig", new_gig_path(:form => "properties") %>
 	<%= link_to "Contacts", contacts_path if user_signed_in? %>
 
 </nav>
