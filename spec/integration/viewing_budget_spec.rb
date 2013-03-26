@@ -13,6 +13,6 @@ feature "Viewing budget" do
 		click_link  "Jazz Bash at the Casbah"
 		click_link "Budget Breakdown"
 		page.should have_content(gig.title)
-		find_field('Amount').value.should eql(gig.total_budget.to_s)
+		find_field('Amount').value.should eql("5000.00")  #(number_with_precision(gig.total_budget, :precision => 2).to_s)
 	end
 end

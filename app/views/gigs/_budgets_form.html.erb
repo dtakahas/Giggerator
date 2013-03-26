@@ -2,17 +2,28 @@
   <%= f.error_messages %>
 
     <div id="budget_items" class="clearfix">
-      <%= f.fields_for :budget_items, :positive => true do |item_form| %>
+      <%= f.fields_for :budget_items do |item_form| %>
         <%= render :partial => "budget_items/fields", :locals => { :f => item_form } %>
       <% end %>
     </div>
 
   <br />
-  <%= link_to "Add another budget item", :controller => "budget_items", :action => "new", :gig_id => @gig.id %>
+
+  <%= link_to "Add another budget item", :controller => "budget_items", :action => "new", :gig_id => @gig.id, :anchor => "budget_items"  %>
+
+    <div id="expense_items" class="clearfix">
+      <%= f.fields_for :expense_items do |item_form| %>
+        <%= render :partial => "expense_items/fields", :locals => { :f => item_form } %>
+      <% end %>
+    </div>
+
+  <br />
+
+  <%= link_to "Add another expense item", :controller => "expense_items", :action => "new", :gig_id => @gig.id, :anchor => "expense_items" %>
 
     <%= f.submit "Save Budget" %>
   <% end %>
 
   <br />
 
-  Total: $<span id="budget-total"><%= @sum %></span>
+  <div id="total_readout">Total: $<span id="budget-total"><%= number_with_precision(@sum, :precision => 2 || 0) %></span></div>

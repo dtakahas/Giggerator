@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130319201202) do
+ActiveRecord::Schema.define(:version => 20130325214751) do
 
   create_table "budget_items", :force => true do |t|
     t.integer  "gig_id"
@@ -25,6 +25,18 @@ ActiveRecord::Schema.define(:version => 20130319201202) do
 
   add_index "budget_items", ["gig_id"], :name => "index_budget_items_on_gig_id"
   add_index "budget_items", ["user_id"], :name => "index_budget_items_on_user_id"
+
+  create_table "expense_items", :force => true do |t|
+    t.integer  "gig_id"
+    t.float    "amount"
+    t.string   "label"
+    t.integer  "user_id"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  add_index "expense_items", ["gig_id"], :name => "index_expense_items_on_gig_id"
+  add_index "expense_items", ["user_id"], :name => "index_expense_items_on_user_id"
 
   create_table "gigs", :force => true do |t|
     t.string   "title"

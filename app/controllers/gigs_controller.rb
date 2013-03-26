@@ -21,6 +21,7 @@ class GigsController < ApplicationController
 		@gig.month = params["date"]["month"].to_i
 		@gig.day = params["date"]["day"].to_i
 		@gig.year = params["date"]["year"].to_i
+    @gig.user_id = current_user.id
 		logger.info @gig.month
 
 		if @gig.save
@@ -39,6 +40,7 @@ class GigsController < ApplicationController
 	def edit
 		@gig = Gig.find(params[:id])
     @items = @gig.budget_items
+    @expenses = @gig.expense_items
 
     if @items.empty? && params[:form] == "budgets"
       @budget = BudgetItem.new(:gig_id => @gig.id, :label => "Total Budget", :positive => true, :amount => @gig.total_budget)
@@ -51,6 +53,10 @@ class GigsController < ApplicationController
     @items.each do |x|
       @sum = @sum + x.amount
     end
+
+    @expenses.each do |y|
+      @sum = @sum + y.amount
+    end
     @sum
 
 	end
@@ -58,8 +64,13 @@ class GigsController < ApplicationController
 	def update
 		@gig = Gig.find(params[:id])
 		if @gig.update_attributes(params[:gig])
-      flash[:notice] = "Updated!"
-      redirect_to @gig
+      if params[:gig][:title]
+        flash[:notice] = "Updated!"
+        redirect_to @gig
+      else
+        flash[:notice] = "Budget Saved!"
+        redirect_to edit_gig_path(@gig, :form => "budgets")
+      end
     else
       flash[:alert] = "Gig NOT saved."
       render :action =>"edit"

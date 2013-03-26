@@ -6,6 +6,7 @@ Temp::Application.routes.draw do
 
   resources :gigs do
     resources :budget_items
+    resources :expense_items
   end
 
 
