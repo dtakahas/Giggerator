@@ -10,14 +10,15 @@ feature "Viewing contacts" do
     sign_in_as!(user_1)
     visit '/'
     click_link "Contacts"
-    page.should have_content("Costanza")
+    page.should have_content("George")
+    click_link "Sign out"
   end
 
   scenario "cannot view other user's contacts" do
-    sign_in_as(user_2)
+    sign_in_as!(user_2)
     visit '/'
     click_link "Contacts"
-    page.should_not have_content("Costanza")
+    page.should_not have_content("George")
   end
 
 end

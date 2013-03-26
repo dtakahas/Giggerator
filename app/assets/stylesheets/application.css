@@ -87,6 +87,7 @@ h2 {
   border-radius: 7px;
 }
 
+<<<<<<< HEAD
 td {
   width: 20em;
   padding-left: 8em;
@@ -138,3 +139,8 @@ html[xmlns] .clearfix {
 * html .clearfix {
   height: 1%;
 }
+=======
+.sign-in {
+  float: right;
+}
+>>>>>>> 3ca29b499d1352f3361c58fc6c53fddeb6722e66

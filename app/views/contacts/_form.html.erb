@@ -1,0 +1,29 @@
+<%= form_for(@contact) do |f| %>
+<%= f.error_messages %>
+
+<p>
+  <%= f.label :first_name, "First Name" %>
+  <%= f.text_field :first_name %>
+</p>
+
+<p>
+  <%= f.label :last_name, "Last Name" %>
+  <%= f.text_field :last_name %>
+</p>
+
+<p>
+  <%= f.label :phone, "Contact Phone" %>
+  <%= f.text_field :phone %>
+</p>
+
+<p>
+  <%= f.label :email, "Contact Email" %>
+  <%= f.text_field :email %>
+</p>
+
+<%#= f.hidden_field :user_id, :value => @user_id %>
+<br>
+
+<%= f.submit "Save Contact" %>
+
+<% end %>

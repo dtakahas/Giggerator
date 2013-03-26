@@ -8,9 +8,7 @@ feature "Deleting a gig" do
     sign_in_as!(user)
     Factory(:gig, :title => "Old Title", :user_id => user.id)
     visit '/'
-    click_link "Edit"
-    click_link "Delete Gig"
+    click_link "Delete"
     page.should have_content("Gig deleted!")
   end
-
 end

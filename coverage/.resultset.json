@@ -1,7 +1,11 @@
 {
   "RSpec": {
     "coverage": {
+<<<<<<< HEAD
       "/Users/Dave/CodeFellows/Giggerator/app/models/user.rb": [
+=======
+      "/home/calico/codefellows/Giggerator/app/models/user.rb": [
+>>>>>>> 3ca29b499d1352f3361c58fc6c53fddeb6722e66
         1,
         null,
         null,
@@ -12,6 +16,7 @@
         null,
         1,
         null,
+<<<<<<< HEAD
         null
       ],
       "/Users/Dave/CodeFellows/Giggerator/app/controllers/application_controller.rb": [
@@ -55,6 +60,36 @@
         3,
         3,
         3,
+=======
+        1,
+        1,
+        null,
+        null
+      ],
+      "/home/calico/codefellows/Giggerator/app/controllers/application_controller.rb": [
+        1,
+        1,
+        null
+      ],
+      "/home/calico/codefellows/Giggerator/app/helpers/application_helper.rb": [
+        1,
+        null
+      ],
+      "/home/calico/codefellows/Giggerator/app/helpers/contacts_helper.rb": [
+        1,
+        null
+      ],
+      "/home/calico/codefellows/Giggerator/app/helpers/gigs_helper.rb": [
+        1,
+        null
+      ],
+      "/home/calico/codefellows/Giggerator/app/controllers/contacts_controller.rb": [
+        1,
+        null,
+        1,
+        0,
+        0,
+>>>>>>> 3ca29b499d1352f3361c58fc6c53fddeb6722e66
         null,
         0,
         0,
@@ -63,37 +98,54 @@
         null,
         1,
         0,
+<<<<<<< HEAD
         0,
         0,
         null,
         0,
         0,
         null,
-        null,
-        null,
-        1,
-        0,
-        0,
+=======
+>>>>>>> 3ca29b499d1352f3361c58fc6c53fddeb6722e66
         null,
         null,
         1,
         0,
         0,
         null,
+<<<<<<< HEAD
+        null,
+        1,
+=======
+        0,
+        0,
+        0,
+        null,
+>>>>>>> 3ca29b499d1352f3361c58fc6c53fddeb6722e66
+        0,
+        0,
+        null,
+        null,
+<<<<<<< HEAD
+        1,
+        0,
+        0,
+=======
+        null,
+        1,
+        0,
+>>>>>>> 3ca29b499d1352f3361c58fc6c53fddeb6722e66
+        null,
         null,
         1,
         0,
         0,
-        null,
-        null,
-        1,
-        0,
-        0,
         0,
         0,
         null,
         null,
         1,
+<<<<<<< HEAD
         null,
         1,
         3,
@@ -144,10 +196,29 @@
         null
       ],
       "/Users/Dave/CodeFellows/Giggerator/app/models/expense_item.rb": [
+=======
+        0,
+        null,
+        null,
+        1,
+        0,
+        0,
+        0,
+        0,
+        null,
+        0,
+        0,
+        null,
+        null,
+        null
+      ],
+      "/home/calico/codefellows/Giggerator/app/models/contact.rb": [
+>>>>>>> 3ca29b499d1352f3361c58fc6c53fddeb6722e66
         1,
         1,
         1,
         1,
+<<<<<<< HEAD
         null,
         1,
         null,
@@ -170,10 +241,19 @@
         5,
         null,
         null,
+=======
+        1,
+        null,
+        null
+      ],
+      "/home/calico/codefellows/Giggerator/app/controllers/gigs_controller.rb": [
+        1,
+>>>>>>> 3ca29b499d1352f3361c58fc6c53fddeb6722e66
         null,
         1,
         3,
         3,
+<<<<<<< HEAD
         2,
         null,
         null,
@@ -233,6 +313,52 @@
         3,
         3,
         null,
+=======
+        null,
+        0,
+        0,
+        null,
+        null,
+        null,
+        1,
+        0,
+        0,
+        0,
+        0,
+        null,
+        null,
+        null,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        null,
+        0,
+        0,
+        0,
+        null,
+        0,
+        0,
+        null,
+        null,
+        null,
+        1,
+        0,
+        null,
+        null,
+        1,
+        0,
+        null,
+        null,
+        1,
+        0,
+        0,
+        0,
+        0,
+>>>>>>> 3ca29b499d1352f3361c58fc6c53fddeb6722e66
         null,
         0,
         0,
@@ -246,6 +372,7 @@
         1,
         null,
         null,
+<<<<<<< HEAD
         null,
         null
       ],
@@ -257,11 +384,22 @@
         1,
         1,
         null,
+=======
+        1,
+        0,
+        null,
+        null,
+        null,
+        null
+      ],
+      "/home/calico/codefellows/Giggerator/app/models/gig.rb": [
+>>>>>>> 3ca29b499d1352f3361c58fc6c53fddeb6722e66
         1,
         1,
         null,
         1,
         1,
+<<<<<<< HEAD
         null,
         1,
         null,
@@ -270,11 +408,21 @@
         1,
         26,
         13,
+=======
+        1,
+        1,
+        null,
+        1,
+>>>>>>> 3ca29b499d1352f3361c58fc6c53fddeb6722e66
         null,
         null,
         null
       ]
     },
+<<<<<<< HEAD
     "timestamp": 1364311414
+=======
+    "timestamp": 1364253068
+>>>>>>> 3ca29b499d1352f3361c58fc6c53fddeb6722e66
   }
 }

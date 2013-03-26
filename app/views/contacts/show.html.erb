@@ -1,0 +1,11 @@
+<h2><%= @contact.first_name %></h2>
+
+<div>
+  <ul>
+      <% @contact.attributes.each do | key, value | %>
+    <li>
+      <%= key %>: <%= value %>
+      <% end %>
+    </li>
+  </ul>
+</div>

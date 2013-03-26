@@ -16,5 +16,8 @@ feature "Editing contacts" do
 
     page.should have_content("Contact saved!")
     page.should have_content("555-555-5555")
+
+    click_link "Contacts"
+    page.should have_content("George")
   end
 end
