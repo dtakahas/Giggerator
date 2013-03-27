@@ -12,7 +12,7 @@ feature "Deleting budgets" do
     visit '/'
     click_link  "Jazz Bash at the Casbah"
     click_link "Budget Breakdown"
-    click_link "Add another budget item"
+    click_link "+"
 		check "Delete"
 		page.should have_content("Budget updated!")
 	end

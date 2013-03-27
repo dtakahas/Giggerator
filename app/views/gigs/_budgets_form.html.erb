@@ -8,8 +8,10 @@
     </div>
 
     <div class="button small">
-      <%= link_to "Add Income", :controller => "budget_items", :action => "new", :gig_id => @gig.id, :anchor => "budget_items"  %>
+      <%= link_to "+", :controller => "budget_items", :action => "new", :gig_id => @gig.id, :anchor => "budget_items" %>
     </div>
+
+    <%= f.submit "Save Budget", :class => "button small" %>
 
     <br />
 
@@ -20,7 +22,7 @@
     </div>
 
     <div class="button small">
-      <%= link_to "Add Expense", :controller => "expense_items", :action => "new", :gig_id => @gig.id, :anchor => "expense_items" %>
+      <%= link_to "+", :controller => "expense_items", :action => "new", :gig_id => @gig.id, :anchor => "expense_items" %>
     </div>
 
     <%= f.submit "Save Budget", :class => "button small" %>

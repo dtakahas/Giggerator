@@ -12,7 +12,7 @@ feature "Creating budget" do
     visit '/'
     click_link  "Jazz Bash at the Casbah"
     click_link "Budget Breakdown"
-    find_field("Amount").value.should eql("5000.00") #(number_with_precision(gig.total_budget, :precision => 2).to_s)
+    find_field("Amount").value.should eql("5000.00")
 		click_button("Save Budget")
 		page.should have_content "Budget Saved!"
 	end
@@ -21,7 +21,7 @@ feature "Creating budget" do
     visit '/'
     click_link  "Jazz Bash at the Casbah"
     click_link "Budget Breakdown"
-    click_link "Add another budget item"
+    click_link "+"
     find_field("Income").value.should eql("Total Budget")
   end
 
@@ -29,7 +29,7 @@ feature "Creating budget" do
     visit '/'
     click_link "Jazz Bash at the Casbah"
     click_link "Budget Breakdown"
-    click_link "Add another expense item"
+    click_link "+"
     page.should have_content("Expense")
   end
 end

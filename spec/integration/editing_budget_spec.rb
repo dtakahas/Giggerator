@@ -12,12 +12,12 @@ feature "Editing budget" do
 	end
 
   scenario "can view a budget with total budget autofilled" do
-    page.should have_content(5000.00)
+    page.should have_content("$5,000.00")
   end
 
 	#checking for jquery auto updating totals
   scenario "can add positive line item" do
-  	click_link "Add another budget item"
+  	click_link "+"
   	fill_in "Income", :with => "tips"
   	fill_in "Amount", :with => 30
     click_button "Save Budget"
@@ -25,7 +25,7 @@ feature "Editing budget" do
   end
 
   scenario "can add negative line item" do
-  	click_link "Add another expense item"
+  	click_link "+"
   	fill_in "Expense", :with => "hamburgers"
   	fill_in "Amount", :with => 29
     click_button "Save Budget"
