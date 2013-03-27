@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/home/calico/codefellows/Giggerator/app/models/user.rb": [
+      "/Users/Dave/CodeFellows/Giggerator/app/models/user.rb": [
         1,
         null,
         null,
@@ -17,32 +17,32 @@
         null,
         null
       ],
-      "/home/calico/codefellows/Giggerator/app/controllers/application_controller.rb": [
+      "/Users/Dave/CodeFellows/Giggerator/app/controllers/application_controller.rb": [
         1,
         1,
         null
       ],
-      "/home/calico/codefellows/Giggerator/app/helpers/application_helper.rb": [
+      "/Users/Dave/CodeFellows/Giggerator/app/helpers/application_helper.rb": [
         1,
         null
       ],
-      "/home/calico/codefellows/Giggerator/app/helpers/budgets_helper.rb": [
+      "/Users/Dave/CodeFellows/Giggerator/app/helpers/budgets_helper.rb": [
         1,
         null
       ],
-      "/home/calico/codefellows/Giggerator/app/helpers/contacts_helper.rb": [
+      "/Users/Dave/CodeFellows/Giggerator/app/helpers/contacts_helper.rb": [
         1,
         null
       ],
-      "/home/calico/codefellows/Giggerator/app/helpers/expense_items_helper.rb": [
+      "/Users/Dave/CodeFellows/Giggerator/app/helpers/expense_items_helper.rb": [
         1,
         null
       ],
-      "/home/calico/codefellows/Giggerator/app/helpers/gigs_helper.rb": [
+      "/Users/Dave/CodeFellows/Giggerator/app/helpers/gigs_helper.rb": [
         1,
         null
       ],
-      "/home/calico/codefellows/Giggerator/app/controllers/budget_items_controller.rb": [
+      "/Users/Dave/CodeFellows/Giggerator/app/controllers/budget_items_controller.rb": [
         1,
         null,
         1,
@@ -104,14 +104,14 @@
         null,
         null
       ],
-      "/home/calico/codefellows/Giggerator/app/models/budget_item.rb": [
+      "/Users/Dave/CodeFellows/Giggerator/app/models/budget_item.rb": [
         1,
         1,
         1,
         1,
         null
       ],
-      "/home/calico/codefellows/Giggerator/app/controllers/contacts_controller.rb": [
+      "/Users/Dave/CodeFellows/Giggerator/app/controllers/contacts_controller.rb": [
         1,
         null,
         1,
@@ -167,7 +167,7 @@
         null,
         null
       ],
-      "/home/calico/codefellows/Giggerator/app/models/contact.rb": [
+      "/Users/Dave/CodeFellows/Giggerator/app/models/contact.rb": [
         1,
         1,
         1,
@@ -176,7 +176,7 @@
         null,
         null
       ],
-      "/home/calico/codefellows/Giggerator/app/controllers/expense_items_controller.rb": [
+      "/Users/Dave/CodeFellows/Giggerator/app/controllers/expense_items_controller.rb": [
         1,
         null,
         1,
@@ -207,7 +207,7 @@
         null,
         null
       ],
-      "/home/calico/codefellows/Giggerator/app/models/expense_item.rb": [
+      "/Users/Dave/CodeFellows/Giggerator/app/models/expense_item.rb": [
         1,
         1,
         1,
@@ -223,7 +223,7 @@
         null,
         null
       ],
-      "/home/calico/codefellows/Giggerator/app/controllers/gigs_controller.rb": [
+      "/Users/Dave/CodeFellows/Giggerator/app/controllers/gigs_controller.rb": [
         1,
         null,
         1,
@@ -327,7 +327,7 @@
         null,
         null
       ],
-      "/home/calico/codefellows/Giggerator/app/models/gig.rb": [
+      "/Users/Dave/CodeFellows/Giggerator/app/models/gig.rb": [
         1,
         1,
         null,
@@ -354,7 +354,7 @@
         null,
         null
       ],
-      "/home/calico/codefellows/Giggerator/app/models/contacts_gigs.rb": [
+      "/Users/Dave/CodeFellows/Giggerator/app/models/contacts_gigs.rb": [
         1,
         1,
         1,
@@ -362,6 +362,6 @@
         null
       ]
     },
-    "timestamp": 1364348821
+    "timestamp": 1364349632
   }
 }
