@@ -1,14 +1,22 @@
-<%= link_to "New Contact", new_contact_path %>
 
+<h2>Contacts</h2>
 <table>
   <% @contacts.each do |contact| %>
     <tr>
-      <td><%= link_to contact.first_name, contact %></td>
-      <td><%= link_to "Edit", edit_contact_path(contact) %></td>
-      <td><%= link_to "Delete", contact_path(contact), :method => :delete, :confirm => "Are you sure?" %></td>
+      <td class="bold-table"><%= link_to contact.first_name + " " + contact.last_name, contact %></td>
+      <td class="short">
+        <div class="button tiny">
+          <%= link_to "Edit", edit_contact_path(contact) %>
+        </div>
+        <div class="button tiny">
+          <%= link_to "Delete", contact_path(contact), :method => :delete, :confirm => "Are you sure?" %>
+        </div>
+      </td>
     </tr>
   <% end %>
 </table>
+
+<div class="button"><%= link_to "New Contact", new_contact_path %></div>
 
 
 

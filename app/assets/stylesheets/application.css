@@ -17,7 +17,13 @@
 
 /* http://stackoverflow.com/questions/10905905/using-fonts-with-rails-asset-pipeline */
 
+input[type="text"] {
+  width: 90%;
+}
 
+select {
+  width: 10em;
+}
 
 body {
   background-image:url('/assets/ampgrillbackground.gif');
@@ -45,6 +51,7 @@ body {
 #logo {
   background-color: #d6d6d6;
   padding-left: 10px;
+  padding-right: 10px;
   padding-top: 10px;
   padding-bottom: 10px;
   /*border-radius: 7px;*/
@@ -56,25 +63,65 @@ body {
   color: #524F50;
 }
 
-/*
+#main input {
+  font-family: arial;
+  color: #524F50;
+}
+
+
+td {
+  width: 20em;
+  padding-left: 12em;
+}
+
+.short {
+  width: 8em;
+}
+
+.bold-table {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+#gig-title {
+  font-weight: bold;
+  font-size: 40px;
+}
+
+.columns {
+  float: left;
+}
+
+.six {
+  width: 50%;
+}
+
+.full {
+  width: 100%;
+}
+
+.subtext {
+  color: #808080;
+  font-size: 11px;
+}
+
+.subtext2 {
+  color: #808080;
+  font-size: 14px;
+}
 
 .flash {
   background-color: #db7f2e;
-  padding-left: 45%;
+  padding-left: 50px;
   padding-top: 10px;
   padding-bottom: 10px;
   font-family: arial;
   font-size: 24px;
-  border-radius: 7px;
+  /*border-radius: 7px;*/
 }
 
-input {
-  border-radius: 7px;
-  height: 30px;
-  background-color: #ffffee;
-  box-shadow: inset 2px 2px 5px #888888;
-  font-size: 18px;
-}
+/*
+
 
 label {
   width: 4em;
@@ -95,10 +142,7 @@ h2 {
   border-radius: 7px;
 }
 
-td {
-  width: 20em;
-  padding-left: 8em;
-}
+
 
 */
 
@@ -111,7 +155,7 @@ td {
 }
 
 #total_readout {
-  float: right;
+  font-size: 24px;
 }
 
 .budget_container {

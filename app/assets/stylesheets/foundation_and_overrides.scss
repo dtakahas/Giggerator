@@ -1,4 +1,5 @@
 // Required global settings and mixins for Foundation
+
 @import "foundation/foundation-global";
 
 // Settings file to override Foundation variables
@@ -140,8 +141,8 @@ $primary-color: #db7f2e;
 // $hr-margin: emCalc(20px);
 
 // We use these to style lists
-// $list-style-position: outside;
-// $list-side-margin: emCalc(18px);
+$list-style-position: outside;
+$list-side-margin: emCalc(18px);
 // $definition-list-header-weight: bold;
 // $definition-list-header-margin-bottom: .3em;
 // $definition-list-margin-bottom: emCalc(12px);
@@ -900,11 +901,11 @@ $primary-color: #db7f2e;
 //
 
 // These control the background color for the table and even rows
-// $table-bg: #fff;
-// $table-even-row-bg: #f9f9f9;
+$table-bg: #fff;
+$table-even-row-bg: #d6d6d6;
 
 // These control the table cell border style
-// $table-border-style: solid;
+$table-border-style: solid;
 // $table-border-size: 1px;
 // $table-border-color: #ddd;
 

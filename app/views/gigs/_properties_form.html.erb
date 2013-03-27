@@ -1,79 +1,84 @@
 <%= form_for(@gig) do |f| %>
 <%= f.error_messages %>
+<div class="full clearfix">
+  <div class="six columns">
+    <p>
+      <%= f.label :title %>
+      <%= f.text_field :title %>
+    </p>
 
-<p>
-  <%= f.label :title %>
-  <%= f.text_field :title %>
-</p>
+      <%= fields_for @contact do |c| %>
+    <p>
+      <%= c.label :first_name, "First Name" %>
+      <%= c.text_field :first_name %>
+    </p>
 
-  <%= fields_for @contact do |c| %>
-<p>
-  <%= c.label :first_name, "First Name" %>
-  <%= c.text_field :first_name %>
-</p>
+    <p>
+      <%= c.label :last_name, "Last Name" %>
+      <%= c.text_field :last_name %>
+    </p>
 
-<p>
-  <%= c.label :last_name, "Last Name" %>
-  <%= c.text_field :last_name %>
-</p>
+    <p>
+      <%= c.label :phone, "Contact Phone" %>
+      <%= c.text_field :phone %>
+    </p>
 
-<p>
-  <%= c.label :phone, "Contact Phone" %>
-  <%= c.text_field :phone %>
-</p>
+    <p>
+      <%= c.label :email, "Contact Email" %>
+      <%= c.text_field :email %>
+    </p>
 
-<p>
-  <%= c.label :email, "Contact Email" %>
-  <%= c.text_field :email %>
-</p>
+    <%= c.hidden_field :user_id, :value => @user_id %>
 
-<%= c.hidden_field :user_id, :value => @user_id %>
+    <% end %>
 
-<% end %>
+    <p style="float:left; padding-right:2px">
+      <%= f.label :month %>
+      <%= select_month(Time.now) %>
+    </p>
 
-<p>
-  <%= f.label :month %>
-  <%= select_month(Time.now) %>
-</p>
+    <p style="float:left; padding-right:2px">
+      <%= f.label :day %>
+      <%= select_day(Time.now) %>
+    </p>
 
-<p>
-  <%= f.label :day %>
-  <%= select_day(Time.now) %>
-</p>
+    <p style="float:left; padding-right:2px">
+      <%= f.label :year %>
+      <%= select_year(Time.now) %>
+    </p>
 
-<p>
-  <%= f.label :year %>
-  <%= select_year(Time.now) %>
-</p>
+  </div>
+  <div class="six columns">
 
-<p>
-  <%= f.label :venue %>
-  <%= f.text_field :venue %>
-</p>
+    <p>
+      <%= f.label :venue %>
+      <%= f.text_field :venue %>
+    </p>
 
-<p>
-  <%= f.label :city %>
-  <%= f.text_field :city %>
-</p>
+    <p>
+      <%= f.label :city %>
+      <%= f.text_field :city %>
+    </p>
 
-<p>
-  <%= f.label :address %>
-  <%= f.text_field :address %>
-</p>
+    <p>
+      <%= f.label :address %>
+      <%= f.text_field :address %>
+    </p>
 
-<p>
-  <%= f.label :zip %>
-  <%= f.text_field :zip %>
-</p>
+    <p>
+      <%= f.label :zip %>
+      <%= f.text_field :zip %>
+    </p>
 
-<p>
-  <%= f.label :total_budget, "Total Budget" %>
-  <%= f.text_field :total_budget %>
-</p>
+    <p>
+      <%= f.label :total_budget, "Total Budget" %>
+      <%= f.text_field :total_budget %>
+    </p>
 
-<%= f.hidden_field :user_id, :value => @user_id %>
+    <%= f.hidden_field :user_id, :value => @user_id %>
+  </div>
 
+  <%= f.submit "Save Gig", :class => "button" %>
 
-<%= f.submit "Save Gig" %>
-
-<% end %>
+  <% end %>
+</div>

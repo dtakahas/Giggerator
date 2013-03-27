@@ -1,11 +1,16 @@
-<h2><%= @contact.first_name %></h2>
+<h2><%= @contact.first_name %> <%= @contact.last_name %></h2>
 
-<div>
-  <ul>
-      <% @contact.attributes.each do | key, value | %>
-    <li>
-      <%= key %>: <%= value %>
-      <% end %>
-    </li>
-  </ul>
+<div class="full clearfix">
+  <div class="six columns">
+      <span class="subtext2">Email : </span><br />
+      <span><%= @contact.email %></span><br /><br />
+
+      <span class="subtext2">Phone : </span><br />
+      <span><%= @contact.phone %></span><br /><br />
+
+      <span class="subtext2">Notes : </span><br />
+      <span><%= @contact.notes %></span><br /><br /><br />
+  </div>
 </div>
+
+<div class="button small"><%= link_to "Edit Contact", edit_contact_path(@contact) %></div>

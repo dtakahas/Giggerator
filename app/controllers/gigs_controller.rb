@@ -28,7 +28,7 @@ class GigsController < ApplicationController
 			@contact = Contact.new(params[:contact])
 		end
 
-		if @gig.save && @contact.save
+		if  @contact.save && @gig.save
   			@gig.user_id = current_user.id
   			ContactsGigs.create(:contact_id => @contact.id, :gig_id => @gig.id)
   			flash[:notice] = "Gig saved!"
@@ -53,6 +53,8 @@ class GigsController < ApplicationController
     if @items.empty? && params[:form] == "budgets"
       @budget = BudgetItem.new(:gig_id => @gig.id, :label => "Total Budget", :positive => true, :amount => @gig.total_budget)
       @budget.save!
+      @expense = ExpenseItem.new(:gig_id => @gig.id, :label => "Expense", :amount => 0)
+      @expense.save!
       flash[:notice] = "Budget saved!"
       redirect_to edit_gig_path(@gig, :form => "budgets")
     end

@@ -1,22 +1,38 @@
-<h2><%= @gig.title %></h2>
-
-<div>
-  <ul>
-      <% @gig.attributes.each do | key, value | %>
-    <li>
-      <%= key %>: <%= value %>
-      <% end %>
-    </li>
-  </ul>
-</div>
-<div>
-  <ul>
-      <% @contacts.each do |contact| %>
-    <li>
-      <%= contact.first_name %> <%= contact.last_name %>
-      <% end %>
-    </li>
-  </ul>
+<div id="gig-title"><%= @gig.title %><br />
+  <span><small><%= @gig.month %> / <%= @gig.day %> / <%= @gig.year %></small></span>
 </div>
 
-<%= link_to "Budget Breakdown", edit_gig_path(@gig, :form => "budgets") %>
+<br />
+
+<div class="full clearfix">
+  <div class="six columns">
+
+        <span class="subtext2">Venue : </span><br /><span><%= @gig.venue %></span><br /><br /><br />
+
+        <span class="subtext2">Address: </span><br />
+        <%= @gig.address %><br />
+
+        <%= @gig.city %> <%= @gig.zip %><br /><br /><br />
+
+        <span class="subtext2">Total Budget: </span><br />
+        <%= number_to_currency(@gig.total_budget, :precision => 2) %><br />
+  </div>
+
+
+  <div class="six columns">
+    <span class="subtext2">Contacts for this gig:</span><br /><br />
+        <% @contacts.each do |contact| %>
+        <%= contact.first_name %> <%= contact.last_name %>  |  <%= contact.phone %>  |  <%= contact.email %><br />
+        <% end %>
+  </div>
+
+  <br />
+
+</div>
+
+<br /><br />
+<span class="subtext">Created: <%= @gig.created_at %> | Updated: <%= @gig.updated_at %></span><br />
+<br /><br />
+
+<div class="button"><%= link_to "Budget Breakdown", edit_gig_path(@gig, :form => "budgets") %></div>
+<div class="button"><%= link_to "Edit Gig", edit_gig_path(@gig, :form => "properties") %></div>
