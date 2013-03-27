@@ -2,11 +2,11 @@
 
 <table>
   <% @contacts.each do |contact| %>
-  <tr>
-    <td><%= link_to contact.first_name, contact %></td>
-    <td><%= link_to "Edit", edit_contact_path(contact) %></td>
-    <td><%= link_to "Delete", contact_path(contact), :method => :delete, :confirm => "Are you sure?" %></td>
-  </tr>
+    <tr>
+      <td><%= link_to contact.first_name, contact %></td>
+      <td><%= link_to "Edit", edit_contact_path(contact) %></td>
+      <td><%= link_to "Delete", contact_path(contact), :method => :delete, :confirm => "Are you sure?" %></td>
+    </tr>
   <% end %>
 </table>
 

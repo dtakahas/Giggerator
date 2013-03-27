@@ -31,5 +31,22 @@ feature "Creating gigs" do
 		click_button "Save Gig"
 		page.should have_content "You must have a gig title and contact name."
   end
+
+  # scenario "can create a gig before signing in and then sign in after" do
+  #   click_link "Sign out"
+  #   visit '/'
+  #   click_link "Create Gig"
+  #   fill_in "Title", :with => "My First Gig"
+		# fill_in "First Name", :with => "Gigs"
+		# fill_in "Contact Phone", :with => "555-555-5555"
+		# fill_in "Contact Email", :with => "gigs@mcgee.com"
+		# click_button "Save Gig"
+		# page.should have_content "Please sign in to save this gig"
+		# fill_in "Email", :with => user.email
+		# fill_in "Password", :with => user.password
+		# click_button "Sign in"
+		# page.should have_content "My First Gig"
+		# page.should have_content "Signed in as"
+  # end
 end
 

@@ -8,6 +8,7 @@
  * You're free to add application-wide styles to this file and they'll appear at the top of the
  * compiled file, but it's generally better to create a new file per style scope.
  *
+ *= require foundation_and_overrides
  *= require_self
  *= require_tree .
  */
@@ -15,6 +16,8 @@
 /*@font-face { font-family: MyType; src: url('/assets/MyType.otf'); } */
 
 /* http://stackoverflow.com/questions/10905905/using-fonts-with-rails-asset-pipeline */
+
+
 
 body {
   background-image:url('/assets/ampgrillbackground.gif');
@@ -25,19 +28,10 @@ body {
   padding-top: 20px;
 }
 
-#logo {
-  background-color: #d6d6d6;
-  padding-left: 10px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  border-radius: 7px;
-  border: 1px solid black;
- }
-
 #main {
   background-color: #ffffff;
   margin-top: 20px;
-  border-radius: 7px;
+  /*border-radius: 7px;*/
   border: 1px solid black;
   padding-left: 30px;
   padding-top: 30px;
@@ -46,9 +40,23 @@ body {
   font-family: arial;
  }
 
+
+
+#logo {
+  background-color: #d6d6d6;
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  /*border-radius: 7px;*/
+  border: 1px solid black;
+ }
+
 #main a {
   font-family: arial;
+  color: #524F50;
 }
+
+/*
 
 .flash {
   background-color: #db7f2e;
@@ -87,11 +95,12 @@ h2 {
   border-radius: 7px;
 }
 
-<<<<<<< HEAD
 td {
   width: 20em;
   padding-left: 8em;
 }
+
+*/
 
 .budget_form {
   float: left;
@@ -139,8 +148,12 @@ html[xmlns] .clearfix {
 * html .clearfix {
   height: 1%;
 }
-=======
+
 .sign-in {
   float: right;
 }
->>>>>>> 3ca29b499d1352f3361c58fc6c53fddeb6722e66
+
+
+
+
+

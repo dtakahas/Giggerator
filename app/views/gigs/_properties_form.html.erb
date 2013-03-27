@@ -6,30 +6,30 @@
   <%= f.text_field :title %>
 </p>
 
-    <%= fields_for @contact do |c| %>
-  <p>
-    <%= c.label :first_name, "First Name" %>
-    <%= c.text_field :first_name %>
-  </p>
+  <%= fields_for @contact do |c| %>
+<p>
+  <%= c.label :first_name, "First Name" %>
+  <%= c.text_field :first_name %>
+</p>
 
-  <p>
-    <%= c.label :last_name, "Last Name" %>
-    <%= c.text_field :last_name %>
-  </p>
+<p>
+  <%= c.label :last_name, "Last Name" %>
+  <%= c.text_field :last_name %>
+</p>
 
-  <p>
-    <%= c.label :phone, "Contact Phone" %>
-    <%= c.text_field :phone %>
-  </p>
+<p>
+  <%= c.label :phone, "Contact Phone" %>
+  <%= c.text_field :phone %>
+</p>
 
-  <p>
-    <%= c.label :email, "Contact Email" %>
-    <%= c.text_field :email %>
-  </p>
+<p>
+  <%= c.label :email, "Contact Email" %>
+  <%= c.text_field :email %>
+</p>
 
-  <%= c.hidden_field :user_id, :value => @user_id %>
+<%= c.hidden_field :user_id, :value => @user_id %>
 
-  <% end %>
+<% end %>
 
 <p>
   <%= f.label :month %>

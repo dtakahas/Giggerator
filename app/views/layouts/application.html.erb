@@ -20,7 +20,7 @@
 <div id="main">
 	<div class="sign-in">
 		<% if user_signed_in? %>
-			Signed in as <%= current_user.email %>
+			Signed in as <%= current_user.email %> |
 			<%= link_to "Sign out", destroy_user_session_path, :method => :delete %>
 		<% else %>
 			<%= link_to "Sign up", new_user_registration_path %>
@@ -29,8 +29,11 @@
 	</div>
 <nav>
 
-	<%= link_to "Create Gig", new_gig_path(:form => "properties") %>
-	<%= link_to "Contacts", contacts_path if user_signed_in? %>
+<% if user_signed_in? %>
+  <div class="button"><a href="/">My Gigs</a></div>
+	<div class="button"><%= link_to "Create Gig", new_gig_path(:form => "properties") %></div>
+	<div class="button"><%= link_to "Contacts", contacts_path %></div>
+<% end %>
 
 </nav>
 <%= yield %>

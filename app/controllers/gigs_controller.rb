@@ -29,11 +29,10 @@ class GigsController < ApplicationController
 		end
 
 		if @gig.save && @contact.save
-			@gig.user_id = current_user.id
-			#this whole line is wrong
-			ContactsGigs.create(:contact_id => @contact.id, :gig_id => @gig.id)
-			flash[:notice] = "Gig saved!"
-			redirect_to @gig
+  			@gig.user_id = current_user.id
+  			ContactsGigs.create(:contact_id => @contact.id, :gig_id => @gig.id)
+  			flash[:notice] = "Gig saved!"
+  			redirect_to @gig
 		else
 			flash[:alert] = "You must have a gig title and contact name."
       redirect_to new_gig_path(@gig, :form => "properties")
