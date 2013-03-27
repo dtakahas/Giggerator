@@ -29,7 +29,7 @@ feature "Creating gigs" do
 	scenario "can not create gigs without title" do
 		fill_in "Title", :with => ""
 		click_button "Save Gig"
-		page.should have_content "Title can't be blank"
+		page.should have_content "You must have a gig title and contact name."
   end
 end
 

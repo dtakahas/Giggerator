@@ -71,6 +71,9 @@
   <%= f.text_field :total_budget %>
 </p>
 
+<%= f.hidden_field :user_id, :value => @user_id %>
+
+
 <%= f.submit "Save Gig" %>
 
 <% end %>

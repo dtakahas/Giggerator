@@ -18,37 +18,38 @@ class GigsController < ApplicationController
 	end
 
 	def create
-		@contact = Contact.new(params[:contact])
 		@gig = Gig.new(params[:gig])
 		@gig.month = params["date"]["month"].to_i
 		@gig.day = params["date"]["day"].to_i
 		@gig.year = params["date"]["year"].to_i
 		logger.info @gig.month
 
+		if params[:contact]
+			@contact = Contact.new(params[:contact])
+		end
+
 		if @gig.save && @contact.save
 			@gig.user_id = current_user.id
+			#this whole line is wrong
+			ContactsGigs.create(:contact_id => @contact.id, :gig_id => @gig.id)
 			flash[:notice] = "Gig saved!"
 			redirect_to @gig
 		else
-			flash[:alert] = "Title can't be blank"
+			flash[:alert] = "You must have a gig title and contact name."
       redirect_to new_gig_path(@gig, :form => "properties")
 		end
 	end
 
 	def show
     @gig = Gig.find(params[:id])
-	end
+    @contacts = @gig.contacts
+ 	end
 
 	def edit
 		@gig = Gig.find(params[:id])
     @items = @gig.budget_items
     @expenses = @gig.expense_items
-		# @contact = Contact.find_by_gig_id(params[:id])
-
-		# if not @contact
-		# 	@contact = Contact.new(params[:contact])
-		# end
-		# THIS IS A BIG MESS
+    @contact = @gig.contacts.first
 
     if @items.empty? && params[:form] == "budgets"
       @budget = BudgetItem.new(:gig_id => @gig.id, :label => "Total Budget", :positive => true, :amount => @gig.total_budget)
@@ -71,6 +72,7 @@ class GigsController < ApplicationController
 
 	def update
 		@gig = Gig.find(params[:id])
+		@contact = @gig.contacts.first
 		if @gig.update_attributes(params[:gig])
       if params[:gig][:title]
         flash[:notice] = "Updated!"

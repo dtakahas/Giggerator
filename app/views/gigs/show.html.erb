@@ -9,5 +9,14 @@
     </li>
   </ul>
 </div>
+<div>
+  <ul>
+      <% @contacts.each do |contact| %>
+    <li>
+      <%= contact.first_name %> <%= contact.last_name %>
+      <% end %>
+    </li>
+  </ul>
+</div>
 
 <%= link_to "Budget Breakdown", edit_gig_path(@gig, :form => "budgets") %>

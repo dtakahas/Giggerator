@@ -1,6 +1,6 @@
 class Gig < ActiveRecord::Base
   attr_accessible :address, :city, :day, :month, :title, :total_budget, :venue, :year,
-                  :zip, :contact_name, :contact_phone, :contact_email, :user_id, :budget_items_attributes, :expense_items_attributes
+                  :zip, :user_id, :budget_items_attributes, :expense_items_attributes
 
   validates :title, :presence => true
   belongs_to :user
@@ -12,6 +12,8 @@ class Gig < ActiveRecord::Base
   accepts_nested_attributes_for :expense_items, :allow_destroy => true
 
   before_save :set_total_budget
+
+  has_and_belongs_to_many :contacts
 
   private
 
