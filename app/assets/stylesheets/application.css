@@ -21,6 +21,14 @@ input[type="text"] {
   width: 90%;
 }
 
+input[type="password"] {
+  width: 90%;
+}
+
+input[type="email"] {
+  width: 90%;
+}
+
 select {
   width: 10em;
 }
