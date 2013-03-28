@@ -28,7 +28,7 @@ class GigsController < ApplicationController
 			@contact = Contact.new(params[:contact])
 		end
 
-		if  @contact.save && @gig.save
+  	if  @contact.save && @gig.save
   			@gig.user_id = current_user.id
   			ContactsGigs.create(:contact_id => @contact.id, :gig_id => @gig.id)
   			flash[:notice] = "Gig saved!"
@@ -74,6 +74,7 @@ class GigsController < ApplicationController
 	def update
 		@gig = Gig.find(params[:id])
 		@contact = @gig.contacts.first
+    @user_id = current_user.id
 		if @gig.update_attributes(params[:gig])
       if params[:gig][:title]
         flash[:notice] = "Updated!"
