@@ -31,6 +31,7 @@ class GigsController < ApplicationController
 
   	if  @contact.save && @gig.save
   			@gig.user_id = current_user.id
+        @gig.save!
   			ContactsGigs.create(:contact_id => @contact.id, :gig_id => @gig.id)
   			flash[:notice] = "Gig saved!"
   			redirect_to @gig

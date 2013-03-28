@@ -14,26 +14,26 @@
       <img src="./assets/0.7.1/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2013-03-28T09:41:43-07:00">2013-03-28T09:41:43-07:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2013-03-28T11:15:14-07:00">2013-03-28T11:15:14-07:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
         <div class="file_list_container" id="AllFiles">
   <h2>
     <span class="group_name">All Files</span>
-    (<span class="covered_percent"><span class="yellow">82.14%</span></span>
+    (<span class="covered_percent"><span class="yellow">82.23%</span></span>
      covered at
      <span class="covered_strength">
        <span class="green">
-         1.78
+         1.79
        </span>
     </span> hits/line)
   </h2>
   <a name="AllFiles"></a>
   <div>
     <b>16</b> files in total.
-    <b>196</b> relevant lines. 
-    <span class="green"><b>161</b> lines covered</span> and
+    <b>197</b> relevant lines. 
+    <span class="green"><b>162</b> lines covered</span> and
     <span class="red"><b>35</b> lines missed </span>
   </div>
   <table class="file_list">
@@ -92,12 +92,12 @@
       
       <tr>
         <td class="strong"><a href="#bd9ea0986b100f5f5728198e0eaba057e401adec" class="src_link" title="app/controllers/gigs_controller.rb">app/controllers/gigs_controller.rb</a></td>
-        <td class="green strong">95.52 %</td>
-        <td>105</td>
-        <td>67</td>
-        <td>64</td>
+        <td class="green strong">95.59 %</td>
+        <td>106</td>
+        <td>68</td>
+        <td>65</td>
         <td>3</td>
-        <td>8.8</td>
+        <td>8.7</td>
       </tr>
       
       <tr>
@@ -197,7 +197,7 @@
         <td>14</td>
         <td>14</td>
         <td>0</td>
-        <td>4.1</td>
+        <td>4.4</td>
       </tr>
       
       <tr>
@@ -219,19 +219,19 @@
           <div class="file_list_container" id="Controllers">
   <h2>
     <span class="group_name">Controllers</span>
-    (<span class="covered_percent"><span class="red">76.82%</span></span>
+    (<span class="covered_percent"><span class="red">76.97%</span></span>
      covered at
      <span class="covered_strength">
        <span class="green">
-         2.6
+         2.58
        </span>
     </span> hits/line)
   </h2>
   <a name="Controllers"></a>
   <div>
     <b>5</b> files in total.
-    <b>151</b> relevant lines. 
-    <span class="green"><b>116</b> lines covered</span> and
+    <b>152</b> relevant lines. 
+    <span class="green"><b>117</b> lines covered</span> and
     <span class="red"><b>35</b> lines missed </span>
   </div>
   <table class="file_list">
@@ -290,12 +290,12 @@
       
       <tr>
         <td class="strong"><a href="#bd9ea0986b100f5f5728198e0eaba057e401adec" class="src_link" title="app/controllers/gigs_controller.rb">app/controllers/gigs_controller.rb</a></td>
-        <td class="green strong">95.52 %</td>
-        <td>105</td>
-        <td>67</td>
-        <td>64</td>
+        <td class="green strong">95.59 %</td>
+        <td>106</td>
+        <td>68</td>
+        <td>65</td>
         <td>3</td>
-        <td>8.8</td>
+        <td>8.7</td>
       </tr>
       
     </tbody>
@@ -310,7 +310,7 @@
      covered at
      <span class="covered_strength">
        <span class="green">
-         1.73
+         1.78
        </span>
     </span> hits/line)
   </h2>
@@ -382,7 +382,7 @@
         <td>14</td>
         <td>14</td>
         <td>0</td>
-        <td>4.1</td>
+        <td>4.4</td>
       </tr>
       
       <tr>
@@ -1559,10 +1559,10 @@
         <div class="source_table" id="bd9ea0986b100f5f5728198e0eaba057e401adec">
   <div class="header">
     <h3>app/controllers/gigs_controller.rb</h3>
-    <h4><span class="green">95.52 %</span> covered</h4>
+    <h4><span class="green">95.59 %</span> covered</h4>
     <div>
-      <b>67</b> relevant lines. 
-      <span class="green"><b>64</b> lines covered</span> and
+      <b>68</b> relevant lines. 
+      <span class="green"><b>65</b> lines covered</span> and
       <span class="red"><b>3</b> lines missed.</span>
     </div>
   </div>
@@ -1771,421 +1771,421 @@
         <li class="covered" data-hits="4" data-linenumber="34">
           <span class="hits">4</span>
           
-          <code class="ruby">  			ContactsGigs.create(:contact_id =&gt; @contact.id, :gig_id =&gt; @gig.id)</code>
+          <code class="ruby">        @gig.save!</code>
         </li>
       
         <li class="covered" data-hits="4" data-linenumber="35">
           <span class="hits">4</span>
           
-          <code class="ruby">  			flash[:notice] = &quot;Gig saved!&quot;</code>
+          <code class="ruby">  			ContactsGigs.create(:contact_id =&gt; @contact.id, :gig_id =&gt; @gig.id)</code>
         </li>
       
         <li class="covered" data-hits="4" data-linenumber="36">
           <span class="hits">4</span>
           
+          <code class="ruby">  			flash[:notice] = &quot;Gig saved!&quot;</code>
+        </li>
+      
+        <li class="covered" data-hits="4" data-linenumber="37">
+          <span class="hits">4</span>
+          
           <code class="ruby">  			redirect_to @gig</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="37">
+        <li class="never" data-hits="" data-linenumber="38">
           
           
           <code class="ruby">		else</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="38">
+        <li class="covered" data-hits="1" data-linenumber="39">
           <span class="hits">1</span>
           
           <code class="ruby">			flash[:alert] = &quot;You must have a gig title and contact name.&quot;</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="39">
+        <li class="covered" data-hits="1" data-linenumber="40">
           <span class="hits">1</span>
           
           <code class="ruby">      redirect_to new_gig_path(@gig, :form =&gt; &quot;properties&quot;)</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="40">
+        <li class="never" data-hits="" data-linenumber="41">
           
           
           <code class="ruby">		end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="41">
+        <li class="never" data-hits="" data-linenumber="42">
           
           
           <code class="ruby">	end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="42">
+        <li class="never" data-hits="" data-linenumber="43">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="43">
+        <li class="covered" data-hits="1" data-linenumber="44">
           <span class="hits">1</span>
           
           <code class="ruby">	def show</code>
         </li>
       
-        <li class="covered" data-hits="13" data-linenumber="44">
+        <li class="covered" data-hits="13" data-linenumber="45">
           <span class="hits">13</span>
           
           <code class="ruby">    @gig = Gig.find(params[:id])</code>
         </li>
       
-        <li class="covered" data-hits="13" data-linenumber="45">
+        <li class="covered" data-hits="13" data-linenumber="46">
           <span class="hits">13</span>
           
           <code class="ruby">    @contacts = @gig.contacts</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="46">
+        <li class="never" data-hits="" data-linenumber="47">
           
           
           <code class="ruby"> 	end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="47">
+        <li class="never" data-hits="" data-linenumber="48">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="48">
+        <li class="covered" data-hits="1" data-linenumber="49">
           <span class="hits">1</span>
           
           <code class="ruby">	def edit</code>
         </li>
       
-        <li class="covered" data-hits="26" data-linenumber="49">
-          <span class="hits">26</span>
-          
-          <code class="ruby">		@gig = Gig.find(params[:id])</code>
-        </li>
-      
         <li class="covered" data-hits="26" data-linenumber="50">
           <span class="hits">26</span>
           
-          <code class="ruby">    @items = @gig.budget_items</code>
+          <code class="ruby">		@gig = Gig.find(params[:id])</code>
         </li>
       
         <li class="covered" data-hits="26" data-linenumber="51">
           <span class="hits">26</span>
           
-          <code class="ruby">    @expenses = @gig.expense_items</code>
+          <code class="ruby">    @items = @gig.budget_items</code>
         </li>
       
         <li class="covered" data-hits="26" data-linenumber="52">
           <span class="hits">26</span>
           
+          <code class="ruby">    @expenses = @gig.expense_items</code>
+        </li>
+      
+        <li class="covered" data-hits="26" data-linenumber="53">
+          <span class="hits">26</span>
+          
           <code class="ruby">    @contact = @gig.contacts.first</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="53">
+        <li class="never" data-hits="" data-linenumber="54">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="26" data-linenumber="54">
+        <li class="covered" data-hits="26" data-linenumber="55">
           <span class="hits">26</span>
           
           <code class="ruby">    if @items.empty? &amp;&amp; params[:form] == &quot;budgets&quot;</code>
         </li>
       
-        <li class="covered" data-hits="8" data-linenumber="55">
+        <li class="covered" data-hits="8" data-linenumber="56">
           <span class="hits">8</span>
           
           <code class="ruby">      @budget = BudgetItem.new(:gig_id =&gt; @gig.id, :label =&gt; &quot;Total Budget&quot;, :positive =&gt; true, :amount =&gt; @gig.total_budget)</code>
         </li>
       
-        <li class="covered" data-hits="8" data-linenumber="56">
+        <li class="covered" data-hits="8" data-linenumber="57">
           <span class="hits">8</span>
           
           <code class="ruby">      @budget.save!</code>
         </li>
       
-        <li class="covered" data-hits="8" data-linenumber="57">
+        <li class="covered" data-hits="8" data-linenumber="58">
           <span class="hits">8</span>
           
           <code class="ruby">      @expense = ExpenseItem.new(:gig_id =&gt; @gig.id, :label =&gt; &quot;Expense&quot;, :amount =&gt; 0)</code>
         </li>
       
-        <li class="covered" data-hits="8" data-linenumber="58">
+        <li class="covered" data-hits="8" data-linenumber="59">
           <span class="hits">8</span>
           
           <code class="ruby">      @expense.save!</code>
         </li>
       
-        <li class="covered" data-hits="8" data-linenumber="59">
+        <li class="covered" data-hits="8" data-linenumber="60">
           <span class="hits">8</span>
           
           <code class="ruby">      flash[:notice] = &quot;Budget saved!&quot;</code>
         </li>
       
-        <li class="covered" data-hits="8" data-linenumber="60">
+        <li class="covered" data-hits="8" data-linenumber="61">
           <span class="hits">8</span>
           
           <code class="ruby">      redirect_to edit_gig_path(@gig, :form =&gt; &quot;budgets&quot;)</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="61">
+        <li class="never" data-hits="" data-linenumber="62">
           
           
           <code class="ruby">    end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="62">
+        <li class="never" data-hits="" data-linenumber="63">
           
           
           <code class="ruby"></code>
-        </li>
-      
-        <li class="covered" data-hits="26" data-linenumber="63">
-          <span class="hits">26</span>
-          
-          <code class="ruby">    @sum = 0</code>
         </li>
       
         <li class="covered" data-hits="26" data-linenumber="64">
           <span class="hits">26</span>
           
+          <code class="ruby">    @sum = 0</code>
+        </li>
+      
+        <li class="covered" data-hits="26" data-linenumber="65">
+          <span class="hits">26</span>
+          
           <code class="ruby">    @items.each do |x|</code>
         </li>
       
-        <li class="covered" data-hits="23" data-linenumber="65">
+        <li class="covered" data-hits="23" data-linenumber="66">
           <span class="hits">23</span>
           
           <code class="ruby">      @sum = @sum + x.amount</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="66">
+        <li class="never" data-hits="" data-linenumber="67">
           
           
           <code class="ruby">    end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="67">
+        <li class="never" data-hits="" data-linenumber="68">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="26" data-linenumber="68">
+        <li class="covered" data-hits="26" data-linenumber="69">
           <span class="hits">26</span>
           
           <code class="ruby">    @expenses.each do |y|</code>
         </li>
       
-        <li class="covered" data-hits="24" data-linenumber="69">
+        <li class="covered" data-hits="24" data-linenumber="70">
           <span class="hits">24</span>
           
           <code class="ruby">      @sum = @sum + y.amount</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="70">
+        <li class="never" data-hits="" data-linenumber="71">
           
           
           <code class="ruby">    end</code>
         </li>
       
-        <li class="covered" data-hits="26" data-linenumber="71">
+        <li class="covered" data-hits="26" data-linenumber="72">
           <span class="hits">26</span>
           
           <code class="ruby">    @sum</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="72">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
         <li class="never" data-hits="" data-linenumber="73">
           
           
-          <code class="ruby">	end</code>
+          <code class="ruby"></code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="74">
           
           
+          <code class="ruby">	end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="75">
+          
+          
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="75">
+        <li class="covered" data-hits="1" data-linenumber="76">
           <span class="hits">1</span>
           
           <code class="ruby">	def update</code>
         </li>
       
-        <li class="covered" data-hits="4" data-linenumber="76">
+        <li class="covered" data-hits="4" data-linenumber="77">
           <span class="hits">4</span>
           
           <code class="ruby">		@gig = Gig.find(params[:id])</code>
         </li>
       
-        <li class="covered" data-hits="4" data-linenumber="77">
+        <li class="covered" data-hits="4" data-linenumber="78">
           <span class="hits">4</span>
           
           <code class="ruby">		@contact = @gig.contacts.first</code>
         </li>
       
-        <li class="covered" data-hits="4" data-linenumber="78">
+        <li class="covered" data-hits="4" data-linenumber="79">
           <span class="hits">4</span>
           
           <code class="ruby">    @user_id = current_user.id</code>
         </li>
       
-        <li class="covered" data-hits="4" data-linenumber="79">
+        <li class="covered" data-hits="4" data-linenumber="80">
           <span class="hits">4</span>
           
           <code class="ruby">		if @gig.update_attributes(params[:gig])</code>
         </li>
       
-        <li class="covered" data-hits="4" data-linenumber="80">
+        <li class="covered" data-hits="4" data-linenumber="81">
           <span class="hits">4</span>
           
           <code class="ruby">      if params[:gig][:title]</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="81">
+        <li class="covered" data-hits="1" data-linenumber="82">
           <span class="hits">1</span>
           
           <code class="ruby">        flash[:notice] = &quot;Updated!&quot;</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="82">
+        <li class="covered" data-hits="1" data-linenumber="83">
           <span class="hits">1</span>
           
           <code class="ruby">        redirect_to @gig</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="83">
+        <li class="never" data-hits="" data-linenumber="84">
           
           
           <code class="ruby">      else</code>
         </li>
       
-        <li class="covered" data-hits="3" data-linenumber="84">
+        <li class="covered" data-hits="3" data-linenumber="85">
           <span class="hits">3</span>
           
           <code class="ruby">        flash[:notice] = &quot;Budget Saved!&quot;</code>
         </li>
       
-        <li class="covered" data-hits="3" data-linenumber="85">
+        <li class="covered" data-hits="3" data-linenumber="86">
           <span class="hits">3</span>
           
           <code class="ruby">        redirect_to edit_gig_path(@gig, :form =&gt; &quot;budgets&quot;)</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="86">
+        <li class="never" data-hits="" data-linenumber="87">
           
           
           <code class="ruby">      end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="87">
+        <li class="never" data-hits="" data-linenumber="88">
           
           
           <code class="ruby">    else</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="88">
+        <li class="missed" data-hits="0" data-linenumber="89">
           
           
           <code class="ruby">      flash[:alert] = &quot;Gig NOT saved.&quot;</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="89">
+        <li class="missed" data-hits="0" data-linenumber="90">
           
           
           <code class="ruby">      render :action =&gt;&quot;edit&quot;</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="90">
+        <li class="never" data-hits="" data-linenumber="91">
           
           
           <code class="ruby">    end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="91">
+        <li class="never" data-hits="" data-linenumber="92">
           
           
           <code class="ruby">	end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="92">
+        <li class="never" data-hits="" data-linenumber="93">
           
           
           <code class="ruby"></code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="93">
-          <span class="hits">1</span>
-          
-          <code class="ruby">	def destroy</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="94">
           <span class="hits">1</span>
           
-          <code class="ruby">    @gig = Gig.find(params[:id])</code>
+          <code class="ruby">	def destroy</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="95">
           <span class="hits">1</span>
           
-          <code class="ruby">    @gig.destroy</code>
+          <code class="ruby">    @gig = Gig.find(params[:id])</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="96">
           <span class="hits">1</span>
           
-          <code class="ruby">    flash[:notice] = &quot;Gig deleted!&quot;</code>
+          <code class="ruby">    @gig.destroy</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="97">
           <span class="hits">1</span>
           
-          <code class="ruby">    redirect_to '/'</code>
+          <code class="ruby">    flash[:notice] = &quot;Gig deleted!&quot;</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="98">
+        <li class="covered" data-hits="1" data-linenumber="98">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby">	end</code>
+          <code class="ruby">    redirect_to '/'</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="99">
           
           
+          <code class="ruby">	end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="100">
+          
+          
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="100">
+        <li class="covered" data-hits="1" data-linenumber="101">
           <span class="hits">1</span>
           
           <code class="ruby">	def add_to_contacts</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="101">
+        <li class="missed" data-hits="0" data-linenumber="102">
           
           
           <code class="ruby">		Contact.create(:first_name =&gt; params[:contact_name])</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="102">
-          
-          
-          <code class="ruby">	end</code>
-        </li>
-      
         <li class="never" data-hits="" data-linenumber="103">
           
           
-          <code class="ruby"></code>
+          <code class="ruby">	end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="104">
@@ -2195,6 +2195,12 @@
         </li>
       
         <li class="never" data-hits="" data-linenumber="105">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="106">
           
           
           <code class="ruby">end</code>
@@ -2746,8 +2752,8 @@
           <code class="ruby">  def set_total_budget</code>
         </li>
       
-        <li class="covered" data-hits="29" data-linenumber="21">
-          <span class="hits">29</span>
+        <li class="covered" data-hits="33" data-linenumber="21">
+          <span class="hits">33</span>
           
           <code class="ruby">    if not self.total_budget</code>
         </li>
