@@ -26,6 +26,7 @@ class GigsController < ApplicationController
 
 		if params[:contact]
 			@contact = Contact.new(params[:contact])
+      @contact.user_id = current_user.id
 		end
 
   	if  @contact.save && @gig.save
