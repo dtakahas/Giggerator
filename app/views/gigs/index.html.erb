@@ -2,6 +2,11 @@
 <br />
 
 <h2>My Gigs</h2>
+
+<% if @gigs.empty? %>
+You haven't entered any gigs yet. Click Create Gig to get started!
+<% end %>
+
 <table>
   <% @gigs.each do |gig| %>
     <tr>
