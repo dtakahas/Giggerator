@@ -3,3 +3,5 @@ log/*
 schema.rb
 .DS_Store
 .bundle/*
+coverage/*
+db/development.sqlite3
