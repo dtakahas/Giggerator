@@ -34,17 +34,22 @@
 
     <p style="float:left; padding-right:2px">
       <%= f.label :month %>
-      <%= select_month(Time.now) %>
+      <%= select_month(@gig.month ||= Time.now) %>
     </p>
 
     <p style="float:left; padding-right:2px">
       <%= f.label :day %>
-      <%= select_day(Time.now) %>
+      <%= select_day(@gig.day ||= Time.now) %>
     </p>
 
     <p style="float:left; padding-right:2px">
       <%= f.label :year %>
-      <%= select_year(Time.now) %>
+      <%= select_year(@gig.year ||= Time.now) %>
+    </p>
+
+    <p style="float:left; padding-right:2px">
+      <%= f.label :time %>
+      <%= f.time_select :time, :minute_step => 15, :ampm => true %>
     </p>
 
   </div>
@@ -73,6 +78,11 @@
     <p>
       <%= f.label :total_budget, "Total Budget" %>
       <%= f.text_field :total_budget %>
+    </p>
+
+    <p>
+      <%= f.label :notes, "Notes" %>
+      <%= f.text_area :notes %>
     </p>
 
     <%#= f.hidden_field :user_id, :value => @user_id %>

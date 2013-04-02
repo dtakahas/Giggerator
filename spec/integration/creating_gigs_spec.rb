@@ -17,11 +17,14 @@ feature "Creating gigs" do
 		select "March", :from => "date[month]"
 		select "10", :from => "date[day]"
 		select "2015", :from => "date[year]"
+    select "07", :from => "gig[time(4i)]"
+    select "30", :from => "gig[time(5i)]"
 		fill_in "Venue", :with => "Carnagie Hall"
 		fill_in "City", :with => "New York"
 		fill_in "Address", :with => "123 Main St"
 		fill_in "Zip", :with => 98102
 		fill_in "Total Budget", :with => 1000
+    fill_in "Notes", :with => "This is a note"
 		click_button "Save Gig"
 		page.should have_content "Gig saved!"
 	end

@@ -1,6 +1,6 @@
 class Gig < ActiveRecord::Base
   attr_accessible :address, :city, :day, :month, :title, :total_budget, :venue, :year,
-                  :zip, :user_id, :budget_items_attributes, :expense_items_attributes
+                  :zip, :notes, :time, :user_id, :budget_items_attributes, :expense_items_attributes
 
   validates :title, :presence => true
   belongs_to :user

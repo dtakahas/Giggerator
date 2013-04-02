@@ -1,5 +1,5 @@
 <div id="gig-title"><%= @gig.title %><br />
-  <span><small><%= @gig.month %> / <%= @gig.day %> / <%= @gig.year %></small></span>
+  <span><small><%= @gig.month %> / <%= @gig.day %> / <%= @gig.year %><% if @gig.time %> @ <%= @gig.time.localtime.strftime("%I:%M %p") %><% end %></small></span>
 </div>
 
 <br />
@@ -16,14 +16,18 @@
 
         <span class="subtext2">Total Budget: </span><br />
         <%= number_to_currency(@gig.total_budget, :precision => 2) %><br />
+
   </div>
 
 
   <div class="six columns">
     <span class="subtext2">Contacts for this gig:</span><br /><br />
         <% @contacts.each do |contact| %>
-        <%= contact.first_name %> <%= contact.last_name %>  |  <%= contact.phone %>  |  <%= contact.email %><br />
+        <%= contact.first_name %> <%= contact.last_name %>  |  <%= contact.phone %>  |  <%= contact.email %><br /><br />
         <% end %>
+
+    <span class="subtext2">Notes: </span><br />
+        <%= @gig.notes %><br />
   </div>
 
   <br />

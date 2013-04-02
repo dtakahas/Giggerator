@@ -22,6 +22,9 @@ class GigsController < ApplicationController
 		@gig.month = params["date"]["month"].to_i
 		@gig.day = params["date"]["day"].to_i
 		@gig.year = params["date"]["year"].to_i
+    if params["time"]
+      @gig.time = Time.new(params["date"]["year"], params["date"]["month"], params["date"]["day"], params["time"]["time(4i)"], params["time"]["time(5i)"])
+    end
 		logger.info @gig.month
 
 		if params[:contact]
@@ -79,6 +82,11 @@ class GigsController < ApplicationController
     @user_id = current_user.id
 		if @gig.update_attributes(params[:gig])
       if params[:gig][:title]
+        @gig.month = params["date"]["month"].to_i
+        @gig.day = params["date"]["day"].to_i
+        @gig.year = params["date"]["year"].to_i
+        @gig.time = Time.new(params["date"]["year"], params["date"]["month"], params["date"]["day"], params["gig"]["time(4i)"], params["gig"]["time(5i)"])
+        @gig.save!
         flash[:notice] = "Updated!"
         redirect_to @gig
       else
