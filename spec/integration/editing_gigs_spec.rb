@@ -3,12 +3,14 @@ require 'spec_helper'
 feature "Updating a gig" do
   let!(:user) { Factory(:confirmed_user) }
   let!(:gig) { Factory(:gig, :title => "Old Title", :user_id => user.id) }
+  let!(:contact) { Factory(:contact, :first_name => "Will", :last_name => "Bethere") }
+
   before do
     sign_in_as!(user)
+    visit '/'
   end
 
   scenario "can update a gig" do
-    visit '/'
     click_link "Edit"
     fill_in "Title", :with => "Better Title"
     fill_in "First Name", :with => "Gigs"
@@ -30,7 +32,6 @@ feature "Updating a gig" do
   end
 
   scenario "gig will have contact associated with it" do
-    visit '/'
     click_link "Create Gig"
     fill_in "Title", :with => "Crap"
     fill_in "First Name", :with => "Joe"
@@ -41,5 +42,16 @@ feature "Updating a gig" do
     find_field("First Name").value.should eql("George")
   end
   #TODO: Write a test for invalid data entry
+
+  scenario "can add multiple contacts to a gig" do
+    click_link "Edit"
+    click_button "Add player"
+    select "Trumpet", :from => "Instrument"
+    select "Will Bethere", :from => "Players"
+    click_button "Save Gig"
+    page.should have_content("Will Bethere")
+  end
+  # To add a player contact to a gig, the user should be able to click Add player, revealing two selection menus (jQuery slide),
+  # one for instrument and one for player names which changes depending on the instrument selected.
 
 end
