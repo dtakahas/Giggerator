@@ -1,56 +1,56 @@
 class GigsController < ApplicationController
 
-	def index
+  def index
     if current_user
-		  @gigs = Gig.where(:user_id => current_user.id)
+      @gigs = Gig.where(:user_id => current_user.id)
     else
-    	flash.keep
+      flash.keep
       redirect_to new_user_session_path
     end
-	end
+  end
 
-	def new
-		@gig = Gig.new
-		@contact = Contact.new
+  def new
+    @gig = Gig.new
+    @contact = Contact.new
     if current_user
-		 @user_id = current_user.id
+      @user_id = current_user.id
     end
-	end
+  end
 
-	def create
-		@gig = Gig.new(params[:gig])
-		@gig.month = params["date"]["month"].to_i
-		@gig.day = params["date"]["day"].to_i
-		@gig.year = params["date"]["year"].to_i
+  def create
+    @gig = Gig.new(params[:gig])
+    @gig.month = params["date"]["month"].to_i
+    @gig.day = params["date"]["day"].to_i
+    @gig.year = params["date"]["year"].to_i
     if params["time"]
       @gig.time = Time.new(params["date"]["year"], params["date"]["month"], params["date"]["day"], params["time"]["time(4i)"], params["time"]["time(5i)"])
     end
-		logger.info @gig.month
+    logger.info @gig.month
 
-		if params[:contact]
-			@contact = Contact.new(params[:contact])
+    if params[:contact]
+      @contact = Contact.new(params[:contact])
       @contact.user_id = current_user.id
-		end
+    end
 
-  	if  @contact.save && @gig.save
-  			@gig.user_id = current_user.id
-        @gig.save!
-  			ContactsGigs.create(:contact_id => @contact.id, :gig_id => @gig.id)
-  			flash[:notice] = "Gig saved!"
-  			redirect_to @gig
-		else
-			flash[:alert] = "You must have a gig title and contact name."
+    if @contact.save && @gig.save
+      @gig.user_id = current_user.id
+      @gig.save!
+      ContactsGigs.create(:contact_id => @contact.id, :gig_id => @gig.id)
+      flash[:notice] = "Gig saved!"
+      redirect_to @gig
+    else
+      flash[:alert] = "You must have a gig title and contact name."
       redirect_to new_gig_path(@gig, :form => "properties")
-		end
-	end
+    end
+  end
 
-	def show
+  def show
     @gig = Gig.find(params[:id])
     @contacts = @gig.contacts
- 	end
+  end
 
-	def edit
-		@gig = Gig.find(params[:id])
+  def edit
+    @gig = Gig.find(params[:id])
     @items = @gig.budget_items
     @expenses = @gig.expense_items
     @contact = @gig.contacts.first
@@ -73,14 +73,13 @@ class GigsController < ApplicationController
       @sum = @sum + y.amount
     end
     @sum
+  end
 
-	end
-
-	def update
-		@gig = Gig.find(params[:id])
-		@contact = @gig.contacts.first
+  def update
+    @gig = Gig.find(params[:id])
+    @contact = @gig.contacts.first
     @user_id = current_user.id
-		if @gig.update_attributes(params[:gig])
+    if @gig.update_attributes(params[:gig])
       if params[:gig][:title]
         @gig.month = params["date"]["month"].to_i
         @gig.day = params["date"]["day"].to_i
@@ -97,18 +96,16 @@ class GigsController < ApplicationController
       flash[:alert] = "Gig NOT saved."
       render :action =>"edit"
     end
-	end
+  end
 
-	def destroy
+  def destroy
     @gig = Gig.find(params[:id])
     @gig.destroy
     flash[:notice] = "Gig deleted!"
     redirect_to '/'
-	end
+  end
 
-	def add_to_contacts
-		Contact.create(:first_name => params[:contact_name])
-	end
-
-
+  def add_to_contacts
+    Contact.create(:first_name => params[:contact_name])
+  end
 end
